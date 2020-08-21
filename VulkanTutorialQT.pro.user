@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 4.12.4, 2020-08-21T11:20:55. -->
+<!-- Written by QtCreator 4.12.4, 2020-08-21T15:22:07. -->
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
@@ -89,8 +89,8 @@
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.BuildConfiguration.0">
     <value type="bool">false</value>
     <value type="int" key="EnableQmlDebugging">0</value>
-    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">/media/liusheng/Apps/progworks/github/Vulkan/Overv/vulkan-tutorial.com/code_me</value>
-    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory.shadowDir">/media/liusheng/Apps/progworks/github/Vulkan/Overv/vulkan-tutorial.com/build-VulkanTutorialQT-Desktop_Qt_5_15_0_GCC_64bit-Debug</value>
+    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">/media/liusheng/Apps/progworks/github/Vulkan/Overv/vulkan-tutorial.com/code_me/VulkanTutorialQT</value>
+    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory.shadowDir">/media/liusheng/Apps/progworks/github/Vulkan/Overv/vulkan-tutorial.com/code_me</value>
     <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.0">
      <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
       <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
@@ -314,19 +314,20 @@
     </valuelist>
     <value type="int" key="PE.EnvironmentAspect.Base">2</value>
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4RunConfiguration:/media/liusheng/Apps/progworks/github/Vulkan/Overv/vulkan-tutorial.com/code_me/VulkanTutorialQT.pro</value>
-    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">/media/liusheng/Apps/progworks/github/Vulkan/Overv/vulkan-tutorial.com/code_me/VulkanTutorialQT.pro</value>
+    <value type="QString" key="ProjectExplorer.CustomExecutableRunConfiguration.Executable">/media/liusheng/Apps/progworks/github/Vulkan/Overv/vulkan-tutorial.com/code_me/QT_Creator/x64/Debug/VulkanTutorialQT</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ProjectExplorer.CustomExecutableRunConfiguration</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey"></value>
     <value type="QString" key="RunConfiguration.Arguments"></value>
     <value type="bool" key="RunConfiguration.Arguments.multi">false</value>
     <value type="QString" key="RunConfiguration.OverrideDebuggerStartup"></value>
     <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
-    <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
     <value type="bool" key="RunConfiguration.UseMultiProcess">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
+    <value type="bool" key="RunConfiguration.UseTerminal">true</value>
     <value type="QString" key="RunConfiguration.WorkingDirectory">/media/liusheng/Apps/progworks/github/Vulkan/Overv/vulkan-tutorial.com/code_me/5.Vertex_Buffers</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/media/liusheng/Apps/progworks/github/Vulkan/Overv/vulkan-tutorial.com/code_me/QT_Creator/x64/Debug</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default"></value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.1">
     <value type="QString" key="Analyzer.Perf.CallgraphMode">dwarf</value>
@@ -388,20 +389,19 @@
     </valuelist>
     <value type="int" key="PE.EnvironmentAspect.Base">2</value>
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
-    <value type="QString" key="ProjectExplorer.CustomExecutableRunConfiguration.Executable">/media/liusheng/Apps/progworks/github/Vulkan/Overv/vulkan-tutorial.com/code_me/QT_Creator/x64/Debug/VulkanTutorialQT</value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ProjectExplorer.CustomExecutableRunConfiguration</value>
-    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey"></value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4RunConfiguration:/media/liusheng/Apps/progworks/github/Vulkan/Overv/vulkan-tutorial.com/code_me/VulkanTutorialQT/VulkanTutorialQT.pro</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">/media/liusheng/Apps/progworks/github/Vulkan/Overv/vulkan-tutorial.com/code_me/VulkanTutorialQT/VulkanTutorialQT.pro</value>
     <value type="QString" key="RunConfiguration.Arguments"></value>
     <value type="bool" key="RunConfiguration.Arguments.multi">false</value>
     <value type="QString" key="RunConfiguration.OverrideDebuggerStartup"></value>
     <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
+    <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
     <value type="bool" key="RunConfiguration.UseMultiProcess">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="bool" key="RunConfiguration.UseTerminal">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory">/media/liusheng/Apps/progworks/github/Vulkan/Overv/vulkan-tutorial.com/code_me/5.Vertex_Buffers</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default"></value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory">/media/liusheng/Apps/progworks/github/Vulkan/Overv/vulkan-tutorial.com/code_me/VulkanTutorialQT/5.Vertex_Buffers</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/media/liusheng/Apps/progworks/github/Vulkan/Overv/vulkan-tutorial.com/code_me/VulkanTutorialQT/QT_Creator/x64/Debug</value>
    </valuemap>
    <value type="int" key="ProjectExplorer.Target.RunConfigurationCount">2</value>
   </valuemap>

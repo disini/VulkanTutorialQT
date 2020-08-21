@@ -22,4 +22,5 @@ QMAKE_CXX.LIBDIRS = \
     /usr/lib \
     /lib/x86_64-linux-gnu \
     /lib \
+    /media/liusheng/Programfiles/Programs/libs/glfw/glfw-3.3.2/src \
     .
