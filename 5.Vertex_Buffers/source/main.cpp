@@ -126,12 +126,17 @@ const std::vector<const char*> deviceExtensions = {
 
 
 
-
+    // vertices without indices
     const std::vector<Vertex> vertices = {
-        {{0.0f, -0.5f}, {1.0f, 1.0f, 1.0f}},
-        {{0.5f, 0.5f}, {0.0f, 1.0f, 0.0f}},
-        {{-0.5f, 0.5f}, {0.0f, 0.0f, 1.0f}}
+        {{-0.5f, -0.5f}, {1.0f, 0.0f, 0.0f}},// 0
+        {{0.5f, -0.5f}, {0.0f, 1.0f, 0.0f}},// 1
+        {{0.5f, 0.5f}, {0.0f, 0.0f, 1.0f}},// 2
+        {{0.5f, 0.5f}, {0.0f, 0.0f, 1.0f}},// 2
+        {{-0.5f, 0.5f},{1.0f, 1.0f, 1.0f}},// 3
+        {{-0.5f, -0.5f}, {1.0f, 0.0f, 0.0f}}// 0
     };
+
+
 
 class HelloTriangleApplication {
 public:
