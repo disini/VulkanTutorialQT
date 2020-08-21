@@ -1,0 +1,8 @@
+QT_Creator/
+debug/
+release/
+.idea/
+.*sdf
+*.db
+*.VC.db
+

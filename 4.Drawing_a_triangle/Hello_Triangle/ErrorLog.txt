@@ -1,0 +1,7 @@
+
+Available Validation Layers Found Count == 1
+validation layer: loader_get_json: Failed to open JSON file O:\Epic Games\Launcher\Portal\Extras\Overlay\EOSOverlayVkLayer-Win32.json
+validation layer: loader_get_json: Failed to open JSON file O:\Epic Games\Launcher\Portal\Extras\Overlay\EOSOverlayVkLayer-Win64.json
+
+
+

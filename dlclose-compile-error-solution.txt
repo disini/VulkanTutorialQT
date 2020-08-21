@@ -1,0 +1,6536 @@
+liusheng@disini-ubuntu:~$ apt search glfw
+正在排序... 完成
+全文搜索... 完成  
+gem-plugin-glfw3/focal 1:0.94-1build2 amd64
+  Graphics Environment for Multimedia - GLFW3 support
+
+libglfw3/focal 3.3.2-1 amd64
+  portable library for OpenGL, window and input (x11 libraries)
+
+libglfw3-dev/focal 3.3.2-1 amd64
+  portable library for OpenGL, window and input (development files)
+
+libglfw3-doc/focal,focal 3.3.2-1 all
+  portable library for OpenGL, window and input (documentation)
+
+libglfw3-wayland/focal 3.3.2-1 amd64
+  portable library for OpenGL, window and input (wayland libraries)
+
+liusheng@disini-ubuntu:~$ sudo apt install libglfw3
+[sudo] liusheng 的密码： 
+正在读取软件包列表... 完成
+正在分析软件包的依赖关系树       
+正在读取状态信息... 完成       
+下列软件包是自动安装的并且现在不需要了：
+  libfprint-2-tod1 libnvidia-cfg1-435 libnvidia-common-435
+  libnvidia-common-440 libnvidia-decode-435 libnvidia-decode-435:i386
+  libnvidia-encode-435 libnvidia-encode-435:i386 libnvidia-extra-440
+  libnvidia-fbc1-435 libnvidia-fbc1-435:i386 libnvidia-gl-435
+  libnvidia-gl-435:i386 libnvidia-ifr1-435 libnvidia-ifr1-435:i386 libxnvctrl0
+  screen-resolution-extra xserver-xorg-video-nvidia-435
+使用'sudo apt autoremove'来卸载它(它们)。
+下列【新】软件包将被安装：
+  libglfw3
+升级了 0 个软件包，新安装了 1 个软件包，要卸载 0 个软件包，有 2 个软件包未被升级。
+需要下载 73.6 kB 的归档。
+解压缩后会消耗 317 kB 的额外空间。
+获取:1 http://mirrors.aliyun.com/ubuntu focal/universe amd64 libglfw3 amd64 3.3.2-1 [73.6 kB]
+已下载 73.6 kB，耗时 0秒 (546 kB/s) 
+正在选中未选择的软件包 libglfw3:amd64。
+(正在读取数据库 ... 系统当前共安装有 232271 个文件和目录。)
+准备解压 .../libglfw3_3.3.2-1_amd64.deb  ...
+正在解压 libglfw3:amd64 (3.3.2-1) ...
+正在设置 libglfw3:amd64 (3.3.2-1) ...
+正在处理用于 libc-bin (2.31-0ubuntu9) 的触发器 ...
+liusheng@disini-ubuntu:~$ ls
+公共的  视频  文档  音乐  CLionProjects  javasharedresources
+模板    图片  下载  桌面  Downloads      snap
+liusheng@disini-ubuntu:~$ 
+
+
+liusheng@disini-ubuntu:/media/liusheng/Apps/progworks/github/Vulkan/Overv/vulkan-tutorial.com/code_me$ ls
+2.Overview
+3.Development_environment
+4.Drawing_a_triangle
+5.Vertex_Buffers
+build-mycode-Desktop_Qt_5_13_0_GCC_64bit-Debug
+debug
+main.cpp
+Makefile
+Makefile.Debug
+Makefile.Release
+QT_Creator
+release
+VulkanTutorialQT.pro
+VulkanTutorialQT.pro.user
+VulkanTutorialQT.pro.user.b896f68.4.10-pre1
+liusheng@disini-ubuntu:/media/liusheng/Apps/progworks/github/Vulkan/Overv/vulkan-tutorial.com/code_me$ grep local/lib -r
+build-mycode-Desktop_Qt_5_13_0_GCC_64bit-Debug/Makefile.Debug:LIBS          = $(SUBLIBS) -L/usr/lib -L/usr/local/lib -L/usr/lib/x86_64-linux-gnu -lcurand -lcublas -lcudart_static -lopencv_core -lopencv_imgproc -lopencv_highgui -lopencv_ml -lopenpose -lGLU -lGL -lglut -lcudnn -lglog -lgflags -lboost_system -lboost_filesystem -lm -lboost_thread -pthread -fPIC -std=c++11 -fopenmp /opt/Qt5.13.0/5.13.0/gcc_64/lib/libQt5Core.so -lpthread   
+build-mycode-Desktop_Qt_5_13_0_GCC_64bit-Debug/Makefile.Release:LIBS          = $(SUBLIBS) -L/usr/lib -L/usr/local/lib -L/usr/lib/x86_64-linux-gnu -lcurand -lcublas -lcudart_static -lopencv_core -lopencv_imgproc -lopencv_highgui -lopencv_ml -lopenpose -lGLU -lGL -lglut -lcudnn -lglog -lgflags -lboost_system -lboost_filesystem -lm -lboost_thread -pthread -fPIC -std=c++11 -fopenmp /opt/Qt5.13.0/5.13.0/gcc_64/lib/libQt5Core.so -lpthread   
+liusheng@disini-ubuntu:/media/liusheng/Apps/progworks/github/Vulkan/Overv/vulkan-tutorial.com/code_me$ ls
+2.Overview
+3.Development_environment
+4.Drawing_a_triangle
+5.Vertex_Buffers
+build-mycode-Desktop_Qt_5_13_0_GCC_64bit-Debug
+debug
+main.cpp
+Makefile
+Makefile.Debug
+Makefile.Release
+QT_Creator
+release
+VulkanTutorialQT.pro
+VulkanTutorialQT.pro.user
+VulkanTutorialQT.pro.user.b896f68.4.10-pre1
+liusheng@disini-ubuntu:/media/liusheng/Apps/progworks/github/Vulkan/Overv/vulkan-tutorial.com/code_me$ cd 5.Vertex_Buffers/
+liusheng@disini-ubuntu:/media/liusheng/Apps/progworks/github/Vulkan/Overv/vulkan-tutorial.com/code_me/5.Vertex_Buffers$ grep local/lib -r
+liusheng@disini-ubuntu:/media/liusheng/Apps/progworks/github/Vulkan/Overv/vulkan-tutorial.com/code_me/5.Vertex_Buffers$ cd /usr/local/lib/
+liusheng@disini-ubuntu:/usr/local/lib$ ls
+cmake  libglfw3.a  libpython2.7.a  pkgconfig  python2.7  python3.8
+liusheng@disini-ubuntu:/usr/local/lib$ sudo mv libglfw3.a ——libglfw3.a 
+[sudo] liusheng 的密码： 
+liusheng@disini-ubuntu:/usr/local/lib$ ^C
+liusheng@disini-ubuntu:/usr/local/lib$ sudo mv libglfw3.a _libglfw3.a 
+[sudo] liusheng 的密码： 
+liusheng@disini-ubuntu:/usr/local/lib$ cd -
+/media/liusheng/Apps/progworks/github/Vulkan/Overv/vulkan-tutorial.com/code_me/5.Vertex_Buffers
+liusheng@disini-ubuntu:/media/liusheng/Apps/progworks/github/Vulkan/Overv/vulkan-tutorial.com/code_me/5.Vertex_Buffers$ dpkg -L libglfw3
+/.
+/usr
+/usr/lib
+/usr/lib/x86_64-linux-gnu
+/usr/lib/x86_64-linux-gnu/libglfw.so.3.3
+/usr/share
+/usr/share/doc
+/usr/share/doc/libglfw3
+/usr/share/doc/libglfw3/changelog.Debian.gz
+/usr/share/doc/libglfw3/copyright
+/usr/lib/x86_64-linux-gnu/libglfw.so.3
+liusheng@disini-ubuntu:/media/liusheng/Apps/progworks/github/Vulkan/Overv/vulkan-tutorial.com/code_me/5.Vertex_Buffers$ cd /usr/lib/x86_64-linux-gnu/
+liusheng@disini-ubuntu:/usr/lib/x86_64-linux-gnu$ ls
+aisleriot
+alsa-lib
+ao
+apr-util-1
+audit
+avahi
+bluetooth
+caca
+capi
+cmake
+colord-plugins
+colord-sensors
+coreutils
+crt1.o
+crti.o
+crtn.o
+cups-pk-helper-mechanism
+dbus-1.0
+deja-dup
+dri
+e2fsprogs
+elfutils
+enchant-2
+engines-1.1
+eog
+espeak-ng-data
+evince
+fcitx
+fwupd-plugins-3
+gconv
+gcrt1.o
+gdk-pixbuf-2.0
+gedit
+gio
+girepository-1.0
+gjs
+glib-2.0
+gnome-keyring
+gnome-todo
+goa-1.0
+grcrt1.o
+grilo-0.3
+gstreamer-1.0
+gstreamer1.0
+gtk-2.0
+gtk-3.0
+guile
+gupnp-dlna
+gvfs
+icu
+ImageMagick-6.9.10
+krb5
+ld-2.31.so
+ldb
+ld-linux-x86-64.so.2
+ldscripts
+libaa.so.1
+libaa.so.1.0.4
+libabw-0.1.so.1
+libabw-0.1.so.1.0.3
+libaccountsservice.so.0
+libaccountsservice.so.0.0.0
+libacl.so.1
+libacl.so.1.1.2253
+libamtk-5.so.0
+libamtk-5.so.0.0.0
+libanl-2.31.so
+libanl.a
+libanl_pic.a
+libanl_pic.map
+libanl.so
+libanl.so.1
+libaom.so.0
+libao.so.4
+libao.so.4.1.1
+libapparmor.so.1
+libapparmor.so.1.6.1
+libappindicator3.so.1
+libappindicator3.so.1.0.0
+libappstream.so.0.12.10
+libappstream.so.4
+libapr-1.so.0
+libapr-1.so.0.6.5
+libaprutil-1.so.0
+libaprutil-1.so.0.6.1
+libapt-pkg.so.6.0
+libapt-pkg.so.6.0.0
+libapt-private.so.0.0
+libapt-private.so.0.0.0
+libarchive.so.13
+libarchive.so.13.4.0
+libargon2.so.1
+libasan.so.5
+libasan.so.5.0.0
+libasn1.so.8
+libasn1.so.8.0.0
+libasound.so.2
+libasound.so.2.0.0
+libaspell.so.15
+libaspell.so.15.3.1
+libassuan.so.0
+libassuan.so.0.8.3
+libasyncns.so.0
+libasyncns.so.0.3.1
+libatasmart.so.4
+libatasmart.so.4.0.5
+libatk-1.0.so
+libatk-1.0.so.0
+libatk-1.0.so.0.23510.1
+libatk-bridge-2.0.so
+libatk-bridge-2.0.so.0
+libatk-bridge-2.0.so.0.0.0
+libatkmm-1.6.so.1
+libatkmm-1.6.so.1.1.0
+libatm.so.1
+libatm.so.1.0.0
+libatomic.so.1
+libatomic.so.1.2.0
+libatopology.so.2
+libatopology.so.2.0.0
+libatspi.so
+libatspi.so.0
+libatspi.so.0.0.1
+libattr.so.1
+libattr.so.1.1.2448
+libaudit.so.1
+libaudit.so.1.0.0
+libavahi-client.so.3
+libavahi-client.so.3.2.9
+libavahi-common.so.3
+libavahi-common.so.3.5.3
+libavahi-core.so.7
+libavahi-core.so.7.0.2
+libavahi-glib.so.1
+libavahi-glib.so.1.0.2
+libavahi-ui-gtk3.so.0
+libavahi-ui-gtk3.so.0.1.4
+libavc1394.so.0
+libavc1394.so.0.3.0
+libavcodec.so.58
+libavcodec.so.58.54.100
+libavutil.so.56
+libavutil.so.56.31.100
+libbabeltrace-ctf-metadata.so.1
+libbabeltrace-ctf-metadata.so.1.0.0
+libbabeltrace-ctf.so.1
+libbabeltrace-ctf.so.1.0.0
+libbabeltrace-ctf-text.so.1
+libbabeltrace-ctf-text.so.1.0.0
+libbabeltrace-dummy.so.1
+libbabeltrace-dummy.so.1.0.0
+libbabeltrace-lttng-live.so.1
+libbabeltrace-lttng-live.so.1.0.0
+libbabeltrace.so.1
+libbabeltrace.so.1.0.0
+libbd_crypto.so.2
+libbd_crypto.so.2.0.0
+libbd_fs.so.2
+libbd_fs.so.2.0.0
+libbd_loop.so.2
+libbd_loop.so.2.0.0
+libbd_part_err.so.2
+libbd_part_err.so.2.0.0
+libbd_part.so.2
+libbd_part.so.2.0.0
+libbd_swap.so.2
+libbd_swap.so.2.0.0
+libbd_utils.so.2
+libbd_utils.so.2.1.0
+libbfd-2.34-system.so
+libbind9.so.1600
+libbind9.so.1600.0.1
+libblkid.a
+libblkid.so
+libblkid.so.1
+libblkid.so.1.1.0
+libblockdev.so.2
+libblockdev.so.2.0.0
+libbluetooth.so.3
+libbluetooth.so.3.19.1
+libboost_date_time.so.1.71.0
+libboost_filesystem.so.1.71.0
+libboost_iostreams.so.1.71.0
+libboost_locale.so.1.71.0
+libboost_thread.so.1.71.0
+libbrlapi.so.0.7
+libbrlapi.so.0.7.0
+libBrokenLocale-2.31.so
+libBrokenLocale.a
+libBrokenLocale_pic.a
+libBrokenLocale_pic.map
+libBrokenLocale.so
+libBrokenLocale.so.1
+libbrotlicommon.so.1
+libbrotlicommon.so.1.0.7
+libbrotlidec.so.1
+libbrotlidec.so.1.0.7
+libbrotlienc.so.1
+libbrotlienc.so.1.0.7
+libbsd.so.0
+libbsd.so.0.10.0
+libbz2.so.1
+libbz2.so.1.0
+libbz2.so.1.0.4
+libc-2.31.so
+libc.a
+libcaca++.so.0
+libcaca.so.0
+libcaca++.so.0.99.19
+libcaca.so.0.99.19
+libcairo.a
+libcairo-gobject.a
+libcairo-gobject.so
+libcairo-gobject.so.2
+libcairo-gobject.so.2.11600.0
+libcairomm-1.0.so.1
+libcairomm-1.0.so.1.4.0
+libcairo-script-interpreter.a
+libcairo-script-interpreter.so
+libcairo-script-interpreter.so.2
+libcairo-script-interpreter.so.2.11600.0
+libcairo.so
+libcairo.so.2
+libcairo.so.2.11600.0
+libcamel-1.2.so.62
+libcamel-1.2.so.62.0.0
+libcanberra-0.30
+libcanberra-gtk3.so.0
+libcanberra-gtk3.so.0.1.9
+libcanberra.so.0
+libcanberra.so.0.2.5
+libcapi20.so.3
+libcapi20.so.3.0.6
+libcap-ng.so.0
+libcap-ng.so.0.0.0
+libcap.so.2
+libcap.so.2.32
+libcbor.so.0.6
+libcbor.so.0.6.0
+libcc1.so.0
+libcc1.so.0.0.0
+libcdda_interface.so.0
+libcdda_interface.so.0.10.2
+libcdda_paranoia.so.0
+libcdda_paranoia.so.0.10.2
+libcdio_cdda.so.2
+libcdio_cdda.so.2.0.0
+libcdio_paranoia.so.2
+libcdio_paranoia.so.2.0.0
+libcdio.so.18
+libcdio.so.18.0.0
+libcdr-0.1.so.1
+libcdr-0.1.so.1.0.6
+libchasen.so.2
+libchasen.so.2.0.4
+libcheese-gtk.so.25
+libcheese-gtk.so.25.1.4
+libcheese.so.8
+libcheese.so.8.0.14
+libclang-8.so.1
+libclucene-contribs-lib.so.1
+libclucene-contribs-lib.so.2.3.3.4
+libclucene-core.so.1
+libclucene-core.so.2.3.3.4
+libclucene-shared.so.1
+libclucene-shared.so.2.3.3.4
+libclutter-1.0.so.0
+libclutter-1.0.so.0.2600.4
+libclutter-glx-1.0.so.0
+libclutter-gst-3.0.so.0
+libclutter-gst-3.0.so.0.27.0
+libclutter-gtk-1.0.so.0
+libclutter-gtk-1.0.so.0.800.4
+libcmis-0.5.so.5
+libcmis-0.5.so.5.0.0
+libcmis-c-0.5.so.5
+libcmis-c-0.5.so.5.0.0
+libc_nonshared.a
+libcodec2.so.0.9
+libcogl-pango.so.20
+libcogl-pango.so.20.4.2
+libcogl-path.so.20
+libcogl-path.so.20.4.2
+libcogl.so.20
+libcogl.so.20.4.2
+libcolamd.so.2
+libcolamd.so.2.9.6
+libcolord-gtk.so.1
+libcolord-gtk.so.1.0.3
+libcolordprivate.so.2
+libcolordprivate.so.2.0.5
+libcolord.so.2
+libcolord.so.2.0.5
+libcolorhug.so.2
+libcolorhug.so.2.0.5
+libcom_err.so.2
+libcom_err.so.2.1
+libc_pic
+libc_pic.a
+libc_pic.map
+libcrack.so.2
+libcrack.so.2.9.0
+libcroco-0.6.so.3
+libcroco-0.6.so.3.0.1
+libcrypt.a
+libcrypto.so.1.1
+libcryptsetup.so.12
+libcryptsetup.so.12.5.0
+libcrypt.so
+libcrypt.so.1
+libcrypt.so.1.1.0
+libc.so
+libc.so.6
+libctf-nobfd.so.0
+libctf-nobfd.so.0.0.0
+libctf.so.0
+libctf.so.0.0.0
+libcuda.so
+libcuda.so.1
+libcuda.so.430.64
+libcue.so.2
+libcue.so.2.2.1
+libcupsfilters.so.1
+libcupsfilters.so.1.0.0
+libcupsimage.so.2
+libcups.so.2
+libcurl-gnutls.so.3
+libcurl-gnutls.so.4
+libcurl-gnutls.so.4.6.0
+libcurl.so.4
+libcurl.so.4.6.0
+libcurses.a
+libcurses.so
+libdaemon.so.0
+libdaemon.so.0.5.0
+libdatrie.a
+libdatrie.so
+libdatrie.so.1
+libdatrie.so.1.3.5
+libdaxctl.so.1
+libdaxctl.so.1.4.0
+libdazzle-1.0.so.0
+libdb-5.3.so
+libdbi.so.1
+libdbi.so.1.1.0
+libdbus-1.a
+libdbus-1.so
+libdbus-1.so.3
+libdbus-1.so.3.19.11
+libdbus-glib-1.so.2
+libdbus-glib-1.so.2.3.4
+libdbusmenu-glib.so.4
+libdbusmenu-glib.so.4.0.12
+libdbusmenu-gtk3.so.4
+libdbusmenu-gtk3.so.4.0.12
+libdcerpc-binding.so.0
+libdcerpc-binding.so.0.0.1
+libdcerpc-samr.so.0
+libdcerpc-samr.so.0.0.1
+libdcerpc-server.so.0
+libdcerpc-server.so.0.0.1
+libdcerpc.so.0
+libdcerpc.so.0.0.1
+libdconf.so.1
+libdconf.so.1.0.0
+libdebconfclient.so.0
+libdebconfclient.so.0.0.0
+libdee-1.0.so.4
+libdee-1.0.so.4.2.1
+libdevmapper.so.1.02.1
+libdjvulibre.so.21
+libdjvulibre.so.21.6.0
+libdl-2.31.so
+libdl.a
+libdl_pic.a
+libdl_pic.map
+libdl.so
+libdl.so.2
+libdmapsharing-3.0.so.2
+libdmapsharing-3.0.so.2.9.39
+libdmx.a
+libdmx.so
+libdmx.so.1
+libdmx.so.1.0.0
+libdns-export.so.1109
+libdns-export.so.1109.0.1
+libdns.so.1601
+libdns.so.1601.0.0
+libdotconf.so.0
+libdotconf.so.0.0.1
+libdouble-conversion.so.3
+libdouble-conversion.so.3.1
+libdrm_amdgpu.so
+libdrm_amdgpu.so.1
+libdrm_amdgpu.so.1.0.0
+libdrm_intel.so
+libdrm_intel.so.1
+libdrm_intel.so.1.0.0
+libdrm_nouveau.so
+libdrm_nouveau.so.2
+libdrm_nouveau.so.2.0.0
+libdrm_radeon.so
+libdrm_radeon.so.1
+libdrm_radeon.so.1.0.1
+libdrm.so
+libdrm.so.2
+libdrm.so.2.4.0
+libdv.so.4
+libdv.so.4.0.3
+libdw-0.176.so
+libdw.so.1
+libe2p.so.2
+libe2p.so.2.3
+libebackend-1.2.so.10
+libebackend-1.2.so.10.0.0
+libe-book-0.1.so.1
+libe-book-0.1.so.1.0.3
+libebook-1.2.so.20
+libebook-1.2.so.20.1.3
+libebook-contacts-1.2.so.3
+libebook-contacts-1.2.so.3.0.0
+libecal-2.0.so.1
+libecal-2.0.so.1.0.0
+libedata-book-1.2.so.26
+libedata-book-1.2.so.26.0.0
+libedata-cal-2.0.so.1
+libedata-cal-2.0.so.1.0.0
+libedataserver-1.2.so.24
+libedataserver-1.2.so.24.0.0
+libedataserverui-1.2.so.2
+libedataserverui-1.2.so.2.0.0
+libedit.so.2
+libedit.so.2.0.63
+libefiboot.so.1
+libefiboot.so.1.37
+libefivar.so.1
+libefivar.so.1.37
+libEGL_mesa.so.0
+libEGL_mesa.so.0.0.0
+libEGL_nvidia.so.0
+libEGL_nvidia.so.430.64
+libEGL.so
+libEGL.so.1
+libEGL.so.1.1.0
+libelf-0.176.so
+libelf.so.1
+libenchant-2.so.2
+libenchant-2.so.2.2.8
+libeot.so.0
+libeot.so.0.0.0
+libepoxy.so
+libepoxy.so.0
+libepoxy.so.0.0.0
+libepubgen-0.1.so.1
+libepubgen-0.1.so.1.0.1
+libespeak-ng.so.1
+libespeak-ng.so.1.1.49
+libestr.so.0
+libestr.so.0.0.0
+libetonyek-0.1.so.1
+libetonyek-0.1.so.1.0.9
+libevdev.so.2
+libevdev.so.2.3.0
+libevdocument3.so.4
+libevdocument3.so.4.0.0
+libevent-2.1.so.7
+libevent-2.1.so.7.0.0
+libevview3.so.3
+libevview3.so.3.0.0
+libexempi.so.8
+libexempi.so.8.0.0
+libexif.so.12
+libexif.so.12.3.3
+libexiv2.so.0.27.2
+libexiv2.so.27
+libexpat.a
+libexpat.so
+libexpat.so.1
+libexpat.so.1.6.11
+libexpatw.a
+libexpatw.so
+libexpatw.so.1
+libexpatw.so.1.6.11
+libexslt.so.0
+libexslt.so.0.8.20
+libext2fs.so.2
+libext2fs.so.2.4
+libexttextcat-2.0.so.0
+libexttextcat-2.0.so.0.0.0
+libfakeroot
+libfastjson.so.4
+libfastjson.so.4.2.0
+libFAudio.so.0
+libFAudio.so.0.20.04
+libfcitx-config.so.4
+libfcitx-config.so.4.1
+libfcitx-core.so.0
+libfcitx-core.so.0.3
+libfcitx-gclient.so.0.2
+libfcitx-gclient.so.1
+libFcitxQt5DBusAddons.so.1
+libFcitxQt5DBusAddons.so.1.0
+libFcitxQt5WidgetsAddons.so.1
+libFcitxQt5WidgetsAddons.so.1.0
+libfcitx-utils.so.0
+libfcitx-utils.so.0.1
+libfdisk.so.1
+libfdisk.so.1.1.0
+libffi.a
+libffi_pic.a
+libffi.so
+libffi.so.7
+libffi.so.7.1.0
+libfftw3f_omp.so.3
+libfftw3f_omp.so.3.5.8
+libfftw3f.so.3
+libfftw3f.so.3.5.8
+libfftw3f_threads.so.3
+libfftw3f_threads.so.3.5.8
+libfftw3_omp.so.3
+libfftw3_omp.so.3.5.8
+libfftw3.so.3
+libfftw3.so.3.5.8
+libfftw3_threads.so.3
+libfftw3_threads.so.3.5.8
+libfido2.so.1
+libfido2.so.1.3.1
+libFLAC.so.8
+libFLAC.so.8.3.0
+libfontconfig.a
+libfontconfig.so
+libfontconfig.so.1
+libfontconfig.so.1.12.0
+libfontembed.so.1
+libfontembed.so.1.0.0
+libfontenc.a
+libfontenc.so
+libfontenc.so.1
+libfontenc.so.1.0.0
+libform.a
+libform.so
+libform.so.6
+libform.so.6.2
+libformw.a
+libformw.so
+libformw.so.6
+libformw.so.6.2
+libfprint-2.so.2
+libfprint-2.so.2.0.0
+libfprint-2-tod.so.1
+libfreebl3.chk
+libfreebl3.so
+libfreeblpriv3.chk
+libfreeblpriv3.so
+libfreehand-0.1.so.1
+libfreehand-0.1.so.1.0.2
+libfreerdp2.so.2
+libfreerdp2.so.2.1.1
+libfreerdp-client2.so.2
+libfreerdp-client2.so.2.1.1
+libfreetype.a
+libfreetype.so
+libfreetype.so.6
+libfreetype.so.6.17.1
+libfribidi.a
+libfribidi.so
+libfribidi.so.0
+libfribidi.so.0.4.0
+libFS.a
+libFS.so
+libFS.so.6
+libFS.so.6.0.0
+libfuse.so.2
+libfuse.so.2.9.9
+libfwupdplugin.so.1
+libfwupdplugin.so.1.0.0
+libfwupd.so.2
+libfwupd.so.2.0.0
+libg.a
+libgailutil.so.18
+libgailutil.so.18.0.1
+libgamemodeauto.so.0
+libgamemodeauto.so.0.0.0
+libgamemode.so.0
+libgamemode.so.0.0.0
+libgbm.so.1
+libgbm.so.1.0.0
+libgcab-1.0.so.0
+libgcab-1.0.so.0.1.0
+libgcalc-2.so
+libgcalc-2.so.1
+libgcalc-2.so.1.0.1
+libgccpp.so.1
+libgccpp.so.1.3.1
+libgcc_s.so.1
+libgci-1.so
+libgci-1.so.0
+libgci-1.so.0.0.0
+libgck-1.so.0
+libgck-1.so.0.0.0
+libgcr-base-3.so.1
+libgcr-base-3.so.1.0.0
+libgcr-ui-3.so.1
+libgcr-ui-3.so.1.0.0
+libgcrypt.so.20
+libgcrypt.so.20.2.5
+libgc.so.1
+libgc.so.1.3.2
+libgdata.so.22
+libgdata.so.22.5.1
+libgdbm_compat.so.4
+libgdbm_compat.so.4.0.0
+libgdbm.so.6
+libgdbm.so.6.0.0
+libgdk-3.so
+libgdk-3.so.0
+libgdk-3.so.0.2404.16
+libgdkmm-3.0.so.1
+libgdkmm-3.0.so.1.1.0
+libgdk_pixbuf-2.0.so
+libgdk_pixbuf-2.0.so.0
+libgdk_pixbuf-2.0.so.0.4000.0
+libgdk_pixbuf_xlib-2.0.so
+libgdk_pixbuf_xlib-2.0.so.0
+libgdk_pixbuf_xlib-2.0.so.0.4000.0
+libgdk-x11-2.0.so.0
+libgdk-x11-2.0.so.0.2400.32
+libgdm.so.1
+libgdm.so.1.0.0
+libgd.so.3
+libgd.so.3.0.5
+libgee-0.8.so.2
+libgee-0.8.so.2.6.1
+libgeoclue-2.so.0
+libgeoclue-2.so.0.0.0
+libgeocode-glib.so.0
+libgeocode-glib.so.0.0.0
+libGeoIP.so.1
+libGeoIP.so.1.6.12
+libgettextlib-0.19.8.1.so
+libgettextpo.so.0
+libgettextpo.so.0.5.4
+libgettextsrc-0.19.8.1.so
+libgexiv2.so.2
+libgexiv2.so.2.0.0
+libgif.so.7
+libgif.so.7.1.0
+libgio-2.0.a
+libgio-2.0.so
+libgio-2.0.so.0
+libgio-2.0.so.0.6400.3
+libgiomm-2.4.so.1
+libgiomm-2.4.so.1.3.0
+libgirepository-1.0.so.1
+libgirepository-1.0.so.1.0.0
+libgjs.so.0
+libgjs.so.0.0.0
+libglapi.so.0
+libglapi.so.0.0.0
+libGLdispatch.so
+libGLdispatch.so.0
+libGLdispatch.so.0.0.0
+libGLESv1_CM_nvidia.so.1
+libGLESv1_CM_nvidia.so.430.64
+libGLESv1_CM.so
+libGLESv1_CM.so.1
+libGLESv1_CM.so.1.2.0
+libGLESv2_nvidia.so.2
+libGLESv2_nvidia.so.430.64
+libGLESv2.so
+libGLESv2.so.2
+libGLESv2.so.2.1.0
+libglfw.so.3
+libglfw.so.3.3
+libglib-2.0.a
+libglib-2.0.so
+libglib-2.0.so.0
+libglib-2.0.so.0.6400.3
+libglibmm-2.4.so.1
+libglibmm-2.4.so.1.3.0
+libglibmm_generate_extra_defs-2.4.so.1
+libglibmm_generate_extra_defs-2.4.so.1.3.0
+libGL.la
+libGL.so
+libGL.so.1
+libGL.so.1.7.0
+libGLU.so.1
+libGLU.so.1.3.1
+libGLX_indirect.so.0
+libGLX_mesa.so.0
+libGLX_mesa.so.0.0.0
+libGLX_nvidia.so.0
+libGLX_nvidia.so.430.64
+libGLX.so
+libGLX.so.0
+libGLX.so.0.0.0
+libgmodule-2.0.a
+libgmodule-2.0.so
+libgmodule-2.0.so.0
+libgmodule-2.0.so.0.6400.3
+libgmp.so.10
+libgmp.so.10.4.0
+libgnome-autoar-0.so.0
+libgnome-autoar-0.so.0.0.0
+libgnome-bluetooth.so.13
+libgnome-bluetooth.so.13.0.2
+libgnome-desktop-3-19
+libgnome-desktop-3.so.19
+libgnome-desktop-3.so.19.0.3
+libgnome-games-support-1.so.3
+libgnome-games-support-1.so.3.0.3
+libgnomekbd.so.8
+libgnomekbd.so.8.0.0
+libgnomekbdui.so.8
+libgnomekbdui.so.8.0.0
+libgnome-menu-3.so.0
+libgnome-menu-3.so.0.0.1
+libgnutls-dane.so.0
+libgnutls-dane.so.0.4.1
+libgnutls.so.30
+libgnutls.so.30.27.0
+libgoa-1.0.so.0
+libgoa-1.0.so.0.0.0
+libgoa-backend-1.0.so.1
+libgoa-backend-1.0.so.1.0.0
+libgobject-2.0.a
+libgobject-2.0.so
+libgobject-2.0.so.0
+libgobject-2.0.so.0.6400.3
+libgom-1.0.so.0
+libgom-1.0.so.0.1.0
+libgomp.so.1
+libgomp.so.1.0.0
+libgpg-error.so.0
+libgpg-error.so.0.28.0
+libgpgmepp.so.6
+libgpgmepp.so.6.10.0
+libgpgme-pthread.so.11
+libgpgme.so.11
+libgpgme.so.11.22.1
+libgphoto2
+libgphoto2_port
+libgphoto2_port.so.12
+libgphoto2_port.so.12.0.0
+libgphoto2.so.6
+libgphoto2.so.6.1.0
+libgpm.so.2
+libgpod.so.4
+libgpod.so.4.3.2
+libgraphene-1.0.so.0
+libgraphene-1.0.so.0.1000.0
+libgraphite2.so
+libgraphite2.so.2.0.0
+libgraphite2.so.3
+libgraphite2.so.3.2.1
+libgrilo-0.3.so.0
+libgrilo-0.3.so.0.312.1
+libgrlnet-0.3.so.0
+libgrlnet-0.3.so.0.312.0
+libgrlpls-0.3.so.0
+libgrlpls-0.3.so.0.312.0
+libgsasl.so.7
+libgsasl.so.7.9.7
+libgsf-1.so.114
+libgsf-1.so.114.0.46
+libgsm.so.1
+libgsm.so.1.0.18
+libgsound.so.0
+libgsound.so.0.0.2
+libgspell-1.so.2
+libgspell-1.so.2.3.0
+libgssapi_krb5.so.2
+libgssapi_krb5.so.2.2
+libgssapi.so.3
+libgssapi.so.3.0.0
+libgssdp-1.2.so.0
+libgssdp-1.2.so.0.0.0
+libgs.so.9
+libgs.so.9.50
+libgstallocators-1.0.so.0
+libgstallocators-1.0.so.0.1602.0
+libgstapp-1.0.so.0
+libgstapp-1.0.so.0.1602.0
+libgstaudio-1.0.so.0
+libgstaudio-1.0.so.0.1602.0
+libgstbase-1.0.so.0
+libgstbase-1.0.so.0.1602.0
+libgstbasecamerabinsrc-1.0.so.0
+libgstbasecamerabinsrc-1.0.so.0.1602.0
+libgstcheck-1.0.so.0
+libgstcheck-1.0.so.0.1602.0
+libgstcontroller-1.0.so.0
+libgstcontroller-1.0.so.0.1602.0
+libgstfft-1.0.so.0
+libgstfft-1.0.so.0.1602.0
+libgstgl-1.0.so.0
+libgstgl-1.0.so.0.1602.0
+libgstnet-1.0.so.0
+libgstnet-1.0.so.0.1602.0
+libgstpbutils-1.0.so.0
+libgstpbutils-1.0.so.0.1602.0
+libgstphotography-1.0.so.0
+libgstphotography-1.0.so.0.1602.0
+libgstreamer-1.0.so.0
+libgstreamer-1.0.so.0.1602.0
+libgstriff-1.0.so.0
+libgstriff-1.0.so.0.1602.0
+libgstrtp-1.0.so.0
+libgstrtp-1.0.so.0.1602.0
+libgstrtsp-1.0.so.0
+libgstrtsp-1.0.so.0.1602.0
+libgstsdp-1.0.so.0
+libgstsdp-1.0.so.0.1602.0
+libgsttag-1.0.so.0
+libgsttag-1.0.so.0.1602.0
+libgstvideo-1.0.so.0
+libgstvideo-1.0.so.0.1602.0
+libgthread-2.0.a
+libgthread-2.0.so
+libgthread-2.0.so.0
+libgthread-2.0.so.0.6400.3
+libgtk2.0-0
+libgtk-3-0
+libgtk3-nocsd.so.0
+libgtk-3.so
+libgtk-3.so.0
+libgtk-3.so.0.2404.16
+libgtkmm-3.0.so.1
+libgtkmm-3.0.so.1.1.0
+libgtksourceview-4.so.0
+libgtksourceview-4.so.0.0.0
+libgtk-x11-2.0.so.0
+libgtk-x11-2.0.so.0.2400.32
+libgtop-2.0.so.11
+libgtop-2.0.so.11.0.1
+libgudev-1.0.so.0
+libgudev-1.0.so.0.2.0
+libguile-2.2.so.1
+libguile-2.2.so.1.4.2
+libgupnp-1.2.so.0
+libgupnp-1.2.so.0.0.0
+libgupnp-av-1.0.so.2
+libgupnp-av-1.0.so.2.0.0
+libgupnp-dlna-2.0.so.3
+libgupnp-dlna-2.0.so.3.0.0
+libgupnp-dlna-gst-2.0.so.3
+libgupnp-dlna-gst-2.0.so.3.0.0
+libgusb.so.2
+libgusb.so.2.0.10
+libgweather-3.so.16
+libgweather-3.so.16.0.0
+libgxps.so.2
+libgxps.so.2.2.3
+libHalf.so.24
+libHalf.so.24.0.0
+libhandy-0.0.so.0
+libharfbuzz.a
+libharfbuzz-gobject.a
+libharfbuzz-gobject.so
+libharfbuzz-gobject.so.0
+libharfbuzz-gobject.so.0.20600.4
+libharfbuzz-icu.a
+libharfbuzz-icu.so
+libharfbuzz-icu.so.0
+libharfbuzz-icu.so.0.20600.4
+libharfbuzz.so
+libharfbuzz.so.0
+libharfbuzz.so.0.20600.4
+libhcrypto.so.4
+libhcrypto.so.4.1.0
+libheimbase.so.1
+libheimbase.so.1.0.0
+libheimntlm.so.0
+libheimntlm.so.0.1.0
+libhistory.so.8
+libhistory.so.8.0
+libhogweed.so.5
+libhogweed.so.5.0
+libhpdiscovery.so.0
+libhpdiscovery.so.0.0.1
+libhpipp.so.0
+libhpipp.so.0.0.1
+libhpip.so.0
+libhpip.so.0.0.1
+libhpmud.so.0
+libhpmud.so.0.0.6
+libhunspell-1.7.so.0
+libhunspell-1.7.so.0.0.1
+libhx509.so.5
+libhx509.so.5.0.0
+libhyphen.so.0
+libhyphen.so.0.3.0
+libI810XvMC.so.1
+libI810XvMC.so.1.0.0
+libibus-1.0.so.5
+libibus-1.0.so.5.0.522
+libical_cxx.so.3
+libical_cxx.so.3.0.8
+libical-glib.so.3
+libical-glib.so.3.0.8
+libical.so.3
+libical.so.3.0.8
+libicalss_cxx.so.3
+libicalss_cxx.so.3.0.8
+libicalss.so.3
+libicalss.so.3.0.8
+libicalvcal.so.3
+libicalvcal.so.3.0.8
+libICE.a
+libICE.so
+libICE.so.6
+libICE.so.6.3.0
+libicudata.a
+libicudata.so
+libicudata.so.66
+libicudata.so.66.1
+libicui18n.a
+libicui18n.so
+libicui18n.so.66
+libicui18n.so.66.1
+libicuio.a
+libicuio.so
+libicuio.so.66
+libicuio.so.66.1
+libicutest.a
+libicutest.so
+libicutest.so.66
+libicutest.so.66.1
+libicutu.a
+libicutu.so
+libicutu.so.66
+libicutu.so.66.1
+libicuuc.a
+libicuuc.so
+libicuuc.so.66
+libicuuc.so.66.1
+libidn2.so.0
+libidn2.so.0.3.6
+libidn.so.11
+libidn.so.11.6.16
+libiec61883.so.0
+libiec61883.so.0.1.1
+libieee1284.so.3
+libieee1284.so.3.2.2
+libIex-2_3.so.24
+libIex-2_3.so.24.0.0
+libIexMath-2_3.so.24
+libIexMath-2_3.so.24.0.0
+libigdgmm.so.11
+libigdgmm.so.11.1.0
+libijs-0.35.so
+libIlmImf-2_3.so.24
+libIlmImf-2_3.so.24.0.0
+libIlmImfUtil-2_3.so.24
+libIlmImfUtil-2_3.so.24.0.0
+libIlmThread-2_3.so.24
+libIlmThread-2_3.so.24.0.0
+libimagequant.so.0
+libImath-2_3.so.24
+libImath-2_3.so.24.0.0
+libimobiledevice.so.6
+libimobiledevice.so.6.0.0
+libinproctrace.so
+libinput.so.10
+libinput.so.10.13.0
+libIntelXvMC.so.1
+libIntelXvMC.so.1.0.0
+libiomp5.so
+libip4tc.so.2
+libip4tc.so.2.0.0
+libip6tc.so.2
+libip6tc.so.2.0.0
+libiperf.so.0
+libiperf.so.0.0.0
+libipmctl.so.4
+libipmctl.so.4.0.0
+libIPMIlanserv.so.0
+libIPMIlanserv.so.0.0.1
+libipset.so.13
+libipset.so.13.1.0
+libirs.so.1600
+libirs.so.1600.0.1
+libisccc.so.1600
+libisccc.so.1600.0.1
+libisccfg.so.1600
+libisccfg.so.1600.0.1
+libisc-export.so.1105
+libisc-export.so.1105.0.0
+libisc.so.1601
+libisc.so.1601.0.0
+libisl.so.22
+libisl.so.22.0.1
+libitm.so.1
+libitm.so.1.0.0
+libiw.so.30
+libjacknet.so.0
+libjacknet.so.0.1.0
+libjackserver.so.0
+libjackserver.so.0.1.0
+libjack.so.0
+libjack.so.0.1.0
+libjansson.so.4
+libjansson.so.4.11.1
+libjavascriptcoregtk-4.0.so.18
+libjavascriptcoregtk-4.0.so.18.16.7
+libjbig2dec.so.0
+libjbig2dec.so.0.0.0
+libjbig.so.0
+libjpeg.so.62
+libjpeg.so.62.2.0
+libjpeg.so.8
+libjpeg.so.8.2.2
+libjq.so.1
+libjq.so.1.0.4
+libjsoncpp.so.1
+libjsoncpp.so.1.7.4
+libjson-c.so.4
+libjson-c.so.4.0.0
+libjson-glib-1.0.so.0
+libjson-glib-1.0.so.0.400.4
+libk5crypto.so.3
+libk5crypto.so.3.1
+libkeyutils.so.1
+libkeyutils.so.1.8
+libkmod.so.2
+libkmod.so.2.3.5
+libkpathsea.so.6
+libkpathsea.so.6.3.1
+libkrb5.so.26
+libkrb5.so.26.0.0
+libkrb5.so.3
+libkrb5.so.3.3
+libkrb5support.so.0
+libkrb5support.so.0.1
+libksba.so.8
+libksba.so.8.11.6
+libkyotocabinet.so.16
+libkyotocabinet.so.16.13.0
+liblangtag.so.1
+liblangtag.so.1.4.1
+liblber-2.4.so.2
+liblber-2.4.so.2.10.12
+liblcms2.so.2
+liblcms2.so.2.0.8
+libldap-2.4.so.2
+libldap_r-2.4.so.2
+libldap_r-2.4.so.2.10.12
+libldb.so.2
+libldb.so.2.0.10
+liblirc_client.so.0
+liblirc_client.so.0.6.0
+libLLVM-10.so
+libLLVM-10.so.1
+libLLVM-8.0.1.so.1
+libLLVM-8.so
+libLLVM-8.so.1
+libLLVM-9.so
+libLLVM-9.so.1
+liblmdb.so.0
+liblmdb.so.0.0.0
+liblouis.so.20
+liblouis.so.20.0.0
+liblouisutdml.so.9
+liblouisutdml.so.9.1.0
+liblqr-1.so.0
+liblqr-1.so.0.3.2
+liblsan.so.0
+liblsan.so.0.0.0
+libltdl.a
+libltdl.la
+libltdl.so
+libltdl.so.7
+libltdl.so.7.3.1
+liblua5.2-c++.so.0
+liblua5.2-c++.so.0.0.0
+liblua5.2.so.0
+liblua5.2.so.0.0.0
+liblua5.3-c++.so.0
+liblua5.3-c++.so.0.0.0
+liblua5.3.so.0
+liblua5.3.so.0.0.0
+liblz4.so.1
+liblz4.so.1.9.2
+liblzma.so.5
+liblzma.so.5.2.4
+liblzo2.so.2
+liblzo2.so.2.0.0
+libm-2.31.a
+libm-2.31.so
+libm.a
+libMagickCore-6.Q16.so.6
+libMagickCore-6.Q16.so.6.0.0
+libMagickWand-6.Q16.so.6
+libMagickWand-6.Q16.so.6.0.0
+libmagic.so.1
+libmagic.so.1.0.0
+libmailutils.so.6
+libmailutils.so.6.0.0
+libmaxminddb.so.0
+libmaxminddb.so.0.0.7
+libmbim-glib.so.4
+libmbim-glib.so.4.4.2
+libmcheck.a
+libmediaart-2.0.so.0
+libmediaart-2.0.so.0.904.0
+libmemusage.so
+libmenu.a
+libmenu.so
+libmenu.so.6
+libmenu.so.6.2
+libmenuw.a
+libmenuw.so
+libmenuw.so.6
+libmenuw.so.6.2
+libmessaging-menu.so.0
+libmessaging-menu.so.0.0.0
+libmhash.so.2
+libmhash.so.2.0.1
+libminiupnpc.so.17
+libmm-glib.so.0
+libmm-glib.so.0.5.0
+libmnl.so.0
+libmnl.so.0.2.0
+libmount.a
+libmount.so
+libmount.so.1
+libmount.so.1.1.0
+libmozjs-68.so.0
+libmozjs-68.so.68
+libmozjs-68.so.68.6.0
+libmp3lame.so.0
+libmp3lame.so.0.0.0
+libmpc.so.3
+libmpc.so.3.1.0
+libmpdec.so.2
+libmpdec.so.2.4.2
+libmpfr.so.6
+libmpfr.so.6.0.2
+libmpg123.so.0
+libmpg123.so.0.44.10
+libm_pic.a
+libm_pic.map
+libmpx.so.2
+libmpx.so.2.0.1
+libmpxwrappers.so.2
+libmpxwrappers.so.2.0.1
+libm.so
+libm.so.6
+libmspack.so.0
+libmspack.so.0.1.0
+libmspub-0.1.so.1
+libmspub-0.1.so.1.0.4
+libmtdev.so.1
+libmtdev.so.1.0.0
+libmtp.so.9
+libmtp.so.9.4.0
+libmu_auth.so.6
+libmu_auth.so.6.0.0
+libmuaux.so.6
+libmuaux.so.6.0.0
+libmu_dbm.so.6
+libmu_dbm.so.6.0.0
+libmu_dotmail.so.6
+libmu_dotmail.so.6.0.0
+libmu_imap.so.6
+libmu_imap.so.6.0.0
+libmu_maildir.so.6
+libmu_maildir.so.6.0.0
+libmu_mailer.so.6
+libmu_mailer.so.6.0.0
+libmu_mbox.so.6
+libmu_mbox.so.6.0.0
+libmu_mh.so.6
+libmu_mh.so.6.0.0
+libmu_pop.so.6
+libmu_pop.so.6.0.0
+libmu_py.so.6
+libmu_py.so.6.0.0
+libmu_scm.so.6
+libmu_scm.so.6.0.0
+libmu_sieve.so.6
+libmu_sieve.so.6.0.0
+libmutter-6.so.0
+libmutter-6.so.0.0.0
+libmvec-2.31.so
+libmvec.a
+libmvec_pic.a
+libmvec_pic.map
+libmvec.so
+libmvec.so.1
+libmwaw-0.3.so.3
+libmwaw-0.3.so.3.0.15
+libmysqlclient.so.21
+libmysqlclient.so.21.1.21
+libmythes-1.2.so.0
+libmythes-1.2.so.0.0.0
+libnatpmp.so.1
+libnautilus-extension.so.1
+libnautilus-extension.so.1.5.0
+libncurses++.a
+libncurses.a
+libncurses.so
+libncurses.so.6
+libncurses.so.6.2
+libncurses++w.a
+libncursesw.a
+libncursesw.so
+libncursesw.so.6
+libncursesw.so.6.2
+libndctl.so.6
+libndctl.so.6.16.0
+libndp.so.0
+libndp.so.0.1.1
+libndr-krb5pac.so.0
+libndr-krb5pac.so.0.0.1
+libndr-nbt.so.0
+libndr-nbt.so.0.0.1
+libndr.so.0
+libndr.so.0.2.0
+libndr-standard.so.0
+libndr-standard.so.0.0.1
+libneon-gnutls.so.27
+libneon-gnutls.so.27.3.2
+libnetapi.so.0
+libnetfilter_conntrack.so.3
+libnetfilter_conntrack.so.3.7.0
+libnetplan.so.0.0
+libnetsnmpagent.so.35
+libnetsnmpagent.so.35.0.0
+libnetsnmphelpers.so.35
+libnetsnmphelpers.so.35.0.0
+libnetsnmpmibs.so.35
+libnetsnmpmibs.so.35.0.0
+libnetsnmp.so.35
+libnetsnmp.so.35.0.0
+libnetsnmptrapd.so.35
+libnetsnmptrapd.so.35.0.0
+libnet.so.1
+libnet.so.1.7.0
+libnettle.so.7
+libnettle.so.7.0
+libnewt.so.0.52
+libnewt.so.0.52.21
+libnfnetlink.so.0
+libnfnetlink.so.0.2.0
+libnfs.so.13
+libnfs.so.13.0.0
+libnftnl.so.11
+libnftnl.so.11.2.0
+libnghttp2.so.14
+libnghttp2.so.14.19.0
+libnl-3.so.200
+libnl-3.so.200.26.0
+libnl-genl-3.so.200
+libnl-genl-3.so.200.26.0
+libnl-route-3.so.200
+libnl-route-3.so.200.26.0
+libnma.so.0
+libnma.so.0.0.0
+libnm.so.0
+libnm.so.0.1.0
+libnotify.so.4
+libnotify.so.4.0.0
+libnpth.so.0
+libnpth.so.0.1.2
+libnsl-2.31.so
+libnsl.a
+libnsl_pic.a
+libnsl_pic.map
+libnsl.so
+libnsl.so.1
+libnspr4.so
+libnss3.so
+libnss_compat-2.31.so
+libnss_compat_pic.a
+libnss_compat_pic.map
+libnss_compat.so
+libnss_compat.so.2
+libnss_dns-2.31.so
+libnss_dns_pic.a
+libnss_dns_pic.map
+libnss_dns.so
+libnss_dns.so.2
+libnss_files-2.31.so
+libnss_files_pic.a
+libnss_files_pic.map
+libnss_files.so
+libnss_files.so.2
+libnss_hesiod-2.31.so
+libnss_hesiod_pic.a
+libnss_hesiod_pic.map
+libnss_hesiod.so
+libnss_hesiod.so.2
+libnss_mdns4_minimal.so.2
+libnss_mdns4.so.2
+libnss_mdns6_minimal.so.2
+libnss_mdns6.so.2
+libnss_mdns_minimal.so.2
+libnss_mdns.so.2
+libnss_nis-2.31.so
+libnss_nis_pic.a
+libnss_nis_pic.map
+libnss_nisplus-2.31.so
+libnss_nisplus_pic.a
+libnss_nisplus_pic.map
+libnss_nisplus.so
+libnss_nisplus.so.2
+libnss_nis.so
+libnss_nis.so.2
+libns.so.1601
+libns.so.1601.0.0
+libnss_systemd.so.2
+libnssutil3.so
+libntfs-3g.so.883
+libntfs-3g.so.883.0.0
+libntlm.so.0
+libntlm.so.0.0.20
+libnuma.so.1
+libnuma.so.1.0.0
+libnvcuvid.so
+libnvcuvid.so.1
+libnvcuvid.so.430.64
+libnvidia-allocator.so
+libnvidia-allocator.so.1
+libnvidia-allocator.so.440.100
+libnvidia-cbl.so.430.64
+libnvidia-cfg.so
+libnvidia-cfg.so.1
+libnvidia-cfg.so.430.64
+libnvidia-compiler.so.430.64
+libnvidia-eglcore.so.430.64
+libnvidia-egl-wayland.so.1
+libnvidia-egl-wayland.so.1.1.2
+libnvidia-encode.so
+libnvidia-encode.so.1
+libnvidia-encode.so.430.64
+libnvidia-fatbinaryloader.so.430.64
+libnvidia-fbc.so
+libnvidia-fbc.so.1
+libnvidia-fbc.so.430.64
+libnvidia-glcore.so.430.64
+libnvidia-glsi.so.430.64
+libnvidia-glvkspirv.so.430.64
+libnvidia-gtk2.so.430.64
+libnvidia-gtk3.so.430.64
+libnvidia-ifr.so
+libnvidia-ifr.so.1
+libnvidia-ifr.so.430.64
+libnvidia-ml.so
+libnvidia-ml.so.1
+libnvidia-ml.so.430.64
+libnvidia-opencl.so.1
+libnvidia-opencl.so.430.64
+libnvidia-opticalflow.so
+libnvidia-opticalflow.so.1
+libnvidia-opticalflow.so.430.64
+libnvidia-ptxjitcompiler.so
+libnvidia-ptxjitcompiler.so.1
+libnvidia-ptxjitcompiler.so.430.64
+libnvidia-rtcore.so.430.64
+libnvidia-tls.so.430.64
+libnvoptix.so.1
+libnvoptix.so.430.64
+libobjc_gc.so.4
+libobjc_gc.so.4.0.0
+libobjc.so.4
+libobjc.so.4.0.0
+libodbccr.so.1
+libodbccr.so.2
+libodbccr.so.2.0.0
+libodbc.so.1
+libodbc.so.2
+libodbc.so.2.0.0
+libodfgen-0.1.so.1
+libodfgen-0.1.so.1.0.7
+libogg.so.0
+libogg.so.0.8.4
+libomp5.so
+libomp.so.5
+libonig.so.5
+libonig.so.5.0.0
+libopcodes-2.34-system.so
+libopenal.so.1
+libopenal.so.1.19.1
+libopencc.so
+libopencc.so.2
+libopencc.so.2.0.0
+libOpenCL.so
+libOpenCL.so.1
+libOpenCL.so.1.0
+libOpenCL.so.1.0.0
+libOpenGL.so
+libOpenGL.so.0
+libOpenGL.so.0.0.0
+libOpenIPMIcmdlang.so.0
+libOpenIPMIcmdlang.so.0.0.5
+libOpenIPMIposix.so.0
+libOpenIPMIposix.so.0.0.1
+libOpenIPMIpthread.so.0
+libOpenIPMIpthread.so.0.0.1
+libOpenIPMI.so.0
+libOpenIPMI.so.0.0.5
+libOpenIPMIui.so.1
+libOpenIPMIui.so.1.0.1
+libOpenIPMIutils.so.0
+libOpenIPMIutils.so.0.0.1
+libopenjp2.so.2.3.1
+libopenjp2.so.7
+libopus.so.0
+libopus.so.0.8.0
+liborc-0.4.so.0
+liborc-0.4.so.0.31.0
+liborc-test-0.4.so.0
+liborc-test-0.4.so.0.31.0
+liborcus-0.15.so.0
+liborcus-0.15.so.0.0.0
+liborcus-mso-0.15.so.0
+liborcus-mso-0.15.so.0.0.0
+liborcus-parser-0.15.so.0
+liborcus-parser-0.15.so.0.0.0
+libOSMesa.so.6
+libOSMesa.so.8
+libOSMesa.so.8.0.0
+libp11-kit.so.0
+libp11-kit.so.0.3.0
+libpackagekit-glib2.so.18
+libpackagekit-glib2.so.18.1.3
+libpagemaker-0.0.so.0
+libpagemaker-0.0.so.0.0.4
+libpamc.so.0
+libpamc.so.0.82.1
+libpam_misc.so.0
+libpam_misc.so.0.82.1
+libpam.so.0
+libpam.so.0.84.2
+libpanel.a
+libpanel.so
+libpanel.so.6
+libpanel.so.6.2
+libpanelw.a
+libpanelw.so
+libpanelw.so.6
+libpanelw.so.6.2
+libpango-1.0.so
+libpango-1.0.so.0
+libpango-1.0.so.0.4400.7
+libpangocairo-1.0.so
+libpangocairo-1.0.so.0
+libpangocairo-1.0.so.0.4400.7
+libpangoft2-1.0.so
+libpangoft2-1.0.so.0
+libpangoft2-1.0.so.0.4400.7
+libpangomm-1.4.so.1
+libpangomm-1.4.so.1.0.30
+libpangoxft-1.0.so
+libpangoxft-1.0.so.0
+libpangoxft-1.0.so.0.4400.7
+libpaper.so.1
+libpaper.so.1.1.2
+libparted-fs-resize.so.0
+libparted-fs-resize.so.0.0.2
+libparted.so.2
+libparted.so.2.0.2
+libpcap.so.0.8
+libpcap.so.1.9.1
+libpcaudio.so.0
+libpcaudio.so.0.0.1
+libpciaccess.a
+libpciaccess.so
+libpciaccess.so.0
+libpciaccess.so.0.11.1
+libpci.so.3
+libpci.so.3.6.4
+libpcprofile.so
+libpcre16.a
+libpcre16.so
+libpcre16.so.3
+libpcre16.so.3.13.3
+libpcre2-16.a
+libpcre2-16.so
+libpcre2-16.so.0
+libpcre2-16.so.0.9.0
+libpcre2-32.a
+libpcre2-32.so
+libpcre2-32.so.0
+libpcre2-32.so.0.9.0
+libpcre2-8.a
+libpcre2-8.so
+libpcre2-8.so.0
+libpcre2-8.so.0.9.0
+libpcre2-posix.a
+libpcre2-posix.so
+libpcre2-posix.so.2
+libpcre2-posix.so.2.0.3
+libpcre32.a
+libpcre32.so
+libpcre32.so.3
+libpcre32.so.3.13.3
+libpcre.a
+libpcrecpp.a
+libpcrecpp.so
+libpcrecpp.so.0
+libpcrecpp.so.0.0.1
+libpcreposix.a
+libpcreposix.so
+libpcreposix.so.3
+libpcreposix.so.3.13.3
+libpcre.so
+libpcre.so.3
+libpcre.so.3.13.3
+libpcsclite.so.1
+libpcsclite.so.1.0.0
+libpeas-1.0
+libpeas-1.0.so.0
+libpeas-1.0.so.0.2600.0
+libpeas-gtk-1.0.so.0
+libpeas-gtk-1.0.so.0.2600.0
+libperl.so.5.30
+libperl.so.5.30.0
+libpfm.so.4
+libpfm.so.4.10.1
+libphonenumber.so.7
+libphonenumber.so.7.0
+libpinyin
+libpinyin.so.13
+libpinyin.so.13.0.0
+libpipeline.so.1
+libpipeline.so.1.5.2
+libpixman-1.a
+libpixman-1.so
+libpixman-1.so.0
+libpixman-1.so.0.38.4
+libpkcs11-helper.so.1
+libpkcs11-helper.so.1.0.0
+libplc4.so
+libplds4.so
+libplist.so.3
+libplist.so.3.2.0
+libply-boot-client.so.5
+libply-boot-client.so.5.0.0
+libply.so.5
+libply.so.5.0.0
+libply-splash-core.so.5
+libply-splash-core.so.5.0.0
+libply-splash-graphics.so.5
+libply-splash-graphics.so.5.0.0
+libpng16.a
+libpng16.so
+libpng16.so.16
+libpng16.so.16.37.0
+libpng.a
+libpng.so
+libpolkit-agent-1.so.0
+libpolkit-agent-1.so.0.0.0
+libpolkit-gobject-1.so.0
+libpolkit-gobject-1.so.0.0.0
+libpoppler-cpp.so.0
+libpoppler-cpp.so.0.7.0
+libpoppler-glib.so.8
+libpoppler-glib.so.8.15.0
+libpoppler.so.97
+libpoppler.so.97.0.0
+libpopt.so.0
+libpopt.so.0.0.0
+libpresage.so.1
+libpresage.so.1.1.1
+libprocps.so.8
+libprocps.so.8.0.2
+libprotobuf.so.17
+libprotobuf.so.17.0.0
+libproxy
+libproxy.so.1
+libproxy.so.1.0.0
+libpsl.so.5
+libpsl.so.5.3.2
+libpspell.so.15
+libpspell.so.15.3.1
+libptexenc.so.1
+libptexenc.so.1.3.7
+libpthread-2.31.so
+libpthread.a
+libpthread.so
+libpthread.so.0
+libpulse-mainloop-glib.so.0
+libpulse-mainloop-glib.so.0.0.5
+libpulse-simple.so.0
+libpulse-simple.so.0.1.1
+libpulse.so.0
+libpulse.so.0.21.2
+libpwquality.so.1
+libpwquality.so.1.0.2
+libpyglib-2.0-python2.7.so.0
+libpyglib-2.0-python2.7.so.0.0.0
+libpytalloc-util.cpython-38-x86-64-linux-gnu.so.2
+libpytalloc-util.cpython-38-x86-64-linux-gnu.so.2.3.0
+libpython3.8.so.1
+libpython3.8.so.1.0
+libqmi-glib.so.5
+libqmi-glib.so.5.6.0
+libqpdf.so.26
+libqpdf.so.26.1.1
+libqqwing.so.2
+libqqwing.so.2.1.0
+libQt5Core.so.5
+libQt5Core.so.5.12
+libQt5Core.so.5.12.8
+libQt5DBus.so.5
+libQt5DBus.so.5.12
+libQt5DBus.so.5.12.8
+libQt5EglFSDeviceIntegration.so.5
+libQt5EglFSDeviceIntegration.so.5.12
+libQt5EglFSDeviceIntegration.so.5.12.8
+libQt5EglFsKmsSupport.so.5
+libQt5EglFsKmsSupport.so.5.12
+libQt5EglFsKmsSupport.so.5.12.8
+libQt5Gui.so.5
+libQt5Gui.so.5.12
+libQt5Gui.so.5.12.8
+libQt5Network.so.5
+libQt5Network.so.5.12
+libQt5Network.so.5.12.8
+libQt5Positioning.so.5
+libQt5Positioning.so.5.12
+libQt5Positioning.so.5.12.8
+libQt5PrintSupport.so.5
+libQt5PrintSupport.so.5.12
+libQt5PrintSupport.so.5.12.8
+libQt5Qml.so.5
+libQt5Qml.so.5.12
+libQt5Qml.so.5.12.8
+libQt5Quick.so.5
+libQt5Quick.so.5.12
+libQt5Quick.so.5.12.8
+libQt5Sensors.so.5
+libQt5Sensors.so.5.12
+libQt5Sensors.so.5.12.8
+libQt5Sql.so.5
+libQt5Sql.so.5.12
+libQt5Sql.so.5.12.8
+libQt5Svg.so.5
+libQt5Svg.so.5.12
+libQt5Svg.so.5.12.8
+libQt5WebChannel.so.5
+libQt5WebChannel.so.5.12
+libQt5WebChannel.so.5.12.8
+libQt5WebKit.so.5
+libQt5WebKit.so.5.212.0
+libQt5WebKitWidgets.so.5
+libQt5WebKitWidgets.so.5.212.0
+libQt5Widgets.so.5
+libQt5Widgets.so.5.12
+libQt5Widgets.so.5.12.8
+libQt5X11Extras.so.5
+libQt5X11Extras.so.5.12
+libQt5X11Extras.so.5.12.8
+libQt5XcbQpa.so.5
+libQt5XcbQpa.so.5.12
+libQt5XcbQpa.so.5.12.8
+libQt5Xml.so.5
+libQt5Xml.so.5.12
+libQt5Xml.so.5.12.8
+libquadmath.so.0
+libquadmath.so.0.0.0
+libraptor2.so.0
+libraptor2.so.0.0.0
+librasqal.so.3
+librasqal.so.3.0.0
+libraw1394.so.11
+libraw1394.so.11.1.0
+libraw_r.so.19
+libraw_r.so.19.0.2
+libraw.so.19
+libraw.so.19.0.2
+librdf.so.0
+librdf.so.0.0.0
+libreadline.so.8
+libreadline.so.8.0
+libresolv-2.31.so
+libresolv.a
+libresolv_pic.a
+libresolv_pic.map
+libresolv.so
+libresolv.so.2
+librest-0.7.so.0
+librest-0.7.so.0.0.0
+librevenge-0.0.so.0
+librevenge-0.0.so.0.0.4
+librevenge-generators-0.0.so.0
+librevenge-generators-0.0.so.0.0.4
+librevenge-stream-0.0.so.0
+librevenge-stream-0.0.so.0.0.4
+librhythmbox-core.so.10
+librhythmbox-core.so.10.0.0
+libroken.so.18
+libroken.so.18.1.0
+librom1394.so.0
+librom1394.so.0.3.0
+librpcsvc.a
+librrd.so.8
+librrd.so.8.2.1
+librsvg-2.so.2
+librsvg-2.so.2.47.0
+librsync.so.2
+librsync.so.2.0.2
+librt-2.31.so
+librt.a
+librtmp.so.1
+librt_pic.a
+librt_pic.map
+librt.so
+librt.so.1
+librygel-core-2.6.so.2
+librygel-core-2.6.so.2.0.4
+librygel-db-2.6.so.2
+librygel-db-2.6.so.2.0.4
+librygel-renderer-2.6.so.2
+librygel-renderer-2.6.so.2.0.4
+librygel-server-2.6.so.2
+librygel-server-2.6.so.2.0.4
+libsamba-credentials.so.0
+libsamba-credentials.so.0.0.1
+libsamba-errors.so.1
+libsamba-hostconfig.so.0
+libsamba-hostconfig.so.0.0.1
+libsamba-passdb.so.0
+libsamba-passdb.so.0.28.0
+libsamba-policy.cpython-38-x86-64-linux-gnu.so.0
+libsamba-policy.cpython-38-x86-64-linux-gnu.so.0.0.1
+libsamba-util.so.0
+libsamba-util.so.0.0.1
+libsamdb.so.0
+libsamdb.so.0.0.1
+libsamplerate.so.0
+libsamplerate.so.0.1.8
+libsane.so.1
+libsane.so.1.0.29
+libsasl2.so.2
+libsasl2.so.2.0.25
+libsbc.so.1
+libsbc.so.1.2.2
+libsctp.so.1
+libsctp.so.1.0.18
+libSDL2-2.0.so.0
+libSDL2-2.0.so.0.10.0
+libseccomp.so.2
+libseccomp.so.2.4.3
+libsecret-1.so.0
+libsecret-1.so.0.0.0
+libSegFault.so
+libselinux.a
+libselinux.so
+libselinux.so.1
+libsemanage.so.1
+libsensors.so.5
+libsensors.so.5.0.0
+libsepol.a
+libsepol.so
+libsepol.so.1
+libsgutils2.so.2
+libsgutils2.so.2.0.0
+libshine.so.3
+libshine.so.3.0.1
+libshotwell-authenticator.so
+libshotwell-authenticator.so.0
+libshotwell-authenticator.so.0.30.10
+libshotwell-plugin-common.so
+libshotwell-plugin-common.so.0
+libshotwell-plugin-common.so.0.30.10
+libshotwell-plugin-dev-1.0.so
+libshotwell-plugin-dev-1.0.so.0
+libshotwell-plugin-dev-1.0.so.0.30.10
+libshout.so.3
+libshout.so.3.2.0
+libsigc-2.0.so.0
+libsigc-2.0.so.0.0.0
+libsigsegv.so.2
+libsigsegv.so.2.0.5
+libslang.so.2
+libslang.so.2.3.2
+libSM.a
+libsmartcols.so.1
+libsmartcols.so.1.1.0
+libsmbclient.so.0
+libsmbclient.so.0.5.0
+libsmbconf.so.0
+libsmbios_c.so.2
+libsmbios_c.so.2.2.1
+libsmbldap.so.2
+libsmime3.so
+libSM.so
+libSM.so.6
+libSM.so.6.0.1
+libsnapd-glib.so.1
+libsnapd-glib.so.1.0.0
+libsnappy.so.1
+libsnappy.so.1.1.8
+libsndfile.so.1
+libsndfile.so.1.0.28
+libsndio.so.7.0
+libsnmp.so.35
+libsnmp.so.35.0.0
+libsodium.so.23
+libsodium.so.23.3.0
+libsonic.so.0
+libsonic.so.0.2.0
+libsoup-2.4.so.1
+libsoup-2.4.so.1.9.0
+libsoup-gnome-2.4.so.1
+libsoup-gnome-2.4.so.1.9.0
+libsoxr.so.0
+libsoxr.so.0.1.2
+libspectre.so.1
+libspectre.so.1.1.8
+libspeechd.so.2
+libspeechd.so.2.6.0
+libspeexdsp.so.1
+libspeexdsp.so.1.5.0
+libspeex.so.1
+libspeex.so.1.5.0
+libsqlite3.so.0
+libsqlite3.so.0.8.6
+libssh.so.4
+libssh.so.4.8.4
+libssl3.so
+libssl.so.1.1
+libss.so.2
+libss.so.2.0
+libstartup-notification-1.so.0
+libstartup-notification-1.so.0.0.0
+libstb.so.0
+libstb.so.0.0
+libstdc++.so.6
+libstdc++.so.6.0.28
+libstemmer.so.0d
+libstemmer.so.0d.0.0
+libsuitesparseconfig.so.5
+libsuitesparseconfig.so.5.7.1
+libswresample.so.3
+libswresample.so.3.5.100
+libsynctex.so.2
+libsynctex.so.2.0.0
+libsysmetrics.so.1
+libsystemd.so.0
+libsystemd.so.0.28.0
+libtag.so.1
+libtag.so.1.17.0
+libtalloc.so.2
+libtalloc.so.2.3.0
+libtasn1.so.6
+libtasn1.so.6.6.0
+libtdb.so.1
+libtdb.so.1.4.2
+libteamdctl.so.0
+libteamdctl.so.0.1.5
+libTECkit_Compiler.so.0
+libTECkit_Compiler.so.0.0.0
+libTECkit.so.0
+libTECkit.so.0.0.0
+libtepl-4.so.0
+libtepl-4.so.0.1.0
+libtermcap.a
+libtermcap.so
+libtevent.so.0
+libtevent.so.0.10.1
+libtevent-util.so.0
+libtevent-util.so.0.0.1
+libtexlua53.so.5
+libtexlua53.so.5.3.4
+libtexluajit.so.2
+libtexluajit.so.2.1.0
+libthai.a
+libthai.so
+libthai.so.0
+libthai.so.0.3.1
+libtheoradec.so.1
+libtheoradec.so.1.1.4
+libtheoraenc.so.1
+libtheoraenc.so.1.1.2
+libtheora.so.0
+libtheora.so.0.3.10
+libthread_db-1.0.so
+libthread_db_pic.a
+libthread_db_pic.map
+libthread_db.so
+libthread_db.so.1
+libtic.a
+libtic.so
+libtic.so.6
+libtic.so.6.2
+libtiff.so.5
+libtiff.so.5.5.0
+libtinfo.a
+libtinfo.so
+libtinfo.so.6
+libtinfo.so.6.2
+libtinyxml.so.2.6.2
+libtirpc.so.3
+libtirpc.so.3.0.0
+libtotem-plparser-mini.so.18
+libtotem-plparser-mini.so.18.3.4
+libtotem-plparser.so.18
+libtotem-plparser.so.18.3.4
+libtotem.so.0
+libtotem.so.0.0.0
+libtracker-control-2.0.so.0
+libtracker-control-2.0.so.0.304.0
+libtracker-miner-2.0.so.0
+libtracker-miner-2.0.so.0.304.0
+libtracker-sparql-2.0.so.0
+libtracker-sparql-2.0.so.0.304.0
+libtsan_preinit.o
+libtsan.so.0
+libtsan.so.0.0.0
+libtss2-esys.so.0
+libtss2-esys.so.0.0.0
+libtss2-mu.so.0
+libtss2-mu.so.0.0.0
+libtss2-rc.so.0
+libtss2-rc.so.0.0.0
+libtss2-sys.so.0
+libtss2-sys.so.0.0.0
+libtss2-tcti-device.so.0
+libtss2-tcti-device.so.0.0.0
+libtss2-tctildr.so.0
+libtss2-tctildr.so.0.0.0
+libtss2-tcti-mssim.so.0
+libtss2-tcti-mssim.so.0.0.0
+libtwolame.so.0
+libtwolame.so.0.0.0
+libubsan.so.1
+libubsan.so.1.0.0
+libuchardet.so.0
+libuchardet.so.0.0.6
+libudev.so.1
+libudev.so.1.6.17
+libudisks2.so.0
+libudisks2.so.0.0.0
+libulockmgr.so.1
+libulockmgr.so.1.0.1
+libunbound.so.8
+libunbound.so.8.1.4
+libunistring.so.2
+libunistring.so.2.1.0
+libunity
+libunity-extras.so.9
+libunity-extras.so.9.0.2
+libunity.so.9
+libunity.so.9.0.2
+libuno_cppuhelpergcc3.so.3
+libuno_cppu.so.3
+libuno_purpenvhelpergcc3.so.3
+libuno_salhelpergcc3.so.3
+libuno_sal.so.3
+libunwind-coredump.so.0
+libunwind-coredump.so.0.0.0
+libunwind-ptrace.so.0
+libunwind-ptrace.so.0.0.0
+libunwind.so.8
+libunwind.so.8.0.1
+libunwind-x86_64.so.8
+libunwind-x86_64.so.8.0.1
+libupower-glib.so.3
+libupower-glib.so.3.0.1
+libusb-1.0.so.0
+libusb-1.0.so.0.2.0
+libusbmuxd.so.6
+libusbmuxd.so.6.0.0
+libutil-2.31.so
+libutil.a
+libutil_pic.a
+libutil_pic.map
+libutil.so
+libutil.so.1
+libuuid.a
+libuuid.so
+libuuid.so.1
+libuuid.so.1.3.0
+libuv.so.1
+libuv.so.1.0.0
+libv4l
+libv4l1.so.0
+libv4l1.so.0.0.0
+libv4l2.so.0
+libv4l2.so.0.0.0
+libv4lconvert0
+libv4lconvert.so.0
+libv4lconvert.so.0.0.0
+libva-drm.so.2
+libva-drm.so.2.700.0
+libva.so.2
+libva.so.2.700.0
+libva-x11.so.2
+libva-x11.so.2.700.0
+libvdpau_nvidia.so
+libvdpau.so.1
+libvdpau.so.1.0.0
+libvisio-0.1.so.1
+libvisio-0.1.so.1.0.7
+libvisual-0.4.so.0
+libvisual-0.4.so.0.0.0
+libvkd3d.so.1
+libvkd3d.so.1.1.0
+libVkLayer_MESA_overlay.so
+libvncclient.so.0.9.12
+libvncclient.so.1
+libvolume_key.so.1
+libvolume_key.so.1.2.3
+libvorbisenc.so.2
+libvorbisenc.so.2.0.11
+libvorbisfile.so.3
+libvorbisfile.so.3.3.7
+libvorbis.so.0
+libvorbis.so.0.4.8
+libvpx.so.6
+libvpx.so.6.2
+libvpx.so.6.2.0
+libvte-2.91.so.0
+libvte-2.91.so.0.6000.3
+libvulkan_intel.so
+libvulkan_radeon.so
+libwacom.so.2
+libwacom.so.2.6.1
+libwavpack.so.1
+libwavpack.so.1.2.1
+libwayland-client.so
+libwayland-client.so.0
+libwayland-client.so.0.3.0
+libwayland-cursor.so
+libwayland-cursor.so.0
+libwayland-cursor.so.0.0.0
+libwayland-egl.so
+libwayland-egl.so.1
+libwayland-egl.so.1.0.0
+libwayland-server.so
+libwayland-server.so.0
+libwayland-server.so.0.1.0
+libwbclient.so.0
+libwbclient.so.0.15
+libwebkit2gtk-4.0.so.37
+libwebkit2gtk-4.0.so.37.44.6
+libwebpdemux.so.2
+libwebpdemux.so.2.0.3
+libwebpmux.so.3
+libwebpmux.so.3.0.1
+libwebp.so.6
+libwebp.so.6.0.2
+libwebrtc_audio_processing.so.1
+libwebrtc_audio_processing.so.1.0.0
+libwhoopsie-preferences.so.0
+libwhoopsie-preferences.so.0.0.0
+libwhoopsie.so.0
+libwhoopsie.so.0.0
+libwind.so.0
+libwind.so.0.0.0
+libwinpr2.so.2
+libwinpr2.so.2.1.1
+libwmf-0.2.so.7
+libwmf-0.2.so.7.1.0
+libwmflite-0.2.so.7
+libwmflite-0.2.so.7.0.1
+libwnck-3.so.0
+libwnck-3.so.0.3.0
+libwoff2common.so.1.0.2
+libwoff2dec.so.1.0.2
+libwoff2enc.so.1.0.2
+libwpd-0.10.so.10
+libwpd-0.10.so.10.0.3
+libwpg-0.3.so.3
+libwpg-0.3.so.3.0.3
+libwps-0.4.so.4
+libwps-0.4.so.4.0.10
+libwrap.so.0
+libwrap.so.0.7.6
+libwx_baseu-3.0.so.0
+libwx_baseu-3.0.so.0.4.0
+libwx_baseu_net-3.0.so.0
+libwx_baseu_net-3.0.so.0.4.0
+libwx_baseu_xml-3.0.so.0
+libwx_baseu_xml-3.0.so.0.4.0
+libwx_gtk3u_adv-3.0.so.0
+libwx_gtk3u_adv-3.0.so.0.4.0
+libwx_gtk3u_aui-3.0.so.0
+libwx_gtk3u_aui-3.0.so.0.4.0
+libwx_gtk3u_core-3.0.so.0
+libwx_gtk3u_core-3.0.so.0.4.0
+libwx_gtk3u_gl-3.0.so.0
+libwx_gtk3u_gl-3.0.so.0.4.0
+libwx_gtk3u_html-3.0.so.0
+libwx_gtk3u_html-3.0.so.0.4.0
+libwx_gtk3u_propgrid-3.0.so.0
+libwx_gtk3u_propgrid-3.0.so.0.4.0
+libwx_gtk3u_qa-3.0.so.0
+libwx_gtk3u_qa-3.0.so.0.4.0
+libwx_gtk3u_ribbon-3.0.so.0
+libwx_gtk3u_ribbon-3.0.so.0.4.0
+libwx_gtk3u_richtext-3.0.so.0
+libwx_gtk3u_richtext-3.0.so.0.4.0
+libwx_gtk3u_stc-3.0.so.0
+libwx_gtk3u_stc-3.0.so.0.4.0
+libwx_gtk3u_xrc-3.0.so.0
+libwx_gtk3u_xrc-3.0.so.0.4.0
+libX11.a
+libX11.so
+libX11.so.6
+libX11.so.6.3.0
+libX11-xcb.so.1
+libX11-xcb.so.1.0.0
+libx264.so.155
+libx265.so.179
+libxatracker.so.2
+libxatracker.so.2.5.0
+libXau.a
+libXau.so
+libXau.so.6
+libXau.so.6.0.0
+libXaw7.a
+libXaw7.so
+libXaw7.so.7
+libXaw7.so.7.0.0
+libXaw.so
+libXaw.so.7
+libxcb.a
+libxcb-dri2.so.0
+libxcb-dri2.so.0.0.0
+libxcb-dri3.so.0
+libxcb-dri3.so.0.0.0
+libxcb-glx.so.0
+libxcb-glx.so.0.0.0
+libxcb-icccm.so.4
+libxcb-icccm.so.4.0.0
+libxcb-image.so.0
+libxcb-image.so.0.0.0
+libxcb-keysyms.so.1
+libxcb-keysyms.so.1.0.0
+libxcb-present.so.0
+libxcb-present.so.0.0.0
+libxcb-randr.so.0
+libxcb-randr.so.0.1.0
+libxcb-render.a
+libxcb-render.so
+libxcb-render.so.0
+libxcb-render.so.0.0.0
+libxcb-render-util.so.0
+libxcb-render-util.so.0.0.0
+libxcb-res.so.0
+libxcb-res.so.0.0.0
+libxcb-shape.so.0
+libxcb-shape.so.0.0.0
+libxcb-shm.a
+libxcb-shm.so
+libxcb-shm.so.0
+libxcb-shm.so.0.0.0
+libxcb.so
+libxcb.so.1
+libxcb.so.1.1.0
+libxcb-sync.so.1
+libxcb-sync.so.1.0.0
+libxcb-util.so.1
+libxcb-util.so.1.0.0
+libxcb-xfixes.so.0
+libxcb-xfixes.so.0.0.0
+libxcb-xinerama.so.0
+libxcb-xinerama.so.0.0.0
+libxcb-xinput.so.0
+libxcb-xinput.so.0.1.0
+libxcb-xkb.so.1
+libxcb-xkb.so.1.0.0
+libxcb-xv.so.0
+libxcb-xv.so.0.0.0
+libXcomposite.a
+libXcomposite.so
+libXcomposite.so.1
+libXcomposite.so.1.0.0
+libXcursor.a
+libXcursor.so
+libXcursor.so.1
+libXcursor.so.1.0.2
+libXdamage.a
+libXdamage.so
+libXdamage.so.1
+libXdamage.so.1.1.0
+libXdmcp.a
+libXdmcp.so
+libXdmcp.so.6
+libXdmcp.so.6.0.0
+libXext.a
+libXext.so
+libXext.so.6
+libXext.so.6.4.0
+libXfixes.a
+libXfixes.so
+libXfixes.so.3
+libXfixes.so.3.1.0
+libXfont2.a
+libXfont2.so
+libXfont2.so.2
+libXfont2.so.2.0.0
+libXft.a
+libXft.so
+libXft.so.2
+libXft.so.2.3.3
+libXi.a
+libXinerama.a
+libXinerama.so
+libXinerama.so.1
+libXinerama.so.1.0.0
+libXi.so
+libXi.so.6
+libXi.so.6.1.0
+libxkbcommon.so
+libxkbcommon.so.0
+libxkbcommon.so.0.0.0
+libxkbcommon-x11.so.0
+libxkbcommon-x11.so.0.0.0
+libxkbfile.a
+libxkbfile.so
+libxkbfile.so.1
+libxkbfile.so.1.0.2
+libxklavier.so.16
+libxklavier.so.16.4.0
+libxml2.so.2
+libxml2.so.2.9.10
+libxmlb.so.1
+libxmlb.so.1.0.0
+libxmlsec1-nss.so.1
+libxmlsec1-nss.so.1.2.28
+libxmlsec1.so.1
+libxmlsec1.so.1.2.28
+libXmu.a
+libXmu.so
+libXmu.so.6
+libXmu.so.6.2.0
+libXmuu.a
+libXmuu.so
+libXmuu.so.1
+libXmuu.so.1.0.0
+libXNVCtrl.so.0
+libXNVCtrl.so.0.0.0
+libXpm.a
+libXpm.so
+libXpm.so.4
+libXpm.so.4.11.0
+libXrandr.a
+libXrandr.so
+libXrandr.so.2
+libXrandr.so.2.2.0
+libXrender.a
+libXrender.so
+libXrender.so.1
+libXrender.so.1.3.0
+libXRes.a
+libXRes.so
+libXRes.so.1
+libXRes.so.1.0.0
+libxshmfence.so.1
+libxshmfence.so.1.0.0
+libxslt.so.1
+libxslt.so.1.1.34
+libXss.a
+libXss.so
+libXss.so.1
+libXss.so.1.0.0
+libXt.a
+libxtables.so
+libxtables.so.12
+libxtables.so.12.2.0
+libXt.so
+libXt.so.6
+libXt.so.6.0.0
+libXtst.a
+libXtst.so
+libXtst.so.6
+libXtst.so.6.1.0
+libXv.a
+libxvidcore.so.4
+libxvidcore.so.4.3
+libXvMC.a
+libXvMC.so
+libXvMC.so.1
+libXvMC.so.1.0.0
+libXvMCW.a
+libXvMCW.so
+libXvMCW.so.1
+libXvMCW.so.1.0.0
+libXv.so
+libXv.so.1
+libXv.so.1.0.0
+libXxf86dga.a
+libXxf86dga.so
+libXxf86dga.so.1
+libXxf86dga.so.1.0.0
+libXxf86vm.a
+libXxf86vm.so
+libXxf86vm.so.1
+libXxf86vm.so.1.0.0
+libyajl.so.2
+libyajl.so.2.1.0
+libyaml-0.so.2
+libyaml-0.so.2.0.6
+libyelp.so.0
+libyelp.so.0.0.0
+libz.a
+libz.so
+libz.so.1
+libz.so.1.2.11
+libzstd.so.1
+libzstd.so.1.4.4
+libzvbi-chains.so.0
+libzvbi-chains.so.0.0.0
+libzvbi.so.0
+libzvbi.so.0.13.2
+libzzip-0.so.10
+libzzip-0.so.11
+libzzip-0.so.12
+libzzip-0.so.13
+libzzip-0.so.13.0.62
+libzzipfseeko-0.so.10
+libzzipfseeko-0.so.11
+libzzipfseeko-0.so.12
+libzzipfseeko-0.so.13
+libzzipfseeko-0.so.13.0.62
+libzzipmmapped-0.so.10
+libzzipmmapped-0.so.11
+libzzipmmapped-0.so.12
+libzzipmmapped-0.so.13
+libzzipmmapped-0.so.13.0.62
+libzzipwrap-0.so.13
+libzzipwrap-0.so.13.0.62
+mailutils
+Mcrt1.o
+ModemManager
+mutter-6
+nautilus
+NetworkManager
+nss
+nvidia
+odbc
+openvpn
+org.gnome.Characters
+p11-kit-proxy.so
+packagekit-backend
+perl
+perl5
+perl-base
+pkcs11
+pkgconfig
+plymouth
+preloadable_libintl.so
+pulseaudio
+qt5
+qt-default
+rcrt1.o
+remmina
+rhythmbox
+rsyslog
+rygel-2.6
+samba
+sane
+sasl2
+Scrt1.o
+security
+shotwell
+speech-dispatcher
+totem
+tracker-2.0
+tracker-miners-2.0
+valgrind
+vdpau
+webkit2gtk-4.0
+wine
+wine-development
+X11
+xtables
+yelp
+liusheng@disini-ubuntu:/usr/lib/x86_64-linux-gnu$ ls
+aisleriot
+alsa-lib
+ao
+apr-util-1
+audit
+avahi
+bluetooth
+caca
+capi
+cmake
+colord-plugins
+colord-sensors
+coreutils
+crt1.o
+crti.o
+crtn.o
+cups-pk-helper-mechanism
+dbus-1.0
+deja-dup
+dri
+e2fsprogs
+elfutils
+enchant-2
+engines-1.1
+eog
+espeak-ng-data
+evince
+fcitx
+fwupd-plugins-3
+gconv
+gcrt1.o
+gdk-pixbuf-2.0
+gedit
+gio
+girepository-1.0
+gjs
+glib-2.0
+gnome-keyring
+gnome-todo
+goa-1.0
+grcrt1.o
+grilo-0.3
+gstreamer-1.0
+gstreamer1.0
+gtk-2.0
+gtk-3.0
+guile
+gupnp-dlna
+gvfs
+icu
+ImageMagick-6.9.10
+krb5
+ld-2.31.so
+ldb
+ld-linux-x86-64.so.2
+ldscripts
+libaa.so.1
+libaa.so.1.0.4
+libabw-0.1.so.1
+libabw-0.1.so.1.0.3
+libaccountsservice.so.0
+libaccountsservice.so.0.0.0
+libacl.so.1
+libacl.so.1.1.2253
+libamtk-5.so.0
+libamtk-5.so.0.0.0
+libanl-2.31.so
+libanl.a
+libanl_pic.a
+libanl_pic.map
+libanl.so
+libanl.so.1
+libaom.so.0
+libao.so.4
+libao.so.4.1.1
+libapparmor.so.1
+libapparmor.so.1.6.1
+libappindicator3.so.1
+libappindicator3.so.1.0.0
+libappstream.so.0.12.10
+libappstream.so.4
+libapr-1.so.0
+libapr-1.so.0.6.5
+libaprutil-1.so.0
+libaprutil-1.so.0.6.1
+libapt-pkg.so.6.0
+libapt-pkg.so.6.0.0
+libapt-private.so.0.0
+libapt-private.so.0.0.0
+libarchive.so.13
+libarchive.so.13.4.0
+libargon2.so.1
+libasan.so.5
+libasan.so.5.0.0
+libasn1.so.8
+libasn1.so.8.0.0
+libasound.so.2
+libasound.so.2.0.0
+libaspell.so.15
+libaspell.so.15.3.1
+libassuan.so.0
+libassuan.so.0.8.3
+libasyncns.so.0
+libasyncns.so.0.3.1
+libatasmart.so.4
+libatasmart.so.4.0.5
+libatk-1.0.so
+libatk-1.0.so.0
+libatk-1.0.so.0.23510.1
+libatk-bridge-2.0.so
+libatk-bridge-2.0.so.0
+libatk-bridge-2.0.so.0.0.0
+libatkmm-1.6.so.1
+libatkmm-1.6.so.1.1.0
+libatm.so.1
+libatm.so.1.0.0
+libatomic.so.1
+libatomic.so.1.2.0
+libatopology.so.2
+libatopology.so.2.0.0
+libatspi.so
+libatspi.so.0
+libatspi.so.0.0.1
+libattr.so.1
+libattr.so.1.1.2448
+libaudit.so.1
+libaudit.so.1.0.0
+libavahi-client.so.3
+libavahi-client.so.3.2.9
+libavahi-common.so.3
+libavahi-common.so.3.5.3
+libavahi-core.so.7
+libavahi-core.so.7.0.2
+libavahi-glib.so.1
+libavahi-glib.so.1.0.2
+libavahi-ui-gtk3.so.0
+libavahi-ui-gtk3.so.0.1.4
+libavc1394.so.0
+libavc1394.so.0.3.0
+libavcodec.so.58
+libavcodec.so.58.54.100
+libavutil.so.56
+libavutil.so.56.31.100
+libbabeltrace-ctf-metadata.so.1
+libbabeltrace-ctf-metadata.so.1.0.0
+libbabeltrace-ctf.so.1
+libbabeltrace-ctf.so.1.0.0
+libbabeltrace-ctf-text.so.1
+libbabeltrace-ctf-text.so.1.0.0
+libbabeltrace-dummy.so.1
+libbabeltrace-dummy.so.1.0.0
+libbabeltrace-lttng-live.so.1
+libbabeltrace-lttng-live.so.1.0.0
+libbabeltrace.so.1
+libbabeltrace.so.1.0.0
+libbd_crypto.so.2
+libbd_crypto.so.2.0.0
+libbd_fs.so.2
+libbd_fs.so.2.0.0
+libbd_loop.so.2
+libbd_loop.so.2.0.0
+libbd_part_err.so.2
+libbd_part_err.so.2.0.0
+libbd_part.so.2
+libbd_part.so.2.0.0
+libbd_swap.so.2
+libbd_swap.so.2.0.0
+libbd_utils.so.2
+libbd_utils.so.2.1.0
+libbfd-2.34-system.so
+libbind9.so.1600
+libbind9.so.1600.0.1
+libblkid.a
+libblkid.so
+libblkid.so.1
+libblkid.so.1.1.0
+libblockdev.so.2
+libblockdev.so.2.0.0
+libbluetooth.so.3
+libbluetooth.so.3.19.1
+libboost_date_time.so.1.71.0
+libboost_filesystem.so.1.71.0
+libboost_iostreams.so.1.71.0
+libboost_locale.so.1.71.0
+libboost_thread.so.1.71.0
+libbrlapi.so.0.7
+libbrlapi.so.0.7.0
+libBrokenLocale-2.31.so
+libBrokenLocale.a
+libBrokenLocale_pic.a
+libBrokenLocale_pic.map
+libBrokenLocale.so
+libBrokenLocale.so.1
+libbrotlicommon.so.1
+libbrotlicommon.so.1.0.7
+libbrotlidec.so.1
+libbrotlidec.so.1.0.7
+libbrotlienc.so.1
+libbrotlienc.so.1.0.7
+libbsd.so.0
+libbsd.so.0.10.0
+libbz2.so.1
+libbz2.so.1.0
+libbz2.so.1.0.4
+libc-2.31.so
+libc.a
+libcaca++.so.0
+libcaca.so.0
+libcaca++.so.0.99.19
+libcaca.so.0.99.19
+libcairo.a
+libcairo-gobject.a
+libcairo-gobject.so
+libcairo-gobject.so.2
+libcairo-gobject.so.2.11600.0
+libcairomm-1.0.so.1
+libcairomm-1.0.so.1.4.0
+libcairo-script-interpreter.a
+libcairo-script-interpreter.so
+libcairo-script-interpreter.so.2
+libcairo-script-interpreter.so.2.11600.0
+libcairo.so
+libcairo.so.2
+libcairo.so.2.11600.0
+libcamel-1.2.so.62
+libcamel-1.2.so.62.0.0
+libcanberra-0.30
+libcanberra-gtk3.so.0
+libcanberra-gtk3.so.0.1.9
+libcanberra.so.0
+libcanberra.so.0.2.5
+libcapi20.so.3
+libcapi20.so.3.0.6
+libcap-ng.so.0
+libcap-ng.so.0.0.0
+libcap.so.2
+libcap.so.2.32
+libcbor.so.0.6
+libcbor.so.0.6.0
+libcc1.so.0
+libcc1.so.0.0.0
+libcdda_interface.so.0
+libcdda_interface.so.0.10.2
+libcdda_paranoia.so.0
+libcdda_paranoia.so.0.10.2
+libcdio_cdda.so.2
+libcdio_cdda.so.2.0.0
+libcdio_paranoia.so.2
+libcdio_paranoia.so.2.0.0
+libcdio.so.18
+libcdio.so.18.0.0
+libcdr-0.1.so.1
+libcdr-0.1.so.1.0.6
+libchasen.so.2
+libchasen.so.2.0.4
+libcheese-gtk.so.25
+libcheese-gtk.so.25.1.4
+libcheese.so.8
+libcheese.so.8.0.14
+libclang-8.so.1
+libclucene-contribs-lib.so.1
+libclucene-contribs-lib.so.2.3.3.4
+libclucene-core.so.1
+libclucene-core.so.2.3.3.4
+libclucene-shared.so.1
+libclucene-shared.so.2.3.3.4
+libclutter-1.0.so.0
+libclutter-1.0.so.0.2600.4
+libclutter-glx-1.0.so.0
+libclutter-gst-3.0.so.0
+libclutter-gst-3.0.so.0.27.0
+libclutter-gtk-1.0.so.0
+libclutter-gtk-1.0.so.0.800.4
+libcmis-0.5.so.5
+libcmis-0.5.so.5.0.0
+libcmis-c-0.5.so.5
+libcmis-c-0.5.so.5.0.0
+libc_nonshared.a
+libcodec2.so.0.9
+libcogl-pango.so.20
+libcogl-pango.so.20.4.2
+libcogl-path.so.20
+libcogl-path.so.20.4.2
+libcogl.so.20
+libcogl.so.20.4.2
+libcolamd.so.2
+libcolamd.so.2.9.6
+libcolord-gtk.so.1
+libcolord-gtk.so.1.0.3
+libcolordprivate.so.2
+libcolordprivate.so.2.0.5
+libcolord.so.2
+libcolord.so.2.0.5
+libcolorhug.so.2
+libcolorhug.so.2.0.5
+libcom_err.so.2
+libcom_err.so.2.1
+libc_pic
+libc_pic.a
+libc_pic.map
+libcrack.so.2
+libcrack.so.2.9.0
+libcroco-0.6.so.3
+libcroco-0.6.so.3.0.1
+libcrypt.a
+libcrypto.so.1.1
+libcryptsetup.so.12
+libcryptsetup.so.12.5.0
+libcrypt.so
+libcrypt.so.1
+libcrypt.so.1.1.0
+libc.so
+libc.so.6
+libctf-nobfd.so.0
+libctf-nobfd.so.0.0.0
+libctf.so.0
+libctf.so.0.0.0
+libcuda.so
+libcuda.so.1
+libcuda.so.430.64
+libcue.so.2
+libcue.so.2.2.1
+libcupsfilters.so.1
+libcupsfilters.so.1.0.0
+libcupsimage.so.2
+libcups.so.2
+libcurl-gnutls.so.3
+libcurl-gnutls.so.4
+libcurl-gnutls.so.4.6.0
+libcurl.so.4
+libcurl.so.4.6.0
+libcurses.a
+libcurses.so
+libdaemon.so.0
+libdaemon.so.0.5.0
+libdatrie.a
+libdatrie.so
+libdatrie.so.1
+libdatrie.so.1.3.5
+libdaxctl.so.1
+libdaxctl.so.1.4.0
+libdazzle-1.0.so.0
+libdb-5.3.so
+libdbi.so.1
+libdbi.so.1.1.0
+libdbus-1.a
+libdbus-1.so
+libdbus-1.so.3
+libdbus-1.so.3.19.11
+libdbus-glib-1.so.2
+libdbus-glib-1.so.2.3.4
+libdbusmenu-glib.so.4
+libdbusmenu-glib.so.4.0.12
+libdbusmenu-gtk3.so.4
+libdbusmenu-gtk3.so.4.0.12
+libdcerpc-binding.so.0
+libdcerpc-binding.so.0.0.1
+libdcerpc-samr.so.0
+libdcerpc-samr.so.0.0.1
+libdcerpc-server.so.0
+libdcerpc-server.so.0.0.1
+libdcerpc.so.0
+libdcerpc.so.0.0.1
+libdconf.so.1
+libdconf.so.1.0.0
+libdebconfclient.so.0
+libdebconfclient.so.0.0.0
+libdee-1.0.so.4
+libdee-1.0.so.4.2.1
+libdevmapper.so.1.02.1
+libdjvulibre.so.21
+libdjvulibre.so.21.6.0
+libdl-2.31.so
+libdl.a
+libdl_pic.a
+libdl_pic.map
+libdl.so
+libdl.so.2
+libdmapsharing-3.0.so.2
+libdmapsharing-3.0.so.2.9.39
+libdmx.a
+libdmx.so
+libdmx.so.1
+libdmx.so.1.0.0
+libdns-export.so.1109
+libdns-export.so.1109.0.1
+libdns.so.1601
+libdns.so.1601.0.0
+libdotconf.so.0
+libdotconf.so.0.0.1
+libdouble-conversion.so.3
+libdouble-conversion.so.3.1
+libdrm_amdgpu.so
+libdrm_amdgpu.so.1
+libdrm_amdgpu.so.1.0.0
+libdrm_intel.so
+libdrm_intel.so.1
+libdrm_intel.so.1.0.0
+libdrm_nouveau.so
+libdrm_nouveau.so.2
+libdrm_nouveau.so.2.0.0
+libdrm_radeon.so
+libdrm_radeon.so.1
+libdrm_radeon.so.1.0.1
+libdrm.so
+libdrm.so.2
+libdrm.so.2.4.0
+libdv.so.4
+libdv.so.4.0.3
+libdw-0.176.so
+libdw.so.1
+libe2p.so.2
+libe2p.so.2.3
+libebackend-1.2.so.10
+libebackend-1.2.so.10.0.0
+libe-book-0.1.so.1
+libe-book-0.1.so.1.0.3
+libebook-1.2.so.20
+libebook-1.2.so.20.1.3
+libebook-contacts-1.2.so.3
+libebook-contacts-1.2.so.3.0.0
+libecal-2.0.so.1
+libecal-2.0.so.1.0.0
+libedata-book-1.2.so.26
+libedata-book-1.2.so.26.0.0
+libedata-cal-2.0.so.1
+libedata-cal-2.0.so.1.0.0
+libedataserver-1.2.so.24
+libedataserver-1.2.so.24.0.0
+libedataserverui-1.2.so.2
+libedataserverui-1.2.so.2.0.0
+libedit.so.2
+libedit.so.2.0.63
+libefiboot.so.1
+libefiboot.so.1.37
+libefivar.so.1
+libefivar.so.1.37
+libEGL_mesa.so.0
+libEGL_mesa.so.0.0.0
+libEGL_nvidia.so.0
+libEGL_nvidia.so.430.64
+libEGL.so
+libEGL.so.1
+libEGL.so.1.1.0
+libelf-0.176.so
+libelf.so.1
+libenchant-2.so.2
+libenchant-2.so.2.2.8
+libeot.so.0
+libeot.so.0.0.0
+libepoxy.so
+libepoxy.so.0
+libepoxy.so.0.0.0
+libepubgen-0.1.so.1
+libepubgen-0.1.so.1.0.1
+libespeak-ng.so.1
+libespeak-ng.so.1.1.49
+libestr.so.0
+libestr.so.0.0.0
+libetonyek-0.1.so.1
+libetonyek-0.1.so.1.0.9
+libevdev.so.2
+libevdev.so.2.3.0
+libevdocument3.so.4
+libevdocument3.so.4.0.0
+libevent-2.1.so.7
+libevent-2.1.so.7.0.0
+libevview3.so.3
+libevview3.so.3.0.0
+libexempi.so.8
+libexempi.so.8.0.0
+libexif.so.12
+libexif.so.12.3.3
+libexiv2.so.0.27.2
+libexiv2.so.27
+libexpat.a
+libexpat.so
+libexpat.so.1
+libexpat.so.1.6.11
+libexpatw.a
+libexpatw.so
+libexpatw.so.1
+libexpatw.so.1.6.11
+libexslt.so.0
+libexslt.so.0.8.20
+libext2fs.so.2
+libext2fs.so.2.4
+libexttextcat-2.0.so.0
+libexttextcat-2.0.so.0.0.0
+libfakeroot
+libfastjson.so.4
+libfastjson.so.4.2.0
+libFAudio.so.0
+libFAudio.so.0.20.04
+libfcitx-config.so.4
+libfcitx-config.so.4.1
+libfcitx-core.so.0
+libfcitx-core.so.0.3
+libfcitx-gclient.so.0.2
+libfcitx-gclient.so.1
+libFcitxQt5DBusAddons.so.1
+libFcitxQt5DBusAddons.so.1.0
+libFcitxQt5WidgetsAddons.so.1
+libFcitxQt5WidgetsAddons.so.1.0
+libfcitx-utils.so.0
+libfcitx-utils.so.0.1
+libfdisk.so.1
+libfdisk.so.1.1.0
+libffi.a
+libffi_pic.a
+libffi.so
+libffi.so.7
+libffi.so.7.1.0
+libfftw3f_omp.so.3
+libfftw3f_omp.so.3.5.8
+libfftw3f.so.3
+libfftw3f.so.3.5.8
+libfftw3f_threads.so.3
+libfftw3f_threads.so.3.5.8
+libfftw3_omp.so.3
+libfftw3_omp.so.3.5.8
+libfftw3.so.3
+libfftw3.so.3.5.8
+libfftw3_threads.so.3
+libfftw3_threads.so.3.5.8
+libfido2.so.1
+libfido2.so.1.3.1
+libFLAC.so.8
+libFLAC.so.8.3.0
+libfontconfig.a
+libfontconfig.so
+libfontconfig.so.1
+libfontconfig.so.1.12.0
+libfontembed.so.1
+libfontembed.so.1.0.0
+libfontenc.a
+libfontenc.so
+libfontenc.so.1
+libfontenc.so.1.0.0
+libform.a
+libform.so
+libform.so.6
+libform.so.6.2
+libformw.a
+libformw.so
+libformw.so.6
+libformw.so.6.2
+libfprint-2.so.2
+libfprint-2.so.2.0.0
+libfprint-2-tod.so.1
+libfreebl3.chk
+libfreebl3.so
+libfreeblpriv3.chk
+libfreeblpriv3.so
+libfreehand-0.1.so.1
+libfreehand-0.1.so.1.0.2
+libfreerdp2.so.2
+libfreerdp2.so.2.1.1
+libfreerdp-client2.so.2
+libfreerdp-client2.so.2.1.1
+libfreetype.a
+libfreetype.so
+libfreetype.so.6
+libfreetype.so.6.17.1
+libfribidi.a
+libfribidi.so
+libfribidi.so.0
+libfribidi.so.0.4.0
+libFS.a
+libFS.so
+libFS.so.6
+libFS.so.6.0.0
+libfuse.so.2
+libfuse.so.2.9.9
+libfwupdplugin.so.1
+libfwupdplugin.so.1.0.0
+libfwupd.so.2
+libfwupd.so.2.0.0
+libg.a
+libgailutil.so.18
+libgailutil.so.18.0.1
+libgamemodeauto.so.0
+libgamemodeauto.so.0.0.0
+libgamemode.so.0
+libgamemode.so.0.0.0
+libgbm.so.1
+libgbm.so.1.0.0
+libgcab-1.0.so.0
+libgcab-1.0.so.0.1.0
+libgcalc-2.so
+libgcalc-2.so.1
+libgcalc-2.so.1.0.1
+libgccpp.so.1
+libgccpp.so.1.3.1
+libgcc_s.so.1
+libgci-1.so
+libgci-1.so.0
+libgci-1.so.0.0.0
+libgck-1.so.0
+libgck-1.so.0.0.0
+libgcr-base-3.so.1
+libgcr-base-3.so.1.0.0
+libgcr-ui-3.so.1
+libgcr-ui-3.so.1.0.0
+libgcrypt.so.20
+libgcrypt.so.20.2.5
+libgc.so.1
+libgc.so.1.3.2
+libgdata.so.22
+libgdata.so.22.5.1
+libgdbm_compat.so.4
+libgdbm_compat.so.4.0.0
+libgdbm.so.6
+libgdbm.so.6.0.0
+libgdk-3.so
+libgdk-3.so.0
+libgdk-3.so.0.2404.16
+libgdkmm-3.0.so.1
+libgdkmm-3.0.so.1.1.0
+libgdk_pixbuf-2.0.so
+libgdk_pixbuf-2.0.so.0
+libgdk_pixbuf-2.0.so.0.4000.0
+libgdk_pixbuf_xlib-2.0.so
+libgdk_pixbuf_xlib-2.0.so.0
+libgdk_pixbuf_xlib-2.0.so.0.4000.0
+libgdk-x11-2.0.so.0
+libgdk-x11-2.0.so.0.2400.32
+libgdm.so.1
+libgdm.so.1.0.0
+libgd.so.3
+libgd.so.3.0.5
+libgee-0.8.so.2
+libgee-0.8.so.2.6.1
+libgeoclue-2.so.0
+libgeoclue-2.so.0.0.0
+libgeocode-glib.so.0
+libgeocode-glib.so.0.0.0
+libGeoIP.so.1
+libGeoIP.so.1.6.12
+libgettextlib-0.19.8.1.so
+libgettextpo.so.0
+libgettextpo.so.0.5.4
+libgettextsrc-0.19.8.1.so
+libgexiv2.so.2
+libgexiv2.so.2.0.0
+libgif.so.7
+libgif.so.7.1.0
+libgio-2.0.a
+libgio-2.0.so
+libgio-2.0.so.0
+libgio-2.0.so.0.6400.3
+libgiomm-2.4.so.1
+libgiomm-2.4.so.1.3.0
+libgirepository-1.0.so.1
+libgirepository-1.0.so.1.0.0
+libgjs.so.0
+libgjs.so.0.0.0
+libglapi.so.0
+libglapi.so.0.0.0
+libGLdispatch.so
+libGLdispatch.so.0
+libGLdispatch.so.0.0.0
+libGLESv1_CM_nvidia.so.1
+libGLESv1_CM_nvidia.so.430.64
+libGLESv1_CM.so
+libGLESv1_CM.so.1
+libGLESv1_CM.so.1.2.0
+libGLESv2_nvidia.so.2
+libGLESv2_nvidia.so.430.64
+libGLESv2.so
+libGLESv2.so.2
+libGLESv2.so.2.1.0
+libglfw.so.3
+libglfw.so.3.3
+libglib-2.0.a
+libglib-2.0.so
+libglib-2.0.so.0
+libglib-2.0.so.0.6400.3
+libglibmm-2.4.so.1
+libglibmm-2.4.so.1.3.0
+libglibmm_generate_extra_defs-2.4.so.1
+libglibmm_generate_extra_defs-2.4.so.1.3.0
+libGL.la
+libGL.so
+libGL.so.1
+libGL.so.1.7.0
+libGLU.so.1
+libGLU.so.1.3.1
+libGLX_indirect.so.0
+libGLX_mesa.so.0
+libGLX_mesa.so.0.0.0
+libGLX_nvidia.so.0
+libGLX_nvidia.so.430.64
+libGLX.so
+libGLX.so.0
+libGLX.so.0.0.0
+libgmodule-2.0.a
+libgmodule-2.0.so
+libgmodule-2.0.so.0
+libgmodule-2.0.so.0.6400.3
+libgmp.so.10
+libgmp.so.10.4.0
+libgnome-autoar-0.so.0
+libgnome-autoar-0.so.0.0.0
+libgnome-bluetooth.so.13
+libgnome-bluetooth.so.13.0.2
+libgnome-desktop-3-19
+libgnome-desktop-3.so.19
+libgnome-desktop-3.so.19.0.3
+libgnome-games-support-1.so.3
+libgnome-games-support-1.so.3.0.3
+libgnomekbd.so.8
+libgnomekbd.so.8.0.0
+libgnomekbdui.so.8
+libgnomekbdui.so.8.0.0
+libgnome-menu-3.so.0
+libgnome-menu-3.so.0.0.1
+libgnutls-dane.so.0
+libgnutls-dane.so.0.4.1
+libgnutls.so.30
+libgnutls.so.30.27.0
+libgoa-1.0.so.0
+libgoa-1.0.so.0.0.0
+libgoa-backend-1.0.so.1
+libgoa-backend-1.0.so.1.0.0
+libgobject-2.0.a
+libgobject-2.0.so
+libgobject-2.0.so.0
+libgobject-2.0.so.0.6400.3
+libgom-1.0.so.0
+libgom-1.0.so.0.1.0
+libgomp.so.1
+libgomp.so.1.0.0
+libgpg-error.so.0
+libgpg-error.so.0.28.0
+libgpgmepp.so.6
+libgpgmepp.so.6.10.0
+libgpgme-pthread.so.11
+libgpgme.so.11
+libgpgme.so.11.22.1
+libgphoto2
+libgphoto2_port
+libgphoto2_port.so.12
+libgphoto2_port.so.12.0.0
+libgphoto2.so.6
+libgphoto2.so.6.1.0
+libgpm.so.2
+libgpod.so.4
+libgpod.so.4.3.2
+libgraphene-1.0.so.0
+libgraphene-1.0.so.0.1000.0
+libgraphite2.so
+libgraphite2.so.2.0.0
+libgraphite2.so.3
+libgraphite2.so.3.2.1
+libgrilo-0.3.so.0
+libgrilo-0.3.so.0.312.1
+libgrlnet-0.3.so.0
+libgrlnet-0.3.so.0.312.0
+libgrlpls-0.3.so.0
+libgrlpls-0.3.so.0.312.0
+libgsasl.so.7
+libgsasl.so.7.9.7
+libgsf-1.so.114
+libgsf-1.so.114.0.46
+libgsm.so.1
+libgsm.so.1.0.18
+libgsound.so.0
+libgsound.so.0.0.2
+libgspell-1.so.2
+libgspell-1.so.2.3.0
+libgssapi_krb5.so.2
+libgssapi_krb5.so.2.2
+libgssapi.so.3
+libgssapi.so.3.0.0
+libgssdp-1.2.so.0
+libgssdp-1.2.so.0.0.0
+libgs.so.9
+libgs.so.9.50
+libgstallocators-1.0.so.0
+libgstallocators-1.0.so.0.1602.0
+libgstapp-1.0.so.0
+libgstapp-1.0.so.0.1602.0
+libgstaudio-1.0.so.0
+libgstaudio-1.0.so.0.1602.0
+libgstbase-1.0.so.0
+libgstbase-1.0.so.0.1602.0
+libgstbasecamerabinsrc-1.0.so.0
+libgstbasecamerabinsrc-1.0.so.0.1602.0
+libgstcheck-1.0.so.0
+libgstcheck-1.0.so.0.1602.0
+libgstcontroller-1.0.so.0
+libgstcontroller-1.0.so.0.1602.0
+libgstfft-1.0.so.0
+libgstfft-1.0.so.0.1602.0
+libgstgl-1.0.so.0
+libgstgl-1.0.so.0.1602.0
+libgstnet-1.0.so.0
+libgstnet-1.0.so.0.1602.0
+libgstpbutils-1.0.so.0
+libgstpbutils-1.0.so.0.1602.0
+libgstphotography-1.0.so.0
+libgstphotography-1.0.so.0.1602.0
+libgstreamer-1.0.so.0
+libgstreamer-1.0.so.0.1602.0
+libgstriff-1.0.so.0
+libgstriff-1.0.so.0.1602.0
+libgstrtp-1.0.so.0
+libgstrtp-1.0.so.0.1602.0
+libgstrtsp-1.0.so.0
+libgstrtsp-1.0.so.0.1602.0
+libgstsdp-1.0.so.0
+libgstsdp-1.0.so.0.1602.0
+libgsttag-1.0.so.0
+libgsttag-1.0.so.0.1602.0
+libgstvideo-1.0.so.0
+libgstvideo-1.0.so.0.1602.0
+libgthread-2.0.a
+libgthread-2.0.so
+libgthread-2.0.so.0
+libgthread-2.0.so.0.6400.3
+libgtk2.0-0
+libgtk-3-0
+libgtk3-nocsd.so.0
+libgtk-3.so
+libgtk-3.so.0
+libgtk-3.so.0.2404.16
+libgtkmm-3.0.so.1
+libgtkmm-3.0.so.1.1.0
+libgtksourceview-4.so.0
+libgtksourceview-4.so.0.0.0
+libgtk-x11-2.0.so.0
+libgtk-x11-2.0.so.0.2400.32
+libgtop-2.0.so.11
+libgtop-2.0.so.11.0.1
+libgudev-1.0.so.0
+libgudev-1.0.so.0.2.0
+libguile-2.2.so.1
+libguile-2.2.so.1.4.2
+libgupnp-1.2.so.0
+libgupnp-1.2.so.0.0.0
+libgupnp-av-1.0.so.2
+libgupnp-av-1.0.so.2.0.0
+libgupnp-dlna-2.0.so.3
+libgupnp-dlna-2.0.so.3.0.0
+libgupnp-dlna-gst-2.0.so.3
+libgupnp-dlna-gst-2.0.so.3.0.0
+libgusb.so.2
+libgusb.so.2.0.10
+libgweather-3.so.16
+libgweather-3.so.16.0.0
+libgxps.so.2
+libgxps.so.2.2.3
+libHalf.so.24
+libHalf.so.24.0.0
+libhandy-0.0.so.0
+libharfbuzz.a
+libharfbuzz-gobject.a
+libharfbuzz-gobject.so
+libharfbuzz-gobject.so.0
+libharfbuzz-gobject.so.0.20600.4
+libharfbuzz-icu.a
+libharfbuzz-icu.so
+libharfbuzz-icu.so.0
+libharfbuzz-icu.so.0.20600.4
+libharfbuzz.so
+libharfbuzz.so.0
+libharfbuzz.so.0.20600.4
+libhcrypto.so.4
+libhcrypto.so.4.1.0
+libheimbase.so.1
+libheimbase.so.1.0.0
+libheimntlm.so.0
+libheimntlm.so.0.1.0
+libhistory.so.8
+libhistory.so.8.0
+libhogweed.so.5
+libhogweed.so.5.0
+libhpdiscovery.so.0
+libhpdiscovery.so.0.0.1
+libhpipp.so.0
+libhpipp.so.0.0.1
+libhpip.so.0
+libhpip.so.0.0.1
+libhpmud.so.0
+libhpmud.so.0.0.6
+libhunspell-1.7.so.0
+libhunspell-1.7.so.0.0.1
+libhx509.so.5
+libhx509.so.5.0.0
+libhyphen.so.0
+libhyphen.so.0.3.0
+libI810XvMC.so.1
+libI810XvMC.so.1.0.0
+libibus-1.0.so.5
+libibus-1.0.so.5.0.522
+libical_cxx.so.3
+libical_cxx.so.3.0.8
+libical-glib.so.3
+libical-glib.so.3.0.8
+libical.so.3
+libical.so.3.0.8
+libicalss_cxx.so.3
+libicalss_cxx.so.3.0.8
+libicalss.so.3
+libicalss.so.3.0.8
+libicalvcal.so.3
+libicalvcal.so.3.0.8
+libICE.a
+libICE.so
+libICE.so.6
+libICE.so.6.3.0
+libicudata.a
+libicudata.so
+libicudata.so.66
+libicudata.so.66.1
+libicui18n.a
+libicui18n.so
+libicui18n.so.66
+libicui18n.so.66.1
+libicuio.a
+libicuio.so
+libicuio.so.66
+libicuio.so.66.1
+libicutest.a
+libicutest.so
+libicutest.so.66
+libicutest.so.66.1
+libicutu.a
+libicutu.so
+libicutu.so.66
+libicutu.so.66.1
+libicuuc.a
+libicuuc.so
+libicuuc.so.66
+libicuuc.so.66.1
+libidn2.so.0
+libidn2.so.0.3.6
+libidn.so.11
+libidn.so.11.6.16
+libiec61883.so.0
+libiec61883.so.0.1.1
+libieee1284.so.3
+libieee1284.so.3.2.2
+libIex-2_3.so.24
+libIex-2_3.so.24.0.0
+libIexMath-2_3.so.24
+libIexMath-2_3.so.24.0.0
+libigdgmm.so.11
+libigdgmm.so.11.1.0
+libijs-0.35.so
+libIlmImf-2_3.so.24
+libIlmImf-2_3.so.24.0.0
+libIlmImfUtil-2_3.so.24
+libIlmImfUtil-2_3.so.24.0.0
+libIlmThread-2_3.so.24
+libIlmThread-2_3.so.24.0.0
+libimagequant.so.0
+libImath-2_3.so.24
+libImath-2_3.so.24.0.0
+libimobiledevice.so.6
+libimobiledevice.so.6.0.0
+libinproctrace.so
+libinput.so.10
+libinput.so.10.13.0
+libIntelXvMC.so.1
+libIntelXvMC.so.1.0.0
+libiomp5.so
+libip4tc.so.2
+libip4tc.so.2.0.0
+libip6tc.so.2
+libip6tc.so.2.0.0
+libiperf.so.0
+libiperf.so.0.0.0
+libipmctl.so.4
+libipmctl.so.4.0.0
+libIPMIlanserv.so.0
+libIPMIlanserv.so.0.0.1
+libipset.so.13
+libipset.so.13.1.0
+libirs.so.1600
+libirs.so.1600.0.1
+libisccc.so.1600
+libisccc.so.1600.0.1
+libisccfg.so.1600
+libisccfg.so.1600.0.1
+libisc-export.so.1105
+libisc-export.so.1105.0.0
+libisc.so.1601
+libisc.so.1601.0.0
+libisl.so.22
+libisl.so.22.0.1
+libitm.so.1
+libitm.so.1.0.0
+libiw.so.30
+libjacknet.so.0
+libjacknet.so.0.1.0
+libjackserver.so.0
+libjackserver.so.0.1.0
+libjack.so.0
+libjack.so.0.1.0
+libjansson.so.4
+libjansson.so.4.11.1
+libjavascriptcoregtk-4.0.so.18
+libjavascriptcoregtk-4.0.so.18.16.7
+libjbig2dec.so.0
+libjbig2dec.so.0.0.0
+libjbig.so.0
+libjpeg.so.62
+libjpeg.so.62.2.0
+libjpeg.so.8
+libjpeg.so.8.2.2
+libjq.so.1
+libjq.so.1.0.4
+libjsoncpp.so.1
+libjsoncpp.so.1.7.4
+libjson-c.so.4
+libjson-c.so.4.0.0
+libjson-glib-1.0.so.0
+libjson-glib-1.0.so.0.400.4
+libk5crypto.so.3
+libk5crypto.so.3.1
+libkeyutils.so.1
+libkeyutils.so.1.8
+libkmod.so.2
+libkmod.so.2.3.5
+libkpathsea.so.6
+libkpathsea.so.6.3.1
+libkrb5.so.26
+libkrb5.so.26.0.0
+libkrb5.so.3
+libkrb5.so.3.3
+libkrb5support.so.0
+libkrb5support.so.0.1
+libksba.so.8
+libksba.so.8.11.6
+libkyotocabinet.so.16
+libkyotocabinet.so.16.13.0
+liblangtag.so.1
+liblangtag.so.1.4.1
+liblber-2.4.so.2
+liblber-2.4.so.2.10.12
+liblcms2.so.2
+liblcms2.so.2.0.8
+libldap-2.4.so.2
+libldap_r-2.4.so.2
+libldap_r-2.4.so.2.10.12
+libldb.so.2
+libldb.so.2.0.10
+liblirc_client.so.0
+liblirc_client.so.0.6.0
+libLLVM-10.so
+libLLVM-10.so.1
+libLLVM-8.0.1.so.1
+libLLVM-8.so
+libLLVM-8.so.1
+libLLVM-9.so
+libLLVM-9.so.1
+liblmdb.so.0
+liblmdb.so.0.0.0
+liblouis.so.20
+liblouis.so.20.0.0
+liblouisutdml.so.9
+liblouisutdml.so.9.1.0
+liblqr-1.so.0
+liblqr-1.so.0.3.2
+liblsan.so.0
+liblsan.so.0.0.0
+libltdl.a
+libltdl.la
+libltdl.so
+libltdl.so.7
+libltdl.so.7.3.1
+liblua5.2-c++.so.0
+liblua5.2-c++.so.0.0.0
+liblua5.2.so.0
+liblua5.2.so.0.0.0
+liblua5.3-c++.so.0
+liblua5.3-c++.so.0.0.0
+liblua5.3.so.0
+liblua5.3.so.0.0.0
+liblz4.so.1
+liblz4.so.1.9.2
+liblzma.so.5
+liblzma.so.5.2.4
+liblzo2.so.2
+liblzo2.so.2.0.0
+libm-2.31.a
+libm-2.31.so
+libm.a
+libMagickCore-6.Q16.so.6
+libMagickCore-6.Q16.so.6.0.0
+libMagickWand-6.Q16.so.6
+libMagickWand-6.Q16.so.6.0.0
+libmagic.so.1
+libmagic.so.1.0.0
+libmailutils.so.6
+libmailutils.so.6.0.0
+libmaxminddb.so.0
+libmaxminddb.so.0.0.7
+libmbim-glib.so.4
+libmbim-glib.so.4.4.2
+libmcheck.a
+libmediaart-2.0.so.0
+libmediaart-2.0.so.0.904.0
+libmemusage.so
+libmenu.a
+libmenu.so
+libmenu.so.6
+libmenu.so.6.2
+libmenuw.a
+libmenuw.so
+libmenuw.so.6
+libmenuw.so.6.2
+libmessaging-menu.so.0
+libmessaging-menu.so.0.0.0
+libmhash.so.2
+libmhash.so.2.0.1
+libminiupnpc.so.17
+libmm-glib.so.0
+libmm-glib.so.0.5.0
+libmnl.so.0
+libmnl.so.0.2.0
+libmount.a
+libmount.so
+libmount.so.1
+libmount.so.1.1.0
+libmozjs-68.so.0
+libmozjs-68.so.68
+libmozjs-68.so.68.6.0
+libmp3lame.so.0
+libmp3lame.so.0.0.0
+libmpc.so.3
+libmpc.so.3.1.0
+libmpdec.so.2
+libmpdec.so.2.4.2
+libmpfr.so.6
+libmpfr.so.6.0.2
+libmpg123.so.0
+libmpg123.so.0.44.10
+libm_pic.a
+libm_pic.map
+libmpx.so.2
+libmpx.so.2.0.1
+libmpxwrappers.so.2
+libmpxwrappers.so.2.0.1
+libm.so
+libm.so.6
+libmspack.so.0
+libmspack.so.0.1.0
+libmspub-0.1.so.1
+libmspub-0.1.so.1.0.4
+libmtdev.so.1
+libmtdev.so.1.0.0
+libmtp.so.9
+libmtp.so.9.4.0
+libmu_auth.so.6
+libmu_auth.so.6.0.0
+libmuaux.so.6
+libmuaux.so.6.0.0
+libmu_dbm.so.6
+libmu_dbm.so.6.0.0
+libmu_dotmail.so.6
+libmu_dotmail.so.6.0.0
+libmu_imap.so.6
+libmu_imap.so.6.0.0
+libmu_maildir.so.6
+libmu_maildir.so.6.0.0
+libmu_mailer.so.6
+libmu_mailer.so.6.0.0
+libmu_mbox.so.6
+libmu_mbox.so.6.0.0
+libmu_mh.so.6
+libmu_mh.so.6.0.0
+libmu_pop.so.6
+libmu_pop.so.6.0.0
+libmu_py.so.6
+libmu_py.so.6.0.0
+libmu_scm.so.6
+libmu_scm.so.6.0.0
+libmu_sieve.so.6
+libmu_sieve.so.6.0.0
+libmutter-6.so.0
+libmutter-6.so.0.0.0
+libmvec-2.31.so
+libmvec.a
+libmvec_pic.a
+libmvec_pic.map
+libmvec.so
+libmvec.so.1
+libmwaw-0.3.so.3
+libmwaw-0.3.so.3.0.15
+libmysqlclient.so.21
+libmysqlclient.so.21.1.21
+libmythes-1.2.so.0
+libmythes-1.2.so.0.0.0
+libnatpmp.so.1
+libnautilus-extension.so.1
+libnautilus-extension.so.1.5.0
+libncurses++.a
+libncurses.a
+libncurses.so
+libncurses.so.6
+libncurses.so.6.2
+libncurses++w.a
+libncursesw.a
+libncursesw.so
+libncursesw.so.6
+libncursesw.so.6.2
+libndctl.so.6
+libndctl.so.6.16.0
+libndp.so.0
+libndp.so.0.1.1
+libndr-krb5pac.so.0
+libndr-krb5pac.so.0.0.1
+libndr-nbt.so.0
+libndr-nbt.so.0.0.1
+libndr.so.0
+libndr.so.0.2.0
+libndr-standard.so.0
+libndr-standard.so.0.0.1
+libneon-gnutls.so.27
+libneon-gnutls.so.27.3.2
+libnetapi.so.0
+libnetfilter_conntrack.so.3
+libnetfilter_conntrack.so.3.7.0
+libnetplan.so.0.0
+libnetsnmpagent.so.35
+libnetsnmpagent.so.35.0.0
+libnetsnmphelpers.so.35
+libnetsnmphelpers.so.35.0.0
+libnetsnmpmibs.so.35
+libnetsnmpmibs.so.35.0.0
+libnetsnmp.so.35
+libnetsnmp.so.35.0.0
+libnetsnmptrapd.so.35
+libnetsnmptrapd.so.35.0.0
+libnet.so.1
+libnet.so.1.7.0
+libnettle.so.7
+libnettle.so.7.0
+libnewt.so.0.52
+libnewt.so.0.52.21
+libnfnetlink.so.0
+libnfnetlink.so.0.2.0
+libnfs.so.13
+libnfs.so.13.0.0
+libnftnl.so.11
+libnftnl.so.11.2.0
+libnghttp2.so.14
+libnghttp2.so.14.19.0
+libnl-3.so.200
+libnl-3.so.200.26.0
+libnl-genl-3.so.200
+libnl-genl-3.so.200.26.0
+libnl-route-3.so.200
+libnl-route-3.so.200.26.0
+libnma.so.0
+libnma.so.0.0.0
+libnm.so.0
+libnm.so.0.1.0
+libnotify.so.4
+libnotify.so.4.0.0
+libnpth.so.0
+libnpth.so.0.1.2
+libnsl-2.31.so
+libnsl.a
+libnsl_pic.a
+libnsl_pic.map
+libnsl.so
+libnsl.so.1
+libnspr4.so
+libnss3.so
+libnss_compat-2.31.so
+libnss_compat_pic.a
+libnss_compat_pic.map
+libnss_compat.so
+libnss_compat.so.2
+libnss_dns-2.31.so
+libnss_dns_pic.a
+libnss_dns_pic.map
+libnss_dns.so
+libnss_dns.so.2
+libnss_files-2.31.so
+libnss_files_pic.a
+libnss_files_pic.map
+libnss_files.so
+libnss_files.so.2
+libnss_hesiod-2.31.so
+libnss_hesiod_pic.a
+libnss_hesiod_pic.map
+libnss_hesiod.so
+libnss_hesiod.so.2
+libnss_mdns4_minimal.so.2
+libnss_mdns4.so.2
+libnss_mdns6_minimal.so.2
+libnss_mdns6.so.2
+libnss_mdns_minimal.so.2
+libnss_mdns.so.2
+libnss_nis-2.31.so
+libnss_nis_pic.a
+libnss_nis_pic.map
+libnss_nisplus-2.31.so
+libnss_nisplus_pic.a
+libnss_nisplus_pic.map
+libnss_nisplus.so
+libnss_nisplus.so.2
+libnss_nis.so
+libnss_nis.so.2
+libns.so.1601
+libns.so.1601.0.0
+libnss_systemd.so.2
+libnssutil3.so
+libntfs-3g.so.883
+libntfs-3g.so.883.0.0
+libntlm.so.0
+libntlm.so.0.0.20
+libnuma.so.1
+libnuma.so.1.0.0
+libnvcuvid.so
+libnvcuvid.so.1
+libnvcuvid.so.430.64
+libnvidia-allocator.so
+libnvidia-allocator.so.1
+libnvidia-allocator.so.440.100
+libnvidia-cbl.so.430.64
+libnvidia-cfg.so
+libnvidia-cfg.so.1
+libnvidia-cfg.so.430.64
+libnvidia-compiler.so.430.64
+libnvidia-eglcore.so.430.64
+libnvidia-egl-wayland.so.1
+libnvidia-egl-wayland.so.1.1.2
+libnvidia-encode.so
+libnvidia-encode.so.1
+libnvidia-encode.so.430.64
+libnvidia-fatbinaryloader.so.430.64
+libnvidia-fbc.so
+libnvidia-fbc.so.1
+libnvidia-fbc.so.430.64
+libnvidia-glcore.so.430.64
+libnvidia-glsi.so.430.64
+libnvidia-glvkspirv.so.430.64
+libnvidia-gtk2.so.430.64
+libnvidia-gtk3.so.430.64
+libnvidia-ifr.so
+libnvidia-ifr.so.1
+libnvidia-ifr.so.430.64
+libnvidia-ml.so
+libnvidia-ml.so.1
+libnvidia-ml.so.430.64
+libnvidia-opencl.so.1
+libnvidia-opencl.so.430.64
+libnvidia-opticalflow.so
+libnvidia-opticalflow.so.1
+libnvidia-opticalflow.so.430.64
+libnvidia-ptxjitcompiler.so
+libnvidia-ptxjitcompiler.so.1
+libnvidia-ptxjitcompiler.so.430.64
+libnvidia-rtcore.so.430.64
+libnvidia-tls.so.430.64
+libnvoptix.so.1
+libnvoptix.so.430.64
+libobjc_gc.so.4
+libobjc_gc.so.4.0.0
+libobjc.so.4
+libobjc.so.4.0.0
+libodbccr.so.1
+libodbccr.so.2
+libodbccr.so.2.0.0
+libodbc.so.1
+libodbc.so.2
+libodbc.so.2.0.0
+libodfgen-0.1.so.1
+libodfgen-0.1.so.1.0.7
+libogg.so.0
+libogg.so.0.8.4
+libomp5.so
+libomp.so.5
+libonig.so.5
+libonig.so.5.0.0
+libopcodes-2.34-system.so
+libopenal.so.1
+libopenal.so.1.19.1
+libopencc.so
+libopencc.so.2
+libopencc.so.2.0.0
+libOpenCL.so
+libOpenCL.so.1
+libOpenCL.so.1.0
+libOpenCL.so.1.0.0
+libOpenGL.so
+libOpenGL.so.0
+libOpenGL.so.0.0.0
+libOpenIPMIcmdlang.so.0
+libOpenIPMIcmdlang.so.0.0.5
+libOpenIPMIposix.so.0
+libOpenIPMIposix.so.0.0.1
+libOpenIPMIpthread.so.0
+libOpenIPMIpthread.so.0.0.1
+libOpenIPMI.so.0
+libOpenIPMI.so.0.0.5
+libOpenIPMIui.so.1
+libOpenIPMIui.so.1.0.1
+libOpenIPMIutils.so.0
+libOpenIPMIutils.so.0.0.1
+libopenjp2.so.2.3.1
+libopenjp2.so.7
+libopus.so.0
+libopus.so.0.8.0
+liborc-0.4.so.0
+liborc-0.4.so.0.31.0
+liborc-test-0.4.so.0
+liborc-test-0.4.so.0.31.0
+liborcus-0.15.so.0
+liborcus-0.15.so.0.0.0
+liborcus-mso-0.15.so.0
+liborcus-mso-0.15.so.0.0.0
+liborcus-parser-0.15.so.0
+liborcus-parser-0.15.so.0.0.0
+libOSMesa.so.6
+libOSMesa.so.8
+libOSMesa.so.8.0.0
+libp11-kit.so.0
+libp11-kit.so.0.3.0
+libpackagekit-glib2.so.18
+libpackagekit-glib2.so.18.1.3
+libpagemaker-0.0.so.0
+libpagemaker-0.0.so.0.0.4
+libpamc.so.0
+libpamc.so.0.82.1
+libpam_misc.so.0
+libpam_misc.so.0.82.1
+libpam.so.0
+libpam.so.0.84.2
+libpanel.a
+libpanel.so
+libpanel.so.6
+libpanel.so.6.2
+libpanelw.a
+libpanelw.so
+libpanelw.so.6
+libpanelw.so.6.2
+libpango-1.0.so
+libpango-1.0.so.0
+libpango-1.0.so.0.4400.7
+libpangocairo-1.0.so
+libpangocairo-1.0.so.0
+libpangocairo-1.0.so.0.4400.7
+libpangoft2-1.0.so
+libpangoft2-1.0.so.0
+libpangoft2-1.0.so.0.4400.7
+libpangomm-1.4.so.1
+libpangomm-1.4.so.1.0.30
+libpangoxft-1.0.so
+libpangoxft-1.0.so.0
+libpangoxft-1.0.so.0.4400.7
+libpaper.so.1
+libpaper.so.1.1.2
+libparted-fs-resize.so.0
+libparted-fs-resize.so.0.0.2
+libparted.so.2
+libparted.so.2.0.2
+libpcap.so.0.8
+libpcap.so.1.9.1
+libpcaudio.so.0
+libpcaudio.so.0.0.1
+libpciaccess.a
+libpciaccess.so
+libpciaccess.so.0
+libpciaccess.so.0.11.1
+libpci.so.3
+libpci.so.3.6.4
+libpcprofile.so
+libpcre16.a
+libpcre16.so
+libpcre16.so.3
+libpcre16.so.3.13.3
+libpcre2-16.a
+libpcre2-16.so
+libpcre2-16.so.0
+libpcre2-16.so.0.9.0
+libpcre2-32.a
+libpcre2-32.so
+libpcre2-32.so.0
+libpcre2-32.so.0.9.0
+libpcre2-8.a
+libpcre2-8.so
+libpcre2-8.so.0
+libpcre2-8.so.0.9.0
+libpcre2-posix.a
+libpcre2-posix.so
+libpcre2-posix.so.2
+libpcre2-posix.so.2.0.3
+libpcre32.a
+libpcre32.so
+libpcre32.so.3
+libpcre32.so.3.13.3
+libpcre.a
+libpcrecpp.a
+libpcrecpp.so
+libpcrecpp.so.0
+libpcrecpp.so.0.0.1
+libpcreposix.a
+libpcreposix.so
+libpcreposix.so.3
+libpcreposix.so.3.13.3
+libpcre.so
+libpcre.so.3
+libpcre.so.3.13.3
+libpcsclite.so.1
+libpcsclite.so.1.0.0
+libpeas-1.0
+libpeas-1.0.so.0
+libpeas-1.0.so.0.2600.0
+libpeas-gtk-1.0.so.0
+libpeas-gtk-1.0.so.0.2600.0
+libperl.so.5.30
+libperl.so.5.30.0
+libpfm.so.4
+libpfm.so.4.10.1
+libphonenumber.so.7
+libphonenumber.so.7.0
+libpinyin
+libpinyin.so.13
+libpinyin.so.13.0.0
+libpipeline.so.1
+libpipeline.so.1.5.2
+libpixman-1.a
+libpixman-1.so
+libpixman-1.so.0
+libpixman-1.so.0.38.4
+libpkcs11-helper.so.1
+libpkcs11-helper.so.1.0.0
+libplc4.so
+libplds4.so
+libplist.so.3
+libplist.so.3.2.0
+libply-boot-client.so.5
+libply-boot-client.so.5.0.0
+libply.so.5
+libply.so.5.0.0
+libply-splash-core.so.5
+libply-splash-core.so.5.0.0
+libply-splash-graphics.so.5
+libply-splash-graphics.so.5.0.0
+libpng16.a
+libpng16.so
+libpng16.so.16
+libpng16.so.16.37.0
+libpng.a
+libpng.so
+libpolkit-agent-1.so.0
+libpolkit-agent-1.so.0.0.0
+libpolkit-gobject-1.so.0
+libpolkit-gobject-1.so.0.0.0
+libpoppler-cpp.so.0
+libpoppler-cpp.so.0.7.0
+libpoppler-glib.so.8
+libpoppler-glib.so.8.15.0
+libpoppler.so.97
+libpoppler.so.97.0.0
+libpopt.so.0
+libpopt.so.0.0.0
+libpresage.so.1
+libpresage.so.1.1.1
+libprocps.so.8
+libprocps.so.8.0.2
+libprotobuf.so.17
+libprotobuf.so.17.0.0
+libproxy
+libproxy.so.1
+libproxy.so.1.0.0
+libpsl.so.5
+libpsl.so.5.3.2
+libpspell.so.15
+libpspell.so.15.3.1
+libptexenc.so.1
+libptexenc.so.1.3.7
+libpthread-2.31.so
+libpthread.a
+libpthread.so
+libpthread.so.0
+libpulse-mainloop-glib.so.0
+libpulse-mainloop-glib.so.0.0.5
+libpulse-simple.so.0
+libpulse-simple.so.0.1.1
+libpulse.so.0
+libpulse.so.0.21.2
+libpwquality.so.1
+libpwquality.so.1.0.2
+libpyglib-2.0-python2.7.so.0
+libpyglib-2.0-python2.7.so.0.0.0
+libpytalloc-util.cpython-38-x86-64-linux-gnu.so.2
+libpytalloc-util.cpython-38-x86-64-linux-gnu.so.2.3.0
+libpython3.8.so.1
+libpython3.8.so.1.0
+libqmi-glib.so.5
+libqmi-glib.so.5.6.0
+libqpdf.so.26
+libqpdf.so.26.1.1
+libqqwing.so.2
+libqqwing.so.2.1.0
+libQt5Core.so.5
+libQt5Core.so.5.12
+libQt5Core.so.5.12.8
+libQt5DBus.so.5
+libQt5DBus.so.5.12
+libQt5DBus.so.5.12.8
+libQt5EglFSDeviceIntegration.so.5
+libQt5EglFSDeviceIntegration.so.5.12
+libQt5EglFSDeviceIntegration.so.5.12.8
+libQt5EglFsKmsSupport.so.5
+libQt5EglFsKmsSupport.so.5.12
+libQt5EglFsKmsSupport.so.5.12.8
+libQt5Gui.so.5
+libQt5Gui.so.5.12
+libQt5Gui.so.5.12.8
+libQt5Network.so.5
+libQt5Network.so.5.12
+libQt5Network.so.5.12.8
+libQt5Positioning.so.5
+libQt5Positioning.so.5.12
+libQt5Positioning.so.5.12.8
+libQt5PrintSupport.so.5
+libQt5PrintSupport.so.5.12
+libQt5PrintSupport.so.5.12.8
+libQt5Qml.so.5
+libQt5Qml.so.5.12
+libQt5Qml.so.5.12.8
+libQt5Quick.so.5
+libQt5Quick.so.5.12
+libQt5Quick.so.5.12.8
+libQt5Sensors.so.5
+libQt5Sensors.so.5.12
+libQt5Sensors.so.5.12.8
+libQt5Sql.so.5
+libQt5Sql.so.5.12
+libQt5Sql.so.5.12.8
+libQt5Svg.so.5
+libQt5Svg.so.5.12
+libQt5Svg.so.5.12.8
+libQt5WebChannel.so.5
+libQt5WebChannel.so.5.12
+libQt5WebChannel.so.5.12.8
+libQt5WebKit.so.5
+libQt5WebKit.so.5.212.0
+libQt5WebKitWidgets.so.5
+libQt5WebKitWidgets.so.5.212.0
+libQt5Widgets.so.5
+libQt5Widgets.so.5.12
+libQt5Widgets.so.5.12.8
+libQt5X11Extras.so.5
+libQt5X11Extras.so.5.12
+libQt5X11Extras.so.5.12.8
+libQt5XcbQpa.so.5
+libQt5XcbQpa.so.5.12
+libQt5XcbQpa.so.5.12.8
+libQt5Xml.so.5
+libQt5Xml.so.5.12
+libQt5Xml.so.5.12.8
+libquadmath.so.0
+libquadmath.so.0.0.0
+libraptor2.so.0
+libraptor2.so.0.0.0
+librasqal.so.3
+librasqal.so.3.0.0
+libraw1394.so.11
+libraw1394.so.11.1.0
+libraw_r.so.19
+libraw_r.so.19.0.2
+libraw.so.19
+libraw.so.19.0.2
+librdf.so.0
+librdf.so.0.0.0
+libreadline.so.8
+libreadline.so.8.0
+libresolv-2.31.so
+libresolv.a
+libresolv_pic.a
+libresolv_pic.map
+libresolv.so
+libresolv.so.2
+librest-0.7.so.0
+librest-0.7.so.0.0.0
+librevenge-0.0.so.0
+librevenge-0.0.so.0.0.4
+librevenge-generators-0.0.so.0
+librevenge-generators-0.0.so.0.0.4
+librevenge-stream-0.0.so.0
+librevenge-stream-0.0.so.0.0.4
+librhythmbox-core.so.10
+librhythmbox-core.so.10.0.0
+libroken.so.18
+libroken.so.18.1.0
+librom1394.so.0
+librom1394.so.0.3.0
+librpcsvc.a
+librrd.so.8
+librrd.so.8.2.1
+librsvg-2.so.2
+librsvg-2.so.2.47.0
+librsync.so.2
+librsync.so.2.0.2
+librt-2.31.so
+librt.a
+librtmp.so.1
+librt_pic.a
+librt_pic.map
+librt.so
+librt.so.1
+librygel-core-2.6.so.2
+librygel-core-2.6.so.2.0.4
+librygel-db-2.6.so.2
+librygel-db-2.6.so.2.0.4
+librygel-renderer-2.6.so.2
+librygel-renderer-2.6.so.2.0.4
+librygel-server-2.6.so.2
+librygel-server-2.6.so.2.0.4
+libsamba-credentials.so.0
+libsamba-credentials.so.0.0.1
+libsamba-errors.so.1
+libsamba-hostconfig.so.0
+libsamba-hostconfig.so.0.0.1
+libsamba-passdb.so.0
+libsamba-passdb.so.0.28.0
+libsamba-policy.cpython-38-x86-64-linux-gnu.so.0
+libsamba-policy.cpython-38-x86-64-linux-gnu.so.0.0.1
+libsamba-util.so.0
+libsamba-util.so.0.0.1
+libsamdb.so.0
+libsamdb.so.0.0.1
+libsamplerate.so.0
+libsamplerate.so.0.1.8
+libsane.so.1
+libsane.so.1.0.29
+libsasl2.so.2
+libsasl2.so.2.0.25
+libsbc.so.1
+libsbc.so.1.2.2
+libsctp.so.1
+libsctp.so.1.0.18
+libSDL2-2.0.so.0
+libSDL2-2.0.so.0.10.0
+libseccomp.so.2
+libseccomp.so.2.4.3
+libsecret-1.so.0
+libsecret-1.so.0.0.0
+libSegFault.so
+libselinux.a
+libselinux.so
+libselinux.so.1
+libsemanage.so.1
+libsensors.so.5
+libsensors.so.5.0.0
+libsepol.a
+libsepol.so
+libsepol.so.1
+libsgutils2.so.2
+libsgutils2.so.2.0.0
+libshine.so.3
+libshine.so.3.0.1
+libshotwell-authenticator.so
+libshotwell-authenticator.so.0
+libshotwell-authenticator.so.0.30.10
+libshotwell-plugin-common.so
+libshotwell-plugin-common.so.0
+libshotwell-plugin-common.so.0.30.10
+libshotwell-plugin-dev-1.0.so
+libshotwell-plugin-dev-1.0.so.0
+libshotwell-plugin-dev-1.0.so.0.30.10
+libshout.so.3
+libshout.so.3.2.0
+libsigc-2.0.so.0
+libsigc-2.0.so.0.0.0
+libsigsegv.so.2
+libsigsegv.so.2.0.5
+libslang.so.2
+libslang.so.2.3.2
+libSM.a
+libsmartcols.so.1
+libsmartcols.so.1.1.0
+libsmbclient.so.0
+libsmbclient.so.0.5.0
+libsmbconf.so.0
+libsmbios_c.so.2
+libsmbios_c.so.2.2.1
+libsmbldap.so.2
+libsmime3.so
+libSM.so
+libSM.so.6
+libSM.so.6.0.1
+libsnapd-glib.so.1
+libsnapd-glib.so.1.0.0
+libsnappy.so.1
+libsnappy.so.1.1.8
+libsndfile.so.1
+libsndfile.so.1.0.28
+libsndio.so.7.0
+libsnmp.so.35
+libsnmp.so.35.0.0
+libsodium.so.23
+libsodium.so.23.3.0
+libsonic.so.0
+libsonic.so.0.2.0
+libsoup-2.4.so.1
+libsoup-2.4.so.1.9.0
+libsoup-gnome-2.4.so.1
+libsoup-gnome-2.4.so.1.9.0
+libsoxr.so.0
+libsoxr.so.0.1.2
+libspectre.so.1
+libspectre.so.1.1.8
+libspeechd.so.2
+libspeechd.so.2.6.0
+libspeexdsp.so.1
+libspeexdsp.so.1.5.0
+libspeex.so.1
+libspeex.so.1.5.0
+libsqlite3.so.0
+libsqlite3.so.0.8.6
+libssh.so.4
+libssh.so.4.8.4
+libssl3.so
+libssl.so.1.1
+libss.so.2
+libss.so.2.0
+libstartup-notification-1.so.0
+libstartup-notification-1.so.0.0.0
+libstb.so.0
+libstb.so.0.0
+libstdc++.so.6
+libstdc++.so.6.0.28
+libstemmer.so.0d
+libstemmer.so.0d.0.0
+libsuitesparseconfig.so.5
+libsuitesparseconfig.so.5.7.1
+libswresample.so.3
+libswresample.so.3.5.100
+libsynctex.so.2
+libsynctex.so.2.0.0
+libsysmetrics.so.1
+libsystemd.so.0
+libsystemd.so.0.28.0
+libtag.so.1
+libtag.so.1.17.0
+libtalloc.so.2
+libtalloc.so.2.3.0
+libtasn1.so.6
+libtasn1.so.6.6.0
+libtdb.so.1
+libtdb.so.1.4.2
+libteamdctl.so.0
+libteamdctl.so.0.1.5
+libTECkit_Compiler.so.0
+libTECkit_Compiler.so.0.0.0
+libTECkit.so.0
+libTECkit.so.0.0.0
+libtepl-4.so.0
+libtepl-4.so.0.1.0
+libtermcap.a
+libtermcap.so
+libtevent.so.0
+libtevent.so.0.10.1
+libtevent-util.so.0
+libtevent-util.so.0.0.1
+libtexlua53.so.5
+libtexlua53.so.5.3.4
+libtexluajit.so.2
+libtexluajit.so.2.1.0
+libthai.a
+libthai.so
+libthai.so.0
+libthai.so.0.3.1
+libtheoradec.so.1
+libtheoradec.so.1.1.4
+libtheoraenc.so.1
+libtheoraenc.so.1.1.2
+libtheora.so.0
+libtheora.so.0.3.10
+libthread_db-1.0.so
+libthread_db_pic.a
+libthread_db_pic.map
+libthread_db.so
+libthread_db.so.1
+libtic.a
+libtic.so
+libtic.so.6
+libtic.so.6.2
+libtiff.so.5
+libtiff.so.5.5.0
+libtinfo.a
+libtinfo.so
+libtinfo.so.6
+libtinfo.so.6.2
+libtinyxml.so.2.6.2
+libtirpc.so.3
+libtirpc.so.3.0.0
+libtotem-plparser-mini.so.18
+libtotem-plparser-mini.so.18.3.4
+libtotem-plparser.so.18
+libtotem-plparser.so.18.3.4
+libtotem.so.0
+libtotem.so.0.0.0
+libtracker-control-2.0.so.0
+libtracker-control-2.0.so.0.304.0
+libtracker-miner-2.0.so.0
+libtracker-miner-2.0.so.0.304.0
+libtracker-sparql-2.0.so.0
+libtracker-sparql-2.0.so.0.304.0
+libtsan_preinit.o
+libtsan.so.0
+libtsan.so.0.0.0
+libtss2-esys.so.0
+libtss2-esys.so.0.0.0
+libtss2-mu.so.0
+libtss2-mu.so.0.0.0
+libtss2-rc.so.0
+libtss2-rc.so.0.0.0
+libtss2-sys.so.0
+libtss2-sys.so.0.0.0
+libtss2-tcti-device.so.0
+libtss2-tcti-device.so.0.0.0
+libtss2-tctildr.so.0
+libtss2-tctildr.so.0.0.0
+libtss2-tcti-mssim.so.0
+libtss2-tcti-mssim.so.0.0.0
+libtwolame.so.0
+libtwolame.so.0.0.0
+libubsan.so.1
+libubsan.so.1.0.0
+libuchardet.so.0
+libuchardet.so.0.0.6
+libudev.so.1
+libudev.so.1.6.17
+libudisks2.so.0
+libudisks2.so.0.0.0
+libulockmgr.so.1
+libulockmgr.so.1.0.1
+libunbound.so.8
+libunbound.so.8.1.4
+libunistring.so.2
+libunistring.so.2.1.0
+libunity
+libunity-extras.so.9
+libunity-extras.so.9.0.2
+libunity.so.9
+libunity.so.9.0.2
+libuno_cppuhelpergcc3.so.3
+libuno_cppu.so.3
+libuno_purpenvhelpergcc3.so.3
+libuno_salhelpergcc3.so.3
+libuno_sal.so.3
+libunwind-coredump.so.0
+libunwind-coredump.so.0.0.0
+libunwind-ptrace.so.0
+libunwind-ptrace.so.0.0.0
+libunwind.so.8
+libunwind.so.8.0.1
+libunwind-x86_64.so.8
+libunwind-x86_64.so.8.0.1
+libupower-glib.so.3
+libupower-glib.so.3.0.1
+libusb-1.0.so.0
+libusb-1.0.so.0.2.0
+libusbmuxd.so.6
+libusbmuxd.so.6.0.0
+libutil-2.31.so
+libutil.a
+libutil_pic.a
+libutil_pic.map
+libutil.so
+libutil.so.1
+libuuid.a
+libuuid.so
+libuuid.so.1
+libuuid.so.1.3.0
+libuv.so.1
+libuv.so.1.0.0
+libv4l
+libv4l1.so.0
+libv4l1.so.0.0.0
+libv4l2.so.0
+libv4l2.so.0.0.0
+libv4lconvert0
+libv4lconvert.so.0
+libv4lconvert.so.0.0.0
+libva-drm.so.2
+libva-drm.so.2.700.0
+libva.so.2
+libva.so.2.700.0
+libva-x11.so.2
+libva-x11.so.2.700.0
+libvdpau_nvidia.so
+libvdpau.so.1
+libvdpau.so.1.0.0
+libvisio-0.1.so.1
+libvisio-0.1.so.1.0.7
+libvisual-0.4.so.0
+libvisual-0.4.so.0.0.0
+libvkd3d.so.1
+libvkd3d.so.1.1.0
+libVkLayer_MESA_overlay.so
+libvncclient.so.0.9.12
+libvncclient.so.1
+libvolume_key.so.1
+libvolume_key.so.1.2.3
+libvorbisenc.so.2
+libvorbisenc.so.2.0.11
+libvorbisfile.so.3
+libvorbisfile.so.3.3.7
+libvorbis.so.0
+libvorbis.so.0.4.8
+libvpx.so.6
+libvpx.so.6.2
+libvpx.so.6.2.0
+libvte-2.91.so.0
+libvte-2.91.so.0.6000.3
+libvulkan_intel.so
+libvulkan_radeon.so
+libwacom.so.2
+libwacom.so.2.6.1
+libwavpack.so.1
+libwavpack.so.1.2.1
+libwayland-client.so
+libwayland-client.so.0
+libwayland-client.so.0.3.0
+libwayland-cursor.so
+libwayland-cursor.so.0
+libwayland-cursor.so.0.0.0
+libwayland-egl.so
+libwayland-egl.so.1
+libwayland-egl.so.1.0.0
+libwayland-server.so
+libwayland-server.so.0
+libwayland-server.so.0.1.0
+libwbclient.so.0
+libwbclient.so.0.15
+libwebkit2gtk-4.0.so.37
+libwebkit2gtk-4.0.so.37.44.6
+libwebpdemux.so.2
+libwebpdemux.so.2.0.3
+libwebpmux.so.3
+libwebpmux.so.3.0.1
+libwebp.so.6
+libwebp.so.6.0.2
+libwebrtc_audio_processing.so.1
+libwebrtc_audio_processing.so.1.0.0
+libwhoopsie-preferences.so.0
+libwhoopsie-preferences.so.0.0.0
+libwhoopsie.so.0
+libwhoopsie.so.0.0
+libwind.so.0
+libwind.so.0.0.0
+libwinpr2.so.2
+libwinpr2.so.2.1.1
+libwmf-0.2.so.7
+libwmf-0.2.so.7.1.0
+libwmflite-0.2.so.7
+libwmflite-0.2.so.7.0.1
+libwnck-3.so.0
+libwnck-3.so.0.3.0
+libwoff2common.so.1.0.2
+libwoff2dec.so.1.0.2
+libwoff2enc.so.1.0.2
+libwpd-0.10.so.10
+libwpd-0.10.so.10.0.3
+libwpg-0.3.so.3
+libwpg-0.3.so.3.0.3
+libwps-0.4.so.4
+libwps-0.4.so.4.0.10
+libwrap.so.0
+libwrap.so.0.7.6
+libwx_baseu-3.0.so.0
+libwx_baseu-3.0.so.0.4.0
+libwx_baseu_net-3.0.so.0
+libwx_baseu_net-3.0.so.0.4.0
+libwx_baseu_xml-3.0.so.0
+libwx_baseu_xml-3.0.so.0.4.0
+libwx_gtk3u_adv-3.0.so.0
+libwx_gtk3u_adv-3.0.so.0.4.0
+libwx_gtk3u_aui-3.0.so.0
+libwx_gtk3u_aui-3.0.so.0.4.0
+libwx_gtk3u_core-3.0.so.0
+libwx_gtk3u_core-3.0.so.0.4.0
+libwx_gtk3u_gl-3.0.so.0
+libwx_gtk3u_gl-3.0.so.0.4.0
+libwx_gtk3u_html-3.0.so.0
+libwx_gtk3u_html-3.0.so.0.4.0
+libwx_gtk3u_propgrid-3.0.so.0
+libwx_gtk3u_propgrid-3.0.so.0.4.0
+libwx_gtk3u_qa-3.0.so.0
+libwx_gtk3u_qa-3.0.so.0.4.0
+libwx_gtk3u_ribbon-3.0.so.0
+libwx_gtk3u_ribbon-3.0.so.0.4.0
+libwx_gtk3u_richtext-3.0.so.0
+libwx_gtk3u_richtext-3.0.so.0.4.0
+libwx_gtk3u_stc-3.0.so.0
+libwx_gtk3u_stc-3.0.so.0.4.0
+libwx_gtk3u_xrc-3.0.so.0
+libwx_gtk3u_xrc-3.0.so.0.4.0
+libX11.a
+libX11.so
+libX11.so.6
+libX11.so.6.3.0
+libX11-xcb.so.1
+libX11-xcb.so.1.0.0
+libx264.so.155
+libx265.so.179
+libxatracker.so.2
+libxatracker.so.2.5.0
+libXau.a
+libXau.so
+libXau.so.6
+libXau.so.6.0.0
+libXaw7.a
+libXaw7.so
+libXaw7.so.7
+libXaw7.so.7.0.0
+libXaw.so
+libXaw.so.7
+libxcb.a
+libxcb-dri2.so.0
+libxcb-dri2.so.0.0.0
+libxcb-dri3.so.0
+libxcb-dri3.so.0.0.0
+libxcb-glx.so.0
+libxcb-glx.so.0.0.0
+libxcb-icccm.so.4
+libxcb-icccm.so.4.0.0
+libxcb-image.so.0
+libxcb-image.so.0.0.0
+libxcb-keysyms.so.1
+libxcb-keysyms.so.1.0.0
+libxcb-present.so.0
+libxcb-present.so.0.0.0
+libxcb-randr.so.0
+libxcb-randr.so.0.1.0
+libxcb-render.a
+libxcb-render.so
+libxcb-render.so.0
+libxcb-render.so.0.0.0
+libxcb-render-util.so.0
+libxcb-render-util.so.0.0.0
+libxcb-res.so.0
+libxcb-res.so.0.0.0
+libxcb-shape.so.0
+libxcb-shape.so.0.0.0
+libxcb-shm.a
+libxcb-shm.so
+libxcb-shm.so.0
+libxcb-shm.so.0.0.0
+libxcb.so
+libxcb.so.1
+libxcb.so.1.1.0
+libxcb-sync.so.1
+libxcb-sync.so.1.0.0
+libxcb-util.so.1
+libxcb-util.so.1.0.0
+libxcb-xfixes.so.0
+libxcb-xfixes.so.0.0.0
+libxcb-xinerama.so.0
+libxcb-xinerama.so.0.0.0
+libxcb-xinput.so.0
+libxcb-xinput.so.0.1.0
+libxcb-xkb.so.1
+libxcb-xkb.so.1.0.0
+libxcb-xv.so.0
+libxcb-xv.so.0.0.0
+libXcomposite.a
+libXcomposite.so
+libXcomposite.so.1
+libXcomposite.so.1.0.0
+libXcursor.a
+libXcursor.so
+libXcursor.so.1
+libXcursor.so.1.0.2
+libXdamage.a
+libXdamage.so
+libXdamage.so.1
+libXdamage.so.1.1.0
+libXdmcp.a
+libXdmcp.so
+libXdmcp.so.6
+libXdmcp.so.6.0.0
+libXext.a
+libXext.so
+libXext.so.6
+libXext.so.6.4.0
+libXfixes.a
+libXfixes.so
+libXfixes.so.3
+libXfixes.so.3.1.0
+libXfont2.a
+libXfont2.so
+libXfont2.so.2
+libXfont2.so.2.0.0
+libXft.a
+libXft.so
+libXft.so.2
+libXft.so.2.3.3
+libXi.a
+libXinerama.a
+libXinerama.so
+libXinerama.so.1
+libXinerama.so.1.0.0
+libXi.so
+libXi.so.6
+libXi.so.6.1.0
+libxkbcommon.so
+libxkbcommon.so.0
+libxkbcommon.so.0.0.0
+libxkbcommon-x11.so.0
+libxkbcommon-x11.so.0.0.0
+libxkbfile.a
+libxkbfile.so
+libxkbfile.so.1
+libxkbfile.so.1.0.2
+libxklavier.so.16
+libxklavier.so.16.4.0
+libxml2.so.2
+libxml2.so.2.9.10
+libxmlb.so.1
+libxmlb.so.1.0.0
+libxmlsec1-nss.so.1
+libxmlsec1-nss.so.1.2.28
+libxmlsec1.so.1
+libxmlsec1.so.1.2.28
+libXmu.a
+libXmu.so
+libXmu.so.6
+libXmu.so.6.2.0
+libXmuu.a
+libXmuu.so
+libXmuu.so.1
+libXmuu.so.1.0.0
+libXNVCtrl.so.0
+libXNVCtrl.so.0.0.0
+libXpm.a
+libXpm.so
+libXpm.so.4
+libXpm.so.4.11.0
+libXrandr.a
+libXrandr.so
+libXrandr.so.2
+libXrandr.so.2.2.0
+libXrender.a
+libXrender.so
+libXrender.so.1
+libXrender.so.1.3.0
+libXRes.a
+libXRes.so
+libXRes.so.1
+libXRes.so.1.0.0
+libxshmfence.so.1
+libxshmfence.so.1.0.0
+libxslt.so.1
+libxslt.so.1.1.34
+libXss.a
+libXss.so
+libXss.so.1
+libXss.so.1.0.0
+libXt.a
+libxtables.so
+libxtables.so.12
+libxtables.so.12.2.0
+libXt.so
+libXt.so.6
+libXt.so.6.0.0
+libXtst.a
+libXtst.so
+libXtst.so.6
+libXtst.so.6.1.0
+libXv.a
+libxvidcore.so.4
+libxvidcore.so.4.3
+libXvMC.a
+libXvMC.so
+libXvMC.so.1
+libXvMC.so.1.0.0
+libXvMCW.a
+libXvMCW.so
+libXvMCW.so.1
+libXvMCW.so.1.0.0
+libXv.so
+libXv.so.1
+libXv.so.1.0.0
+libXxf86dga.a
+libXxf86dga.so
+libXxf86dga.so.1
+libXxf86dga.so.1.0.0
+libXxf86vm.a
+libXxf86vm.so
+libXxf86vm.so.1
+libXxf86vm.so.1.0.0
+libyajl.so.2
+libyajl.so.2.1.0
+libyaml-0.so.2
+libyaml-0.so.2.0.6
+libyelp.so.0
+libyelp.so.0.0.0
+libz.a
+libz.so
+libz.so.1
+libz.so.1.2.11
+libzstd.so.1
+libzstd.so.1.4.4
+libzvbi-chains.so.0
+libzvbi-chains.so.0.0.0
+libzvbi.so.0
+libzvbi.so.0.13.2
+libzzip-0.so.10
+libzzip-0.so.11
+libzzip-0.so.12
+libzzip-0.so.13
+libzzip-0.so.13.0.62
+libzzipfseeko-0.so.10
+libzzipfseeko-0.so.11
+libzzipfseeko-0.so.12
+libzzipfseeko-0.so.13
+libzzipfseeko-0.so.13.0.62
+libzzipmmapped-0.so.10
+libzzipmmapped-0.so.11
+libzzipmmapped-0.so.12
+libzzipmmapped-0.so.13
+libzzipmmapped-0.so.13.0.62
+libzzipwrap-0.so.13
+libzzipwrap-0.so.13.0.62
+mailutils
+Mcrt1.o
+ModemManager
+mutter-6
+nautilus
+NetworkManager
+nss
+nvidia
+odbc
+openvpn
+org.gnome.Characters
+p11-kit-proxy.so
+packagekit-backend
+perl
+perl5
+perl-base
+pkcs11
+pkgconfig
+plymouth
+preloadable_libintl.so
+pulseaudio
+qt5
+qt-default
+rcrt1.o
+remmina
+rhythmbox
+rsyslog
+rygel-2.6
+samba
+sane
+sasl2
+Scrt1.o
+security
+shotwell
+speech-dispatcher
+totem
+tracker-2.0
+tracker-miners-2.0
+valgrind
+vdpau
+webkit2gtk-4.0
+wine
+wine-development
+X11
+xtables
+yelp
+liusheng@disini-ubuntu:/usr/lib/x86_64-linux-gnu$ readlink 
+Display all 2374 possibilities? (y or n)
+liusheng@disini-ubuntu:/usr/lib/x86_64-linux-gnu$ readlink libdl
+libdl-2.31.so  libdl_pic.a    libdl.so       
+libdl.a        libdl_pic.map  libdl.so.2     
+liusheng@disini-ubuntu:/usr/lib/x86_64-linux-gnu$ readlink libdl
+libdl-2.31.so  libdl_pic.a    libdl.so       
+libdl.a        libdl_pic.map  libdl.so.2     
+liusheng@disini-ubuntu:/usr/lib/x86_64-linux-gnu$ readlink libdl.so
+/lib/x86_64-linux-gnu/libdl.so.2
+liusheng@disini-ubuntu:/usr/lib/x86_64-linux-gnu$ ln -sf libglfw3.so $PWD 
+Display all 2374 possibilities? (y or n)
+liusheng@disini-ubuntu:/usr/lib/x86_64-linux-gnu$ ln -sf libglfw3.so \$PWD/libglfw3.so.2
+ln: 无法创建符号链接'$PWD/libglfw3.so.2': 没有那个文件或目录
+liusheng@disini-ubuntu:/usr/lib/x86_64-linux-gnu$ ls libglfw.so.3
+libglfw.so.3
+liusheng@disini-ubuntu:/usr/lib/x86_64-linux-gnu$ ln -sf libglfw3.so \$PWD/libglfw3.so.2^C
+liusheng@disini-ubuntu:/usr/lib/x86_64-linux-gnu$ readlink libglfw.so.3
+libglfw.so.3.3
+liusheng@disini-ubuntu:/usr/lib/x86_64-linux-gnu$ ln -sf libglfw3.so \$PWD/libglfw3.so.3.3
+ln: 无法创建符号链接'$PWD/libglfw3.so.3.3': 没有那个文件或目录
+liusheng@disini-ubuntu:/usr/lib/x86_64-linux-gnu$ dpkg -L libglfw3
+/.
+/usr
+/usr/lib
+/usr/lib/x86_64-linux-gnu
+/usr/lib/x86_64-linux-gnu/libglfw.so.3.3
+/usr/share
+/usr/share/doc
+/usr/share/doc/libglfw3
+/usr/share/doc/libglfw3/changelog.Debian.gz
+/usr/share/doc/libglfw3/copyright
+/usr/lib/x86_64-linux-gnu/libglfw.so.3
+liusheng@disini-ubuntu:/usr/lib/x86_64-linux-gnu$ ls -al /usr/lib/x86_64-linux-gnu/libglfw.so.3.3
+-rw-r--r-- 1 root root 287976 1月  29  2020 /usr/lib/x86_64-linux-gnu/libglfw.so.3.3
+liusheng@disini-ubuntu:/usr/lib/x86_64-linux-gnu$ sudo ln -sf libglfw.so /usr/lib/x86_64-linux-gnu/libglfw.so.3.3
+liusheng@disini-ubuntu:/usr/lib/x86_64-linux-gnu$ sudo rm libglfw.so.3
+liusheng@disini-ubuntu:/usr/lib/x86_64-linux-gnu$ cd /media/liusheng/Programfiles/Programs/libs/glfw/3.3.2/
+liusheng@disini-ubuntu:/media/liusheng/Programfiles/Programs/libs/glfw/3.3.2$ ls
+build  CMakeLists.txt            deps  examples  LICENSE.md  src
+CMake  cmake_uninstall.cmake.in  docs  include   README.md   tests
+liusheng@disini-ubuntu:/media/liusheng/Programfiles/Programs/libs/glfw/3.3.2$ cmake .
+-- The C compiler identification is GNU 9.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+-- Looking for pthread_create in pthreads
+-- Looking for pthread_create in pthreads - not found
+-- Looking for pthread_create in pthread
+-- Looking for pthread_create in pthread - found
+-- Found Threads: TRUE  
+-- Could NOT find Doxygen (missing: DOXYGEN_EXECUTABLE) 
+-- Using X11 for window creation
+-- Found X11: /usr/include   
+-- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so
+-- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so - found
+-- Looking for gethostbyname
+-- Looking for gethostbyname - found
+-- Looking for connect
+-- Looking for connect - found
+-- Looking for remove
+-- Looking for remove - found
+-- Looking for shmat
+-- Looking for shmat - found
+-- Looking for IceConnectionNumber in ICE
+-- Looking for IceConnectionNumber in ICE - found
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /media/liusheng/Programfiles/Programs/libs/glfw/3.3.2
+liusheng@disini-ubuntu:/media/liusheng/Programfiles/Programs/libs/glfw/3.3.2$ make
+Scanning dependencies of target glfw
+[  1%] Building C object src/CMakeFiles/glfw.dir/context.c.o
+[  2%] Building C object src/CMakeFiles/glfw.dir/init.c.o
+[  3%] Building C object src/CMakeFiles/glfw.dir/input.c.o
+[  3%] Building C object src/CMakeFiles/glfw.dir/monitor.c.o
+[  4%] Building C object src/CMakeFiles/glfw.dir/vulkan.c.o
+[  5%] Building C object src/CMakeFiles/glfw.dir/window.c.o
+^Cmake[2]: *** [src/CMakeFiles/glfw.dir/build.make:147: src/CMakeFiles/glfw.dir/window.c.o] 中断
+make[1]: *** [CMakeFiles/Makefile2:237: src/CMakeFiles/glfw.dir/all] 中断
+make: *** [Makefile:149: all] 中断
+
+liusheng@disini-ubuntu:/media/liusheng/Programfiles/Programs/libs/glfw/3.3.2$ make -j16
+[  1%] Building C object src/CMakeFiles/glfw.dir/window.c.o
+[  2%] Building C object src/CMakeFiles/glfw.dir/x11_init.c.o
+[  3%] Building C object src/CMakeFiles/glfw.dir/x11_monitor.c.o
+[  6%] Building C object src/CMakeFiles/glfw.dir/osmesa_context.c.o
+[  6%] Building C object src/CMakeFiles/glfw.dir/xkb_unicode.c.o
+[  8%] Building C object src/CMakeFiles/glfw.dir/posix_thread.c.o
+[  8%] Building C object src/CMakeFiles/glfw.dir/x11_window.c.o
+[  8%] Building C object src/CMakeFiles/glfw.dir/posix_time.c.o
+[  9%] Building C object src/CMakeFiles/glfw.dir/egl_context.c.o
+[  9%] Building C object src/CMakeFiles/glfw.dir/linux_joystick.c.o
+[ 10%] Building C object src/CMakeFiles/glfw.dir/glx_context.c.o
+[ 11%] Linking C static library libglfw3.a
+[ 15%] Built target glfw
+Scanning dependencies of target boing
+Scanning dependencies of target offscreen
+Scanning dependencies of target heightmap
+Scanning dependencies of target gears
+Scanning dependencies of target particles
+Scanning dependencies of target wave
+Scanning dependencies of target sharing
+Scanning dependencies of target simple
+Scanning dependencies of target splitview
+Scanning dependencies of target reopen
+Scanning dependencies of target monitors
+Scanning dependencies of target gamma
+Scanning dependencies of target iconify
+Scanning dependencies of target inputlag
+Scanning dependencies of target icon
+Scanning dependencies of target tearing
+[ 15%] Building C object examples/CMakeFiles/boing.dir/boing.c.o
+[ 16%] Building C object examples/CMakeFiles/heightmap.dir/heightmap.c.o
+[ 17%] Building C object examples/CMakeFiles/gears.dir/gears.c.o
+[ 18%] Building C object examples/CMakeFiles/offscreen.dir/offscreen.c.o
+[ 18%] Building C object examples/CMakeFiles/wave.dir/wave.c.o
+[ 20%] Building C object examples/CMakeFiles/sharing.dir/sharing.c.o
+[ 20%] Building C object examples/CMakeFiles/particles.dir/particles.c.o
+[ 21%] Building C object examples/CMakeFiles/splitview.dir/splitview.c.o
+[ 23%] Building C object examples/CMakeFiles/simple.dir/simple.c.o
+[ 23%] Building C object tests/CMakeFiles/icon.dir/icon.c.o
+[ 23%] Building C object tests/CMakeFiles/reopen.dir/reopen.c.o
+[ 26%] Building C object tests/CMakeFiles/tearing.dir/tearing.c.o
+[ 26%] Building C object tests/CMakeFiles/monitors.dir/monitors.c.o
+[ 26%] Building C object tests/CMakeFiles/iconify.dir/iconify.c.o
+[ 28%] Building C object tests/CMakeFiles/inputlag.dir/inputlag.c.o
+[ 28%] Building C object tests/CMakeFiles/gamma.dir/gamma.c.o
+[ 29%] Building C object examples/CMakeFiles/heightmap.dir/__/deps/glad_gl.c.o
+[ 30%] Building C object examples/CMakeFiles/boing.dir/__/deps/glad_gl.c.o
+[ 31%] Building C object examples/CMakeFiles/gears.dir/__/deps/glad_gl.c.o
+[ 32%] Building C object tests/CMakeFiles/icon.dir/__/deps/glad_gl.c.o
+[ 33%] Building C object examples/CMakeFiles/sharing.dir/__/deps/glad_gl.c.o
+[ 35%] Building C object examples/CMakeFiles/offscreen.dir/__/deps/glad_gl.c.o
+[ 35%] Building C object examples/CMakeFiles/wave.dir/__/deps/glad_gl.c.o
+[ 36%] Building C object examples/CMakeFiles/splitview.dir/__/deps/glad_gl.c.o
+[ 37%] Building C object examples/CMakeFiles/particles.dir/__/deps/tinycthread.c.o
+[ 37%] Building C object examples/CMakeFiles/simple.dir/__/deps/glad_gl.c.o
+[ 38%] Building C object tests/CMakeFiles/iconify.dir/__/deps/getopt.c.o
+[ 39%] Building C object tests/CMakeFiles/tearing.dir/__/deps/glad_gl.c.o
+[ 40%] Building C object tests/CMakeFiles/reopen.dir/__/deps/glad_gl.c.o
+[ 41%] Building C object tests/CMakeFiles/monitors.dir/__/deps/getopt.c.o
+[ 41%] Linking C executable heightmap
+[ 42%] Linking C executable boing
+[ 43%] Building C object tests/CMakeFiles/iconify.dir/__/deps/glad_gl.c.o
+[ 44%] Linking C executable icon
+[ 45%] Linking C executable gears
+[ 46%] Linking C executable sharing
+[ 47%] Building C object tests/CMakeFiles/monitors.dir/__/deps/glad_gl.c.o
+[ 48%] Linking C executable simple
+[ 48%] Linking C executable tearing
+[ 50%] Linking C executable splitview
+[ 50%] Linking C executable offscreen
+[ 51%] Linking C executable wave
+[ 52%] Building C object examples/CMakeFiles/particles.dir/__/deps/getopt.c.o
+[ 53%] Linking C executable reopen
+[ 54%] Building C object tests/CMakeFiles/gamma.dir/__/deps/glad_gl.c.o
+[ 55%] Building C object tests/CMakeFiles/inputlag.dir/__/deps/getopt.c.o
+[ 55%] Linking C executable iconify
+[ 56%] Building C object examples/CMakeFiles/particles.dir/__/deps/glad_gl.c.o
+[ 57%] Linking C executable monitors
+[ 57%] Built target boing
+[ 57%] Built target heightmap
+[ 57%] Built target icon
+[ 58%] Building C object tests/CMakeFiles/inputlag.dir/__/deps/glad_gl.c.o
+[ 58%] Built target sharing
+[ 58%] Built target gears
+Scanning dependencies of target events
+Scanning dependencies of target empty
+[ 58%] Built target offscreen
+[ 58%] Built target tearing
+[ 58%] Linking C executable gamma
+Scanning dependencies of target msaa
+[ 58%] Built target splitview
+[ 58%] Built target simple
+[ 58%] Built target wave
+Scanning dependencies of target cursor
+Scanning dependencies of target threads
+[ 58%] Built target reopen
+Scanning dependencies of target glfwinfo
+[ 59%] Linking C executable particles
+Scanning dependencies of target joysticks
+[ 60%] Building C object tests/CMakeFiles/events.dir/events.c.o
+Scanning dependencies of target opacity
+[ 61%] Building C object tests/CMakeFiles/empty.dir/empty.c.o
+Scanning dependencies of target windows
+Scanning dependencies of target clipboard
+Scanning dependencies of target title
+[ 62%] Building C object tests/CMakeFiles/msaa.dir/msaa.c.o
+[ 63%] Building C object tests/CMakeFiles/cursor.dir/cursor.c.o
+[ 64%] Building C object tests/CMakeFiles/threads.dir/threads.c.o
+[ 64%] Building C object tests/CMakeFiles/glfwinfo.dir/glfwinfo.c.o
+[ 65%] Building C object tests/CMakeFiles/joysticks.dir/joysticks.c.o
+[ 65%] Built target iconify
+[ 66%] Building C object tests/CMakeFiles/opacity.dir/opacity.c.o
+[ 67%] Building C object tests/CMakeFiles/clipboard.dir/clipboard.c.o
+[ 68%] Building C object tests/CMakeFiles/windows.dir/windows.c.o
+[ 69%] Linking C executable inputlag
+[ 70%] Building C object tests/CMakeFiles/title.dir/title.c.o
+[ 70%] Building C object tests/CMakeFiles/joysticks.dir/__/deps/glad_gl.c.o
+[ 70%] Built target monitors
+[ 71%] Building C object tests/CMakeFiles/title.dir/__/deps/glad_gl.c.o
+[ 72%] Building C object tests/CMakeFiles/events.dir/__/deps/getopt.c.o
+[ 73%] Building C object tests/CMakeFiles/empty.dir/__/deps/tinycthread.c.o
+[ 73%] Building C object tests/CMakeFiles/msaa.dir/__/deps/getopt.c.o
+[ 74%] Building C object tests/CMakeFiles/cursor.dir/__/deps/glad_gl.c.o
+[ 74%] Built target gamma
+[ 75%] Building C object tests/CMakeFiles/clipboard.dir/__/deps/getopt.c.o
+[ 76%] Building C object tests/CMakeFiles/threads.dir/__/deps/tinycthread.c.o
+[ 78%] Building C object tests/CMakeFiles/clipboard.dir/__/deps/glad_gl.c.o
+[ 78%] Building C object tests/CMakeFiles/glfwinfo.dir/__/deps/getopt.c.o
+[ 78%] Built target particles
+[ 79%] Building C object tests/CMakeFiles/windows.dir/__/deps/getopt.c.o
+[ 80%] Building C object tests/CMakeFiles/threads.dir/__/deps/glad_gl.c.o
+Scanning dependencies of target triangle-vulkan
+[ 81%] Building C object tests/CMakeFiles/empty.dir/__/deps/glad_gl.c.o
+[ 82%] Building C object tests/CMakeFiles/events.dir/__/deps/glad_gl.c.o
+[ 83%] Building C object tests/CMakeFiles/msaa.dir/__/deps/glad_gl.c.o
+[ 84%] Linking C executable title
+[ 84%] Building C object tests/CMakeFiles/opacity.dir/__/deps/glad_gl.c.o
+[ 85%] Building C object tests/CMakeFiles/windows.dir/__/deps/glad_gl.c.o
+[ 85%] Built target inputlag
+[ 86%] Building C object tests/CMakeFiles/triangle-vulkan.dir/triangle-vulkan.c.o
+[ 87%] Linking C executable cursor
+[ 88%] Building C object tests/CMakeFiles/glfwinfo.dir/__/deps/glad_gl.c.o
+[ 89%] Building C object tests/CMakeFiles/triangle-vulkan.dir/__/deps/glad_vulkan.c.o
+Scanning dependencies of target timeout
+[ 90%] Building C object tests/CMakeFiles/glfwinfo.dir/__/deps/glad_vulkan.c.o
+[ 91%] Linking C executable threads
+[ 91%] Linking C executable clipboard
+[ 92%] Linking C executable events
+[ 92%] Linking C executable empty
+[ 93%] Building C object tests/CMakeFiles/timeout.dir/timeout.c.o
+[ 94%] Linking C executable msaa
+[ 95%] Building C object tests/CMakeFiles/timeout.dir/__/deps/glad_gl.c.o
+[ 96%] Linking C executable joysticks
+[ 97%] Linking C executable opacity
+[ 98%] Linking C executable windows
+[ 98%] Built target title
+[ 99%] Linking C executable triangle-vulkan
+[100%] Linking C executable glfwinfo
+[100%] Built target cursor
+[100%] Built target threads
+[100%] Linking C executable timeout
+[100%] Built target clipboard
+[100%] Built target events
+[100%] Built target empty
+[100%] Built target msaa
+[100%] Built target opacity
+[100%] Built target joysticks
+[100%] Built target windows
+[100%] Built target triangle-vulkan
+[100%] Built target glfwinfo
+[100%] Built target timeout
+liusheng@disini-ubuntu:/media/liusheng/Programfiles/Programs/libs/glfw/3.3.2$ ls
+build           cmake_install.cmake       deps      LICENSE.md  tests
+CMake           CMakeLists.txt            docs      Makefile
+CMakeCache.txt  cmake_uninstall.cmake     examples  README.md
+CMakeFiles      cmake_uninstall.cmake.in  include   src
+liusheng@disini-ubuntu:/media/liusheng/Programfiles/Programs/libs/glfw/3.3.2$ ldd build/
+CMakeCache.txt         cmake_uninstall.cmake  Makefile
+CMakeFiles/            examples/              src/
+cmake_install.cmake    install_manifest.txt   tests/
+liusheng@disini-ubuntu:/media/liusheng/Programfiles/Programs/libs/glfw/3.3.2$ ldd build/^C
+liusheng@disini-ubuntu:/media/liusheng/Programfiles/Programs/libs/glfw/3.3.2$ cd build/
+liusheng@disini-ubuntu:/media/liusheng/Programfiles/Programs/libs/glfw/3.3.2/build$ ls
+CMakeCache.txt  cmake_install.cmake    examples              Makefile  tests
+CMakeFiles      cmake_uninstall.cmake  install_manifest.txt  src
+liusheng@disini-ubuntu:/media/liusheng/Programfiles/Programs/libs/glfw/3.3.2/build$ grep -r GLIBC
+匹配到二进制文件 CMakeFiles/3.18.1/CMakeDetermineCompilerABI_C.bin
+匹配到二进制文件 CMakeFiles/3.18.1/CompilerIdC/a.out
+匹配到二进制文件 examples/boing
+匹配到二进制文件 examples/gears
+匹配到二进制文件 examples/heightmap
+匹配到二进制文件 examples/offscreen
+匹配到二进制文件 examples/particles
+匹配到二进制文件 examples/sharing
+匹配到二进制文件 examples/simple
+匹配到二进制文件 examples/splitview
+匹配到二进制文件 examples/wave
+匹配到二进制文件 tests/clipboard
+匹配到二进制文件 tests/cursor
+匹配到二进制文件 tests/empty
+匹配到二进制文件 tests/events
+匹配到二进制文件 tests/gamma
+匹配到二进制文件 tests/glfwinfo
+匹配到二进制文件 tests/icon
+匹配到二进制文件 tests/iconify
+匹配到二进制文件 tests/inputlag
+匹配到二进制文件 tests/joysticks
+匹配到二进制文件 tests/monitors
+匹配到二进制文件 tests/msaa
+匹配到二进制文件 tests/opacity
+匹配到二进制文件 tests/reopen
+匹配到二进制文件 tests/tearing
+匹配到二进制文件 tests/threads
+匹配到二进制文件 tests/timeout
+匹配到二进制文件 tests/title
+匹配到二进制文件 tests/triangle-vulkan
+匹配到二进制文件 tests/windows
+liusheng@disini-ubuntu:/media/liusheng/Programfiles/Programs/libs/glfw/3.3.2/build$ cd ..
+ls
+liusheng@disini-ubuntu:/media/liusheng/Programfiles/Programs/libs/glfw/3.3.2$ ls
+^[[A^[[A^[[A^C
+liusheng@disini-ubuntu:/media/liusheng/Programfiles/Programs/libs/glfw/3.3.2$ ^C
+liusheng@disini-ubuntu:/media/liusheng/Programfiles/Programs/libs/glfw/3.3.2$ grep -r GLIBC
+匹配到二进制文件 build/CMakeFiles/3.18.1/CMakeDetermineCompilerABI_C.bin
+匹配到二进制文件 build/CMakeFiles/3.18.1/CompilerIdC/a.out
+匹配到二进制文件 build/examples/boing
+匹配到二进制文件 build/examples/gears
+匹配到二进制文件 build/examples/heightmap
+匹配到二进制文件 build/examples/offscreen
+匹配到二进制文件 build/examples/particles
+匹配到二进制文件 build/examples/sharing
+匹配到二进制文件 build/examples/simple
+匹配到二进制文件 build/examples/splitview
+匹配到二进制文件 build/examples/wave
+匹配到二进制文件 build/tests/clipboard
+匹配到二进制文件 build/tests/cursor
+匹配到二进制文件 build/tests/empty
+匹配到二进制文件 build/tests/events
+匹配到二进制文件 build/tests/gamma
+匹配到二进制文件 build/tests/glfwinfo
+匹配到二进制文件 build/tests/icon
+匹配到二进制文件 build/tests/iconify
+匹配到二进制文件 build/tests/inputlag
+匹配到二进制文件 build/tests/joysticks
+匹配到二进制文件 build/tests/monitors
+匹配到二进制文件 build/tests/msaa
+匹配到二进制文件 build/tests/opacity
+匹配到二进制文件 build/tests/reopen
+匹配到二进制文件 build/tests/tearing
+匹配到二进制文件 build/tests/threads
+匹配到二进制文件 build/tests/timeout
+匹配到二进制文件 build/tests/title
+匹配到二进制文件 build/tests/triangle-vulkan
+匹配到二进制文件 build/tests/windows
+匹配到二进制文件 CMakeFiles/3.18.1/CMakeDetermineCompilerABI_C.bin
+匹配到二进制文件 CMakeFiles/3.18.1/CompilerIdC/a.out
+匹配到二进制文件 examples/boing
+匹配到二进制文件 examples/gears
+匹配到二进制文件 examples/heightmap
+匹配到二进制文件 examples/offscreen
+匹配到二进制文件 examples/particles
+匹配到二进制文件 examples/sharing
+匹配到二进制文件 examples/simple
+匹配到二进制文件 examples/splitview
+匹配到二进制文件 examples/wave
+匹配到二进制文件 tests/clipboard
+匹配到二进制文件 tests/cursor
+匹配到二进制文件 tests/empty
+匹配到二进制文件 tests/events
+匹配到二进制文件 tests/gamma
+匹配到二进制文件 tests/glfwinfo
+匹配到二进制文件 tests/icon
+匹配到二进制文件 tests/iconify
+匹配到二进制文件 tests/inputlag
+匹配到二进制文件 tests/joysticks
+匹配到二进制文件 tests/monitors
+匹配到二进制文件 tests/msaa
+匹配到二进制文件 tests/opacity
+匹配到二进制文件 tests/reopen
+匹配到二进制文件 tests/tearing
+匹配到二进制文件 tests/threads
+匹配到二进制文件 tests/timeout
+匹配到二进制文件 tests/title
+匹配到二进制文件 tests/triangle-vulkan
+匹配到二进制文件 tests/windows
+liusheng@disini-ubuntu:/media/liusheng/Programfiles/Programs/libs/glfw/3.3.2$ ls
+build           cmake_install.cmake       deps      LICENSE.md  tests
+CMake           CMakeLists.txt            docs      Makefile
+CMakeCache.txt  cmake_uninstall.cmake     examples  README.md
+CMakeFiles      cmake_uninstall.cmake.in  include   src
+liusheng@disini-ubuntu:/media/liusheng/Programfiles/Programs/libs/glfw/3.3.2$ cd build/
+CMakeFiles/ examples/   src/        tests/      
+liusheng@disini-ubuntu:/media/liusheng/Programfiles/Programs/libs/glfw/3.3.2$ cd build/
+liusheng@disini-ubuntu:/media/liusheng/Programfiles/Programs/libs/glfw/3.3.2/build$ ls
+CMakeCache.txt  cmake_install.cmake    examples              Makefile  tests
+CMakeFiles      cmake_uninstall.cmake  install_manifest.txt  src
+liusheng@disini-ubuntu:/media/liusheng/Programfiles/Programs/libs/glfw/3.3.2/build$ cd src/
+liusheng@disini-ubuntu:/media/liusheng/Programfiles/Programs/libs/glfw/3.3.2/build/src$ ls
+CMakeFiles           glfw3Config.cmake         glfw3.pc       libglfw3.a
+cmake_install.cmake  glfw3ConfigVersion.cmake  glfw_config.h  Makefile
+liusheng@disini-ubuntu:/media/liusheng/Programfiles/Programs/libs/glfw/3.3.2/build/src$ cd ..
+liusheng@disini-ubuntu:/media/liusheng/Programfiles/Programs/libs/glfw/3.3.2/build$ ls
+CMakeCache.txt  cmake_install.cmake    examples              Makefile  tests
+CMakeFiles      cmake_uninstall.cmake  install_manifest.txt  src
+liusheng@disini-ubuntu:/media/liusheng/Programfiles/Programs/libs/glfw/3.3.2/build$ cd ..
+liusheng@disini-ubuntu:/media/liusheng/Programfiles/Programs/libs/glfw/3.3.2$ ls
+build           cmake_install.cmake       deps      LICENSE.md  tests
+CMake           CMakeLists.txt            docs      Makefile
+CMakeCache.txt  cmake_uninstall.cmake     examples  README.md
+CMakeFiles      cmake_uninstall.cmake.in  include   src
+liusheng@disini-ubuntu:/media/liusheng/Programfiles/Programs/libs/glfw/3.3.2$ git status
+fatal: 不是一个 git 仓库（或者直至挂载点 /media/liusheng 的任何父目录）
+停止在文件系统边界（未设置 GIT_DISCOVERY_ACROSS_FILESYSTEM）。
+liusheng@disini-ubuntu:/media/liusheng/Programfiles/Programs/libs/glfw/3.3.2$ cd ..
+liusheng@disini-ubuntu:/media/liusheng/Programfiles/Programs/libs/glfw$ ls
+3.2  3.3.2   glfw-3.2.1.bin.WIN32.zip  glfw-3.2.1.zip  glfw-master.zip
+3.3  github  glfw-3.2.1.bin.WIN64.zip  glfw-3.3.2.zip
+liusheng@disini-ubuntu:/media/liusheng/Programfiles/Programs/libs/glfw$ cd 3.3.2/
+liusheng@disini-ubuntu:/media/liusheng/Programfiles/Programs/libs/glfw/3.3.2$ ls
+build           cmake_install.cmake       deps      LICENSE.md  tests
+CMake           CMakeLists.txt            docs      Makefile
+CMakeCache.txt  cmake_uninstall.cmake     examples  README.md
+CMakeFiles      cmake_uninstall.cmake.in  include   src
+liusheng@disini-ubuntu:/media/liusheng/Programfiles/Programs/libs/glfw/3.3.2$ make clean^C
+liusheng@disini-ubuntu:/media/liusheng/Programfiles/Programs/libs/glfw/3.3.2$ cd ..
+liusheng@disini-ubuntu:/media/liusheng/Programfiles/Programs/libs/glfw$ ls
+3.2  3.3.2   glfw-3.2.1.bin.WIN32.zip  glfw-3.2.1.zip  glfw-master.zip
+3.3  github  glfw-3.2.1.bin.WIN64.zip  glfw-3.3.2.zip
+liusheng@disini-ubuntu:/media/liusheng/Programfiles/Programs/libs/glfw$ unzip glfw-3.3.2.zip 
+Archive:  glfw-3.3.2.zip
+   creating: glfw-3.3.2/
+   creating: glfw-3.3.2/CMake/
+  inflating: glfw-3.3.2/CMake/GenerateMappings.cmake  
+  inflating: glfw-3.3.2/CMake/i686-w64-mingw32-clang.cmake  
+  inflating: glfw-3.3.2/CMake/i686-w64-mingw32.cmake  
+  inflating: glfw-3.3.2/CMake/MacOSXBundleInfo.plist.in  
+   creating: glfw-3.3.2/CMake/modules/
+  inflating: glfw-3.3.2/CMake/modules/FindEpollShim.cmake  
+  inflating: glfw-3.3.2/CMake/modules/FindOSMesa.cmake  
+  inflating: glfw-3.3.2/CMake/modules/FindWaylandProtocols.cmake  
+  inflating: glfw-3.3.2/CMake/modules/FindXKBCommon.cmake  
+  inflating: glfw-3.3.2/CMake/x86_64-w64-mingw32-clang.cmake  
+  inflating: glfw-3.3.2/CMake/x86_64-w64-mingw32.cmake  
+  inflating: glfw-3.3.2/CMakeLists.txt  
+  inflating: glfw-3.3.2/cmake_uninstall.cmake.in  
+   creating: glfw-3.3.2/deps/
+  inflating: glfw-3.3.2/deps/getopt.c  
+  inflating: glfw-3.3.2/deps/getopt.h  
+   creating: glfw-3.3.2/deps/glad/
+  inflating: glfw-3.3.2/deps/glad/gl.h  
+  inflating: glfw-3.3.2/deps/glad/khrplatform.h  
+  inflating: glfw-3.3.2/deps/glad/vk_platform.h  
+  inflating: glfw-3.3.2/deps/glad/vulkan.h  
+  inflating: glfw-3.3.2/deps/glad_gl.c  
+  inflating: glfw-3.3.2/deps/glad_vulkan.c  
+  inflating: glfw-3.3.2/deps/linmath.h  
+   creating: glfw-3.3.2/deps/mingw/
+  inflating: glfw-3.3.2/deps/mingw/dinput.h  
+  inflating: glfw-3.3.2/deps/mingw/xinput.h  
+  inflating: glfw-3.3.2/deps/mingw/_mingw_dxhelper.h  
+  inflating: glfw-3.3.2/deps/nuklear.h  
+  inflating: glfw-3.3.2/deps/nuklear_glfw_gl2.h  
+  inflating: glfw-3.3.2/deps/stb_image_write.h  
+  inflating: glfw-3.3.2/deps/tinycthread.c  
+  inflating: glfw-3.3.2/deps/tinycthread.h  
+   creating: glfw-3.3.2/deps/vs2008/
+  inflating: glfw-3.3.2/deps/vs2008/stdint.h  
+   creating: glfw-3.3.2/docs/
+  inflating: glfw-3.3.2/docs/build.dox  
+  inflating: glfw-3.3.2/docs/CMakeLists.txt  
+  inflating: glfw-3.3.2/docs/CODEOWNERS  
+  inflating: glfw-3.3.2/docs/compat.dox  
+  inflating: glfw-3.3.2/docs/compile.dox  
+  inflating: glfw-3.3.2/docs/context.dox  
+  inflating: glfw-3.3.2/docs/CONTRIBUTING.md  
+  inflating: glfw-3.3.2/docs/Doxyfile.in  
+  inflating: glfw-3.3.2/docs/DoxygenLayout.xml  
+  inflating: glfw-3.3.2/docs/extra.css  
+  inflating: glfw-3.3.2/docs/extra.less  
+  inflating: glfw-3.3.2/docs/footer.html  
+  inflating: glfw-3.3.2/docs/header.html  
+   creating: glfw-3.3.2/docs/html/
+ extracting: glfw-3.3.2/docs/html/bc_s.png  
+  inflating: glfw-3.3.2/docs/html/bdwn.png  
+  inflating: glfw-3.3.2/docs/html/bug.html  
+  inflating: glfw-3.3.2/docs/html/build_8dox.html  
+  inflating: glfw-3.3.2/docs/html/build_guide.html  
+  inflating: glfw-3.3.2/docs/html/closed.png  
+  inflating: glfw-3.3.2/docs/html/compat_8dox.html  
+  inflating: glfw-3.3.2/docs/html/compat_guide.html  
+  inflating: glfw-3.3.2/docs/html/compile_8dox.html  
+  inflating: glfw-3.3.2/docs/html/compile_guide.html  
+  inflating: glfw-3.3.2/docs/html/context_8dox.html  
+  inflating: glfw-3.3.2/docs/html/context_guide.html  
+  inflating: glfw-3.3.2/docs/html/deprecated.html  
+  inflating: glfw-3.3.2/docs/html/dir_15a5176d7c9cc5c407ed4f611edf0684.html  
+  inflating: glfw-3.3.2/docs/html/dir_a58ef735c5cc5a9a31d321e1abe7c42e.html  
+  inflating: glfw-3.3.2/docs/html/dir_abae1f34c5d965773b98e3c915cdaeb5.html  
+  inflating: glfw-3.3.2/docs/html/dir_bc6505cac00d7a6291dbfd9af70666b7.html  
+ extracting: glfw-3.3.2/docs/html/doc.png  
+  inflating: glfw-3.3.2/docs/html/doxygen.css  
+ extracting: glfw-3.3.2/docs/html/doxygen.png  
+  inflating: glfw-3.3.2/docs/html/dynsections.js  
+  inflating: glfw-3.3.2/docs/html/extra.css  
+  inflating: glfw-3.3.2/docs/html/files.html  
+ extracting: glfw-3.3.2/docs/html/folderclosed.png  
+ extracting: glfw-3.3.2/docs/html/folderopen.png  
+  inflating: glfw-3.3.2/docs/html/glfw3native_8h.html  
+  inflating: glfw-3.3.2/docs/html/glfw3native_8h_source.html  
+  inflating: glfw-3.3.2/docs/html/glfw3_8h.html  
+  inflating: glfw-3.3.2/docs/html/glfw3_8h_source.html  
+  inflating: glfw-3.3.2/docs/html/group__buttons.html  
+  inflating: glfw-3.3.2/docs/html/group__context.html  
+  inflating: glfw-3.3.2/docs/html/group__errors.html  
+  inflating: glfw-3.3.2/docs/html/group__gamepad__axes.html  
+  inflating: glfw-3.3.2/docs/html/group__gamepad__buttons.html  
+  inflating: glfw-3.3.2/docs/html/group__hat__state.html  
+  inflating: glfw-3.3.2/docs/html/group__init.html  
+  inflating: glfw-3.3.2/docs/html/group__input.html  
+  inflating: glfw-3.3.2/docs/html/group__joysticks.html  
+  inflating: glfw-3.3.2/docs/html/group__keys.html  
+  inflating: glfw-3.3.2/docs/html/group__mods.html  
+  inflating: glfw-3.3.2/docs/html/group__monitor.html  
+  inflating: glfw-3.3.2/docs/html/group__native.html  
+  inflating: glfw-3.3.2/docs/html/group__shapes.html  
+  inflating: glfw-3.3.2/docs/html/group__vulkan.html  
+  inflating: glfw-3.3.2/docs/html/group__window.html  
+  inflating: glfw-3.3.2/docs/html/index.html  
+  inflating: glfw-3.3.2/docs/html/input_8dox.html  
+  inflating: glfw-3.3.2/docs/html/input_guide.html  
+  inflating: glfw-3.3.2/docs/html/internals_guide.html  
+  inflating: glfw-3.3.2/docs/html/internal_8dox.html  
+  inflating: glfw-3.3.2/docs/html/intro_8dox.html  
+  inflating: glfw-3.3.2/docs/html/intro_guide.html  
+  inflating: glfw-3.3.2/docs/html/jquery.js  
+  inflating: glfw-3.3.2/docs/html/main_8dox.html  
+  inflating: glfw-3.3.2/docs/html/menu.js  
+  inflating: glfw-3.3.2/docs/html/menudata.js  
+  inflating: glfw-3.3.2/docs/html/modules.html  
+  inflating: glfw-3.3.2/docs/html/monitor_8dox.html  
+  inflating: glfw-3.3.2/docs/html/monitor_guide.html  
+  inflating: glfw-3.3.2/docs/html/moving_8dox.html  
+  inflating: glfw-3.3.2/docs/html/moving_guide.html  
+ extracting: glfw-3.3.2/docs/html/nav_f.png  
+  inflating: glfw-3.3.2/docs/html/nav_g.png  
+  inflating: glfw-3.3.2/docs/html/nav_h.png  
+  inflating: glfw-3.3.2/docs/html/news.html  
+  inflating: glfw-3.3.2/docs/html/news_8dox.html  
+  inflating: glfw-3.3.2/docs/html/open.png  
+  inflating: glfw-3.3.2/docs/html/pages.html  
+  inflating: glfw-3.3.2/docs/html/quick_8dox.html  
+  inflating: glfw-3.3.2/docs/html/quick_guide.html  
+   creating: glfw-3.3.2/docs/html/search/
+  inflating: glfw-3.3.2/docs/html/search/all_0.html  
+  inflating: glfw-3.3.2/docs/html/search/all_0.js  
+  inflating: glfw-3.3.2/docs/html/search/all_1.html  
+  inflating: glfw-3.3.2/docs/html/search/all_1.js  
+  inflating: glfw-3.3.2/docs/html/search/all_10.html  
+  inflating: glfw-3.3.2/docs/html/search/all_10.js  
+  inflating: glfw-3.3.2/docs/html/search/all_11.html  
+  inflating: glfw-3.3.2/docs/html/search/all_11.js  
+  inflating: glfw-3.3.2/docs/html/search/all_2.html  
+  inflating: glfw-3.3.2/docs/html/search/all_2.js  
+  inflating: glfw-3.3.2/docs/html/search/all_3.html  
+  inflating: glfw-3.3.2/docs/html/search/all_3.js  
+  inflating: glfw-3.3.2/docs/html/search/all_4.html  
+  inflating: glfw-3.3.2/docs/html/search/all_4.js  
+  inflating: glfw-3.3.2/docs/html/search/all_5.html  
+  inflating: glfw-3.3.2/docs/html/search/all_5.js  
+  inflating: glfw-3.3.2/docs/html/search/all_6.html  
+  inflating: glfw-3.3.2/docs/html/search/all_6.js  
+  inflating: glfw-3.3.2/docs/html/search/all_7.html  
+  inflating: glfw-3.3.2/docs/html/search/all_7.js  
+  inflating: glfw-3.3.2/docs/html/search/all_8.html  
+  inflating: glfw-3.3.2/docs/html/search/all_8.js  
+  inflating: glfw-3.3.2/docs/html/search/all_9.html  
+  inflating: glfw-3.3.2/docs/html/search/all_9.js  
+  inflating: glfw-3.3.2/docs/html/search/all_a.html  
+  inflating: glfw-3.3.2/docs/html/search/all_a.js  
+  inflating: glfw-3.3.2/docs/html/search/all_b.html  
+  inflating: glfw-3.3.2/docs/html/search/all_b.js  
+  inflating: glfw-3.3.2/docs/html/search/all_c.html  
+  inflating: glfw-3.3.2/docs/html/search/all_c.js  
+  inflating: glfw-3.3.2/docs/html/search/all_d.html  
+  inflating: glfw-3.3.2/docs/html/search/all_d.js  
+  inflating: glfw-3.3.2/docs/html/search/all_e.html  
+  inflating: glfw-3.3.2/docs/html/search/all_e.js  
+  inflating: glfw-3.3.2/docs/html/search/all_f.html  
+  inflating: glfw-3.3.2/docs/html/search/all_f.js  
+  inflating: glfw-3.3.2/docs/html/search/classes_0.html  
+  inflating: glfw-3.3.2/docs/html/search/classes_0.js  
+ extracting: glfw-3.3.2/docs/html/search/close.png  
+  inflating: glfw-3.3.2/docs/html/search/defines_0.html  
+  inflating: glfw-3.3.2/docs/html/search/defines_0.js  
+  inflating: glfw-3.3.2/docs/html/search/files_0.html  
+  inflating: glfw-3.3.2/docs/html/search/files_0.js  
+  inflating: glfw-3.3.2/docs/html/search/files_1.html  
+  inflating: glfw-3.3.2/docs/html/search/files_1.js  
+  inflating: glfw-3.3.2/docs/html/search/files_2.html  
+  inflating: glfw-3.3.2/docs/html/search/files_2.js  
+  inflating: glfw-3.3.2/docs/html/search/files_3.html  
+  inflating: glfw-3.3.2/docs/html/search/files_3.js  
+  inflating: glfw-3.3.2/docs/html/search/files_4.html  
+  inflating: glfw-3.3.2/docs/html/search/files_4.js  
+  inflating: glfw-3.3.2/docs/html/search/files_5.html  
+  inflating: glfw-3.3.2/docs/html/search/files_5.js  
+  inflating: glfw-3.3.2/docs/html/search/files_6.html  
+  inflating: glfw-3.3.2/docs/html/search/files_6.js  
+  inflating: glfw-3.3.2/docs/html/search/files_7.html  
+  inflating: glfw-3.3.2/docs/html/search/files_7.js  
+  inflating: glfw-3.3.2/docs/html/search/files_8.html  
+  inflating: glfw-3.3.2/docs/html/search/files_8.js  
+  inflating: glfw-3.3.2/docs/html/search/functions_0.html  
+  inflating: glfw-3.3.2/docs/html/search/functions_0.js  
+  inflating: glfw-3.3.2/docs/html/search/groups_0.html  
+  inflating: glfw-3.3.2/docs/html/search/groups_0.js  
+  inflating: glfw-3.3.2/docs/html/search/groups_1.html  
+  inflating: glfw-3.3.2/docs/html/search/groups_1.js  
+  inflating: glfw-3.3.2/docs/html/search/groups_2.html  
+  inflating: glfw-3.3.2/docs/html/search/groups_2.js  
+  inflating: glfw-3.3.2/docs/html/search/groups_3.html  
+  inflating: glfw-3.3.2/docs/html/search/groups_3.js  
+  inflating: glfw-3.3.2/docs/html/search/groups_4.html  
+  inflating: glfw-3.3.2/docs/html/search/groups_4.js  
+  inflating: glfw-3.3.2/docs/html/search/groups_5.html  
+  inflating: glfw-3.3.2/docs/html/search/groups_5.js  
+  inflating: glfw-3.3.2/docs/html/search/groups_6.html  
+  inflating: glfw-3.3.2/docs/html/search/groups_6.js  
+  inflating: glfw-3.3.2/docs/html/search/groups_7.html  
+  inflating: glfw-3.3.2/docs/html/search/groups_7.js  
+  inflating: glfw-3.3.2/docs/html/search/groups_8.html  
+  inflating: glfw-3.3.2/docs/html/search/groups_8.js  
+  inflating: glfw-3.3.2/docs/html/search/groups_9.html  
+  inflating: glfw-3.3.2/docs/html/search/groups_9.js  
+  inflating: glfw-3.3.2/docs/html/search/groups_a.html  
+  inflating: glfw-3.3.2/docs/html/search/groups_a.js  
+  inflating: glfw-3.3.2/docs/html/search/mag_sel.png  
+  inflating: glfw-3.3.2/docs/html/search/nomatches.html  
+  inflating: glfw-3.3.2/docs/html/search/pages_0.html  
+  inflating: glfw-3.3.2/docs/html/search/pages_0.js  
+  inflating: glfw-3.3.2/docs/html/search/pages_1.html  
+  inflating: glfw-3.3.2/docs/html/search/pages_1.js  
+  inflating: glfw-3.3.2/docs/html/search/pages_2.html  
+  inflating: glfw-3.3.2/docs/html/search/pages_2.js  
+  inflating: glfw-3.3.2/docs/html/search/pages_3.html  
+  inflating: glfw-3.3.2/docs/html/search/pages_3.js  
+  inflating: glfw-3.3.2/docs/html/search/pages_4.html  
+  inflating: glfw-3.3.2/docs/html/search/pages_4.js  
+  inflating: glfw-3.3.2/docs/html/search/pages_5.html  
+  inflating: glfw-3.3.2/docs/html/search/pages_5.js  
+  inflating: glfw-3.3.2/docs/html/search/pages_6.html  
+  inflating: glfw-3.3.2/docs/html/search/pages_6.js  
+  inflating: glfw-3.3.2/docs/html/search/pages_7.html  
+  inflating: glfw-3.3.2/docs/html/search/pages_7.js  
+  inflating: glfw-3.3.2/docs/html/search/pages_8.html  
+  inflating: glfw-3.3.2/docs/html/search/pages_8.js  
+  inflating: glfw-3.3.2/docs/html/search/pages_9.html  
+  inflating: glfw-3.3.2/docs/html/search/pages_9.js  
+  inflating: glfw-3.3.2/docs/html/search/pages_a.html  
+  inflating: glfw-3.3.2/docs/html/search/pages_a.js  
+  inflating: glfw-3.3.2/docs/html/search/search.css  
+  inflating: glfw-3.3.2/docs/html/search/search.js  
+  inflating: glfw-3.3.2/docs/html/search/searchdata.js  
+  inflating: glfw-3.3.2/docs/html/search/search_l.png  
+  inflating: glfw-3.3.2/docs/html/search/search_m.png  
+  inflating: glfw-3.3.2/docs/html/search/search_r.png  
+  inflating: glfw-3.3.2/docs/html/search/typedefs_0.html  
+  inflating: glfw-3.3.2/docs/html/search/typedefs_0.js  
+  inflating: glfw-3.3.2/docs/html/search/variables_0.html  
+  inflating: glfw-3.3.2/docs/html/search/variables_0.js  
+  inflating: glfw-3.3.2/docs/html/search/variables_1.html  
+  inflating: glfw-3.3.2/docs/html/search/variables_1.js  
+  inflating: glfw-3.3.2/docs/html/search/variables_2.html  
+  inflating: glfw-3.3.2/docs/html/search/variables_2.js  
+  inflating: glfw-3.3.2/docs/html/search/variables_3.html  
+  inflating: glfw-3.3.2/docs/html/search/variables_3.js  
+  inflating: glfw-3.3.2/docs/html/search/variables_4.html  
+  inflating: glfw-3.3.2/docs/html/search/variables_4.js  
+  inflating: glfw-3.3.2/docs/html/search/variables_5.html  
+  inflating: glfw-3.3.2/docs/html/search/variables_5.js  
+  inflating: glfw-3.3.2/docs/html/search/variables_6.html  
+  inflating: glfw-3.3.2/docs/html/search/variables_6.js  
+  inflating: glfw-3.3.2/docs/html/search/variables_7.html  
+  inflating: glfw-3.3.2/docs/html/search/variables_7.js  
+  inflating: glfw-3.3.2/docs/html/spaces.svg  
+  inflating: glfw-3.3.2/docs/html/splitbar.png  
+  inflating: glfw-3.3.2/docs/html/structGLFWgamepadstate.html  
+  inflating: glfw-3.3.2/docs/html/structGLFWgammaramp.html  
+  inflating: glfw-3.3.2/docs/html/structGLFWimage.html  
+  inflating: glfw-3.3.2/docs/html/structGLFWvidmode.html  
+ extracting: glfw-3.3.2/docs/html/sync_off.png  
+ extracting: glfw-3.3.2/docs/html/sync_on.png  
+  inflating: glfw-3.3.2/docs/html/tabs.css  
+ extracting: glfw-3.3.2/docs/html/tab_a.png  
+ extracting: glfw-3.3.2/docs/html/tab_b.png  
+ extracting: glfw-3.3.2/docs/html/tab_h.png  
+ extracting: glfw-3.3.2/docs/html/tab_s.png  
+  inflating: glfw-3.3.2/docs/html/vulkan_8dox.html  
+  inflating: glfw-3.3.2/docs/html/vulkan_guide.html  
+  inflating: glfw-3.3.2/docs/html/window_8dox.html  
+  inflating: glfw-3.3.2/docs/html/window_guide.html  
+  inflating: glfw-3.3.2/docs/input.dox  
+  inflating: glfw-3.3.2/docs/internal.dox  
+  inflating: glfw-3.3.2/docs/intro.dox  
+  inflating: glfw-3.3.2/docs/main.dox  
+  inflating: glfw-3.3.2/docs/monitor.dox  
+  inflating: glfw-3.3.2/docs/moving.dox  
+  inflating: glfw-3.3.2/docs/news.dox  
+  inflating: glfw-3.3.2/docs/quick.dox  
+  inflating: glfw-3.3.2/docs/spaces.svg  
+  inflating: glfw-3.3.2/docs/SUPPORT.md  
+  inflating: glfw-3.3.2/docs/vulkan.dox  
+  inflating: glfw-3.3.2/docs/window.dox  
+   creating: glfw-3.3.2/examples/
+  inflating: glfw-3.3.2/examples/boing.c  
+  inflating: glfw-3.3.2/examples/CMakeLists.txt  
+  inflating: glfw-3.3.2/examples/gears.c  
+  inflating: glfw-3.3.2/examples/glfw.icns  
+  inflating: glfw-3.3.2/examples/glfw.ico  
+  inflating: glfw-3.3.2/examples/glfw.rc  
+  inflating: glfw-3.3.2/examples/heightmap.c  
+  inflating: glfw-3.3.2/examples/offscreen.c  
+  inflating: glfw-3.3.2/examples/particles.c  
+  inflating: glfw-3.3.2/examples/sharing.c  
+  inflating: glfw-3.3.2/examples/simple.c  
+  inflating: glfw-3.3.2/examples/splitview.c  
+  inflating: glfw-3.3.2/examples/wave.c  
+   creating: glfw-3.3.2/include/
+   creating: glfw-3.3.2/include/GLFW/
+  inflating: glfw-3.3.2/include/GLFW/glfw3.h  
+  inflating: glfw-3.3.2/include/GLFW/glfw3native.h  
+  inflating: glfw-3.3.2/LICENSE.md   
+  inflating: glfw-3.3.2/README.md    
+   creating: glfw-3.3.2/src/
+  inflating: glfw-3.3.2/src/CMakeLists.txt  
+  inflating: glfw-3.3.2/src/cocoa_init.m  
+  inflating: glfw-3.3.2/src/cocoa_joystick.h  
+  inflating: glfw-3.3.2/src/cocoa_joystick.m  
+  inflating: glfw-3.3.2/src/cocoa_monitor.m  
+  inflating: glfw-3.3.2/src/cocoa_platform.h  
+  inflating: glfw-3.3.2/src/cocoa_time.c  
+  inflating: glfw-3.3.2/src/cocoa_window.m  
+  inflating: glfw-3.3.2/src/context.c  
+  inflating: glfw-3.3.2/src/egl_context.c  
+  inflating: glfw-3.3.2/src/egl_context.h  
+  inflating: glfw-3.3.2/src/glfw3.pc.in  
+ extracting: glfw-3.3.2/src/glfw3Config.cmake.in  
+  inflating: glfw-3.3.2/src/glfw_config.h.in  
+  inflating: glfw-3.3.2/src/glx_context.c  
+  inflating: glfw-3.3.2/src/glx_context.h  
+  inflating: glfw-3.3.2/src/init.c   
+  inflating: glfw-3.3.2/src/input.c  
+  inflating: glfw-3.3.2/src/internal.h  
+  inflating: glfw-3.3.2/src/linux_joystick.c  
+  inflating: glfw-3.3.2/src/linux_joystick.h  
+  inflating: glfw-3.3.2/src/mappings.h  
+  inflating: glfw-3.3.2/src/mappings.h.in  
+  inflating: glfw-3.3.2/src/monitor.c  
+  inflating: glfw-3.3.2/src/nsgl_context.h  
+  inflating: glfw-3.3.2/src/nsgl_context.m  
+  inflating: glfw-3.3.2/src/null_init.c  
+  inflating: glfw-3.3.2/src/null_joystick.c  
+  inflating: glfw-3.3.2/src/null_joystick.h  
+  inflating: glfw-3.3.2/src/null_monitor.c  
+  inflating: glfw-3.3.2/src/null_platform.h  
+  inflating: glfw-3.3.2/src/null_window.c  
+  inflating: glfw-3.3.2/src/osmesa_context.c  
+  inflating: glfw-3.3.2/src/osmesa_context.h  
+  inflating: glfw-3.3.2/src/posix_thread.c  
+  inflating: glfw-3.3.2/src/posix_thread.h  
+  inflating: glfw-3.3.2/src/posix_time.c  
+  inflating: glfw-3.3.2/src/posix_time.h  
+  inflating: glfw-3.3.2/src/vulkan.c  
+  inflating: glfw-3.3.2/src/wgl_context.c  
+  inflating: glfw-3.3.2/src/wgl_context.h  
+  inflating: glfw-3.3.2/src/win32_init.c  
+  inflating: glfw-3.3.2/src/win32_joystick.c  
+  inflating: glfw-3.3.2/src/win32_joystick.h  
+  inflating: glfw-3.3.2/src/win32_monitor.c  
+  inflating: glfw-3.3.2/src/win32_platform.h  
+  inflating: glfw-3.3.2/src/win32_thread.c  
+  inflating: glfw-3.3.2/src/win32_time.c  
+  inflating: glfw-3.3.2/src/win32_window.c  
+  inflating: glfw-3.3.2/src/window.c  
+  inflating: glfw-3.3.2/src/wl_init.c  
+  inflating: glfw-3.3.2/src/wl_monitor.c  
+  inflating: glfw-3.3.2/src/wl_platform.h  
+  inflating: glfw-3.3.2/src/wl_window.c  
+  inflating: glfw-3.3.2/src/x11_init.c  
+  inflating: glfw-3.3.2/src/x11_monitor.c  
+  inflating: glfw-3.3.2/src/x11_platform.h  
+  inflating: glfw-3.3.2/src/x11_window.c  
+  inflating: glfw-3.3.2/src/xkb_unicode.c  
+  inflating: glfw-3.3.2/src/xkb_unicode.h  
+   creating: glfw-3.3.2/tests/
+  inflating: glfw-3.3.2/tests/clipboard.c  
+  inflating: glfw-3.3.2/tests/CMakeLists.txt  
+  inflating: glfw-3.3.2/tests/cursor.c  
+  inflating: glfw-3.3.2/tests/empty.c  
+  inflating: glfw-3.3.2/tests/events.c  
+  inflating: glfw-3.3.2/tests/gamma.c  
+  inflating: glfw-3.3.2/tests/glfwinfo.c  
+  inflating: glfw-3.3.2/tests/icon.c  
+  inflating: glfw-3.3.2/tests/iconify.c  
+  inflating: glfw-3.3.2/tests/inputlag.c  
+  inflating: glfw-3.3.2/tests/joysticks.c  
+  inflating: glfw-3.3.2/tests/monitors.c  
+  inflating: glfw-3.3.2/tests/msaa.c  
+  inflating: glfw-3.3.2/tests/opacity.c  
+  inflating: glfw-3.3.2/tests/reopen.c  
+  inflating: glfw-3.3.2/tests/tearing.c  
+  inflating: glfw-3.3.2/tests/threads.c  
+  inflating: glfw-3.3.2/tests/timeout.c  
+  inflating: glfw-3.3.2/tests/title.c  
+  inflating: glfw-3.3.2/tests/triangle-vulkan.c  
+  inflating: glfw-3.3.2/tests/windows.c  
+liusheng@disini-ubuntu:/media/liusheng/Programfiles/Programs/libs/glfw$ ls
+3.2  3.3.2   glfw-3.2.1.bin.WIN32.zip  glfw-3.2.1.zip  glfw-3.3.2.zip
+3.3  github  glfw-3.2.1.bin.WIN64.zip  glfw-3.3.2      glfw-master.zip
+liusheng@disini-ubuntu:/media/liusheng/Programfiles/Programs/libs/glfw$ cd glfw-3.3.2/
+liusheng@disini-ubuntu:/media/liusheng/Programfiles/Programs/libs/glfw/glfw-3.3.2$ ls
+CMake                     deps      include     src
+CMakeLists.txt            docs      LICENSE.md  tests
+cmake_uninstall.cmake.in  examples  README.md
+liusheng@disini-ubuntu:/media/liusheng/Programfiles/Programs/libs/glfw/glfw-3.3.2$ cmake .^C
+liusheng@disini-ubuntu:/media/liusheng/Programfiles/Programs/libs/glfw/glfw-3.3.2$ ls ^C
+liusheng@disini-ubuntu:/media/liusheng/Programfiles/Programs/libs/glfw/glfw-3.3.2$ make
+make: *** 没有指明目标并且找不到 makefile。 停止。
+liusheng@disini-ubuntu:/media/liusheng/Programfiles/Programs/libs/glfw/glfw-3.3.2$ cmake .
+-- The C compiler identification is GNU 9.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+-- Looking for pthread_create in pthreads
+-- Looking for pthread_create in pthreads - not found
+-- Looking for pthread_create in pthread
+-- Looking for pthread_create in pthread - found
+-- Found Threads: TRUE  
+-- Could NOT find Doxygen (missing: DOXYGEN_EXECUTABLE) 
+-- Using X11 for window creation
+-- Found X11: /usr/include   
+-- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so
+-- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so - found
+-- Looking for gethostbyname
+-- Looking for gethostbyname - found
+-- Looking for connect
+-- Looking for connect - found
+-- Looking for remove
+-- Looking for remove - found
+-- Looking for shmat
+-- Looking for shmat - found
+-- Looking for IceConnectionNumber in ICE
+-- Looking for IceConnectionNumber in ICE - found
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /media/liusheng/Programfiles/Programs/libs/glfw/glfw-3.3.2
+liusheng@disini-ubuntu:/media/liusheng/Programfiles/Programs/libs/glfw/glfw-3.3.2$ make -j16
+Scanning dependencies of target glfw
+[  1%] Building C object src/CMakeFiles/glfw.dir/init.c.o
+[  2%] Building C object src/CMakeFiles/glfw.dir/input.c.o
+[  2%] Building C object src/CMakeFiles/glfw.dir/monitor.c.o
+[  3%] Building C object src/CMakeFiles/glfw.dir/vulkan.c.o
+[  4%] Building C object src/CMakeFiles/glfw.dir/x11_init.c.o
+[  5%] Building C object src/CMakeFiles/glfw.dir/x11_monitor.c.o
+[  6%] Building C object src/CMakeFiles/glfw.dir/context.c.o
+[  8%] Building C object src/CMakeFiles/glfw.dir/linux_joystick.c.o
+[  8%] Building C object src/CMakeFiles/glfw.dir/window.c.o
+[  8%] Building C object src/CMakeFiles/glfw.dir/posix_time.c.o
+[ 11%] Building C object src/CMakeFiles/glfw.dir/osmesa_context.c.o
+[ 11%] Building C object src/CMakeFiles/glfw.dir/glx_context.c.o
+[ 11%] Building C object src/CMakeFiles/glfw.dir/egl_context.c.o
+[ 13%] Building C object src/CMakeFiles/glfw.dir/x11_window.c.o
+[ 13%] Building C object src/CMakeFiles/glfw.dir/posix_thread.c.o
+[ 14%] Building C object src/CMakeFiles/glfw.dir/xkb_unicode.c.o
+[ 15%] Linking C static library libglfw3.a
+[ 15%] Built target glfw
+Scanning dependencies of target gears
+Scanning dependencies of target heightmap
+Scanning dependencies of target particles
+Scanning dependencies of target sharing
+Scanning dependencies of target offscreen
+Scanning dependencies of target boing
+Scanning dependencies of target reopen
+Scanning dependencies of target inputlag
+Scanning dependencies of target splitview
+Scanning dependencies of target wave
+Scanning dependencies of target simple
+Scanning dependencies of target monitors
+Scanning dependencies of target iconify
+Scanning dependencies of target gamma
+Scanning dependencies of target tearing
+Scanning dependencies of target icon
+[ 16%] Building C object examples/CMakeFiles/gears.dir/gears.c.o
+[ 17%] Building C object examples/CMakeFiles/heightmap.dir/heightmap.c.o
+[ 18%] Building C object examples/CMakeFiles/boing.dir/boing.c.o
+[ 18%] Building C object examples/CMakeFiles/sharing.dir/sharing.c.o
+[ 19%] Building C object examples/CMakeFiles/splitview.dir/splitview.c.o
+[ 20%] Building C object examples/CMakeFiles/offscreen.dir/offscreen.c.o
+[ 20%] Building C object tests/CMakeFiles/reopen.dir/reopen.c.o
+[ 21%] Building C object tests/CMakeFiles/monitors.dir/monitors.c.o
+[ 21%] Building C object examples/CMakeFiles/wave.dir/wave.c.o
+[ 22%] Building C object examples/CMakeFiles/particles.dir/particles.c.o
+[ 23%] Building C object tests/CMakeFiles/iconify.dir/iconify.c.o
+[ 25%] Building C object tests/CMakeFiles/icon.dir/icon.c.o
+[ 26%] Building C object examples/CMakeFiles/simple.dir/simple.c.o
+[ 28%] Building C object tests/CMakeFiles/tearing.dir/tearing.c.o
+[ 28%] Building C object tests/CMakeFiles/inputlag.dir/inputlag.c.o
+[ 28%] Building C object tests/CMakeFiles/gamma.dir/gamma.c.o
+[ 29%] Building C object examples/CMakeFiles/heightmap.dir/__/deps/glad_gl.c.o
+[ 30%] Building C object examples/CMakeFiles/boing.dir/__/deps/glad_gl.c.o
+[ 31%] Building C object examples/CMakeFiles/sharing.dir/__/deps/glad_gl.c.o
+[ 32%] Building C object examples/CMakeFiles/gears.dir/__/deps/glad_gl.c.o
+[ 33%] Building C object tests/CMakeFiles/monitors.dir/__/deps/getopt.c.o
+[ 34%] Building C object tests/CMakeFiles/iconify.dir/__/deps/getopt.c.o
+[ 35%] Building C object examples/CMakeFiles/wave.dir/__/deps/glad_gl.c.o
+[ 36%] Building C object tests/CMakeFiles/icon.dir/__/deps/glad_gl.c.o
+[ 37%] Building C object tests/CMakeFiles/reopen.dir/__/deps/glad_gl.c.o
+[ 37%] Building C object examples/CMakeFiles/simple.dir/__/deps/glad_gl.c.o
+[ 39%] Building C object examples/CMakeFiles/offscreen.dir/__/deps/glad_gl.c.o
+[ 39%] Building C object examples/CMakeFiles/splitview.dir/__/deps/glad_gl.c.o
+[ 41%] Building C object examples/CMakeFiles/particles.dir/__/deps/tinycthread.c.o
+[ 41%] Building C object tests/CMakeFiles/tearing.dir/__/deps/glad_gl.c.o
+[ 42%] Building C object tests/CMakeFiles/monitors.dir/__/deps/glad_gl.c.o
+[ 44%] Linking C executable boing
+[ 44%] Building C object tests/CMakeFiles/iconify.dir/__/deps/glad_gl.c.o
+[ 44%] Linking C executable heightmap
+[ 45%] Linking C executable gears
+[ 47%] Linking C executable wave
+[ 47%] Linking C executable tearing
+[ 47%] Linking C executable sharing
+[ 48%] Linking C executable reopen
+[ 49%] Linking C executable icon
+[ 52%] Linking C executable offscreen
+[ 52%] Linking C executable splitview
+[ 52%] Linking C executable simple
+[ 53%] Building C object examples/CMakeFiles/particles.dir/__/deps/getopt.c.o
+[ 54%] Linking C executable monitors
+[ 54%] Linking C executable iconify
+[ 55%] Building C object examples/CMakeFiles/particles.dir/__/deps/glad_gl.c.o
+[ 57%] Building C object tests/CMakeFiles/inputlag.dir/__/deps/getopt.c.o
+[ 57%] Building C object tests/CMakeFiles/gamma.dir/__/deps/glad_gl.c.o
+[ 57%] Built target heightmap
+[ 57%] Built target boing
+[ 57%] Built target gears
+[ 58%] Building C object tests/CMakeFiles/inputlag.dir/__/deps/glad_gl.c.o
+[ 58%] Built target reopen
+[ 58%] Built target sharing
+[ 58%] Built target tearing
+[ 58%] Built target offscreen
+Scanning dependencies of target empty
+[ 58%] Built target icon
+Scanning dependencies of target events
+Scanning dependencies of target msaa
+[ 58%] Built target wave
+[ 58%] Built target simple
+Scanning dependencies of target joysticks
+[ 58%] Built target splitview
+Scanning dependencies of target cursor
+Scanning dependencies of target threads
+Scanning dependencies of target glfwinfo
+Scanning dependencies of target opacity
+[ 59%] Building C object tests/CMakeFiles/msaa.dir/msaa.c.o
+Scanning dependencies of target windows
+Scanning dependencies of target clipboard
+[ 60%] Building C object tests/CMakeFiles/empty.dir/empty.c.o
+[ 61%] Building C object tests/CMakeFiles/events.dir/events.c.o
+Scanning dependencies of target title
+[ 61%] Built target monitors
+[ 63%] Building C object tests/CMakeFiles/joysticks.dir/joysticks.c.o
+[ 63%] Building C object tests/CMakeFiles/cursor.dir/cursor.c.o
+[ 63%] Linking C executable gamma
+[ 64%] Linking C executable particles
+[ 64%] Built target iconify
+[ 64%] Building C object tests/CMakeFiles/glfwinfo.dir/glfwinfo.c.o
+[ 66%] Building C object tests/CMakeFiles/cursor.dir/__/deps/glad_gl.c.o
+[ 67%] Building C object tests/CMakeFiles/opacity.dir/opacity.c.o
+[ 67%] Building C object tests/CMakeFiles/threads.dir/threads.c.o
+[ 68%] Building C object tests/CMakeFiles/windows.dir/windows.c.o
+[ 69%] Building C object tests/CMakeFiles/clipboard.dir/clipboard.c.o
+[ 70%] Linking C executable inputlag
+[ 70%] Building C object tests/CMakeFiles/joysticks.dir/__/deps/glad_gl.c.o
+[ 71%] Building C object tests/CMakeFiles/title.dir/title.c.o
+[ 71%] Building C object tests/CMakeFiles/msaa.dir/__/deps/getopt.c.o
+[ 72%] Building C object tests/CMakeFiles/events.dir/__/deps/getopt.c.o
+[ 73%] Building C object tests/CMakeFiles/empty.dir/__/deps/tinycthread.c.o
+[ 74%] Building C object tests/CMakeFiles/events.dir/__/deps/glad_gl.c.o
+[ 75%] Building C object tests/CMakeFiles/clipboard.dir/__/deps/getopt.c.o
+[ 76%] Building C object tests/CMakeFiles/windows.dir/__/deps/getopt.c.o
+[ 77%] Building C object tests/CMakeFiles/title.dir/__/deps/glad_gl.c.o
+[ 78%] Linking C executable cursor
+[ 79%] Building C object tests/CMakeFiles/threads.dir/__/deps/tinycthread.c.o
+[ 80%] Building C object tests/CMakeFiles/glfwinfo.dir/__/deps/getopt.c.o
+[ 80%] Built target particles
+[ 81%] Building C object tests/CMakeFiles/glfwinfo.dir/__/deps/glad_gl.c.o
+[ 83%] Building C object tests/CMakeFiles/windows.dir/__/deps/glad_gl.c.o
+[ 83%] Building C object tests/CMakeFiles/msaa.dir/__/deps/glad_gl.c.o
+[ 84%] Building C object tests/CMakeFiles/glfwinfo.dir/__/deps/glad_vulkan.c.o
+[ 84%] Built target inputlag
+[ 84%] Built target gamma
+[ 85%] Building C object tests/CMakeFiles/clipboard.dir/__/deps/glad_gl.c.o
+[ 86%] Building C object tests/CMakeFiles/empty.dir/__/deps/glad_gl.c.o
+[ 87%] Building C object tests/CMakeFiles/threads.dir/__/deps/glad_gl.c.o
+Scanning dependencies of target triangle-vulkan
+[ 87%] Building C object tests/CMakeFiles/opacity.dir/__/deps/glad_gl.c.o
+[ 88%] Linking C executable events
+Scanning dependencies of target timeout
+[ 89%] Building C object tests/CMakeFiles/triangle-vulkan.dir/__/deps/glad_vulkan.c.o
+[ 90%] Building C object tests/CMakeFiles/triangle-vulkan.dir/triangle-vulkan.c.o
+[ 92%] Linking C executable windows
+[ 92%] Linking C executable title
+[ 93%] Building C object tests/CMakeFiles/timeout.dir/timeout.c.o
+[ 93%] Linking C executable clipboard
+[ 94%] Building C object tests/CMakeFiles/timeout.dir/__/deps/glad_gl.c.o
+[ 96%] Linking C executable glfwinfo
+[ 96%] Linking C executable msaa
+[ 96%] Built target cursor
+[ 96%] Linking C executable empty
+[ 97%] Linking C executable threads
+[ 98%] Linking C executable triangle-vulkan
+[100%] Linking C executable opacity
+[100%] Linking C executable joysticks
+[100%] Built target events
+[100%] Linking C executable timeout
+[100%] Built target title
+[100%] Built target windows
+[100%] Built target clipboard
+[100%] Built target glfwinfo
+[100%] Built target msaa
+[100%] Built target empty
+[100%] Built target threads
+[100%] Built target triangle-vulkan
+[100%] Built target opacity
+[100%] Built target joysticks
+[100%] Built target timeout
+liusheng@disini-ubuntu:/media/liusheng/Programfiles/Programs/libs/glfw/glfw-3.3.2$ ls
+CMake                CMakeLists.txt            docs        Makefile
+CMakeCache.txt       cmake_uninstall.cmake     examples    README.md
+CMakeFiles           cmake_uninstall.cmake.in  include     src
+cmake_install.cmake  deps                      LICENSE.md  tests
+liusheng@disini-ubuntu:/media/liusheng/Programfiles/Programs/libs/glfw/glfw-3.3.2$ find -name libglfw3.a
+./src/libglfw3.a
+liusheng@disini-ubuntu:/media/liusheng/Programfiles/Programs/libs/glfw/glfw-3.3.2$ realpath 
+CMake/                    cmake_uninstall.cmake.in  Makefile
+CMakeCache.txt            deps/                     README.md
+CMakeFiles/               docs/                     src/
+cmake_install.cmake       examples/                 tests/
+CMakeLists.txt            include/                  
+cmake_uninstall.cmake     LICENSE.md                
+liusheng@disini-ubuntu:/media/liusheng/Programfiles/Programs/libs/glfw/glfw-3.3.2$ realpath src/
+CMakeFiles/               input.c                   vulkan.c
+cmake_install.cmake       internal.h                wgl_context.c
+CMakeLists.txt            libglfw3.a                wgl_context.h
+cocoa_init.m              linux_joystick.c          win32_init.c
+cocoa_joystick.h          linux_joystick.h          win32_joystick.c
+cocoa_joystick.m          Makefile                  win32_joystick.h
+cocoa_monitor.m           mappings.h                win32_monitor.c
+cocoa_platform.h          mappings.h.in             win32_platform.h
+cocoa_time.c              monitor.c                 win32_thread.c
+cocoa_window.m            nsgl_context.h            win32_time.c
+context.c                 nsgl_context.m            win32_window.c
+egl_context.c             null_init.c               window.c
+egl_context.h             null_joystick.c           wl_init.c
+glfw3Config.cmake         null_joystick.h           wl_monitor.c
+glfw3Config.cmake.in      null_monitor.c            wl_platform.h
+glfw3ConfigVersion.cmake  null_platform.h           wl_window.c
+glfw3.pc                  null_window.c             x11_init.c
+glfw3.pc.in               osmesa_context.c          x11_monitor.c
+glfw_config.h             osmesa_context.h          x11_platform.h
+glfw_config.h.in          posix_thread.c            x11_window.c
+glx_context.c             posix_thread.h            xkb_unicode.c
+glx_context.h             posix_time.c              xkb_unicode.h
+init.c                    posix_time.h              
+liusheng@disini-ubuntu:/media/liusheng/Programfiles/Programs/libs/glfw/glfw-3.3.2$ realpath src/^C
+liusheng@disini-ubuntu:/media/liusheng/Programfiles/Programs/libs/glfw/glfw-3.3.2$ ls
+CMake                CMakeLists.txt            docs        Makefile
+CMakeCache.txt       cmake_uninstall.cmake     examples    README.md
+CMakeFiles           cmake_uninstall.cmake.in  include     src
+cmake_install.cmake  deps                      LICENSE.md  tests
+liusheng@disini-ubuntu:/media/liusheng/Programfiles/Programs/libs/glfw/glfw-3.3.2$ vim Makefile 
+
+Command 'vim' not found, but can be installed with:
+
+sudo apt install vim         # version 2:8.1.2269-1ubuntu5, or
+sudo apt install vim-tiny    # version 2:8.1.2269-1ubuntu5
+sudo apt install neovim      # version 0.4.3-3
+sudo apt install vim-athena  # version 2:8.1.2269-1ubuntu5
+sudo apt install vim-gtk3    # version 2:8.1.2269-1ubuntu5
+sudo apt install vim-nox     # version 2:8.1.2269-1ubuntu5
+
+liusheng@disini-ubuntu:/media/liusheng/Programfiles/Programs/libs/glfw/glfw-3.3.2$ nano Makefile 
+liusheng@disini-ubuntu:/media/liusheng/Programfiles/Programs/libs/glfw/glfw-3.3.2$ less Makefile 
+liusheng@disini-ubuntu:/media/liusheng/Programfiles/Programs/libs/glfw/glfw-3.3.2$ grep libglfw -r
+CMakeFiles/Export/lib/cmake/glfw3/glfw3Targets-noconfig.cmake:  IMPORTED_LOCATION_NOCONFIG "${_IMPORT_PREFIX}/lib/libglfw3.a"
+CMakeFiles/Export/lib/cmake/glfw3/glfw3Targets-noconfig.cmake:list(APPEND _IMPORT_CHECK_FILES_FOR_glfw "${_IMPORT_PREFIX}/lib/libglfw3.a" )
+docs/build.dox:If you are using the dynamic GLFW library, which is named `libglfw.3.dylib`, do:
+docs/build.dox:If you are using the static library, named `libglfw3.a`, substitute `-lglfw3`
+docs/html/build_guide.html:<p>If you are using the dynamic GLFW library, which is named <code>libglfw.3.dylib</code>, do:</p>
+docs/html/build_guide.html:</div><!-- fragment --><p>If you are using the static library, named <code>libglfw3.a</code>, substitute <code>-lglfw3</code> for <code>-lglfw</code>.</p>
+docs/html/moving_guide.html:<p>The GLFW 3 header is named <a class="el" href="glfw3_8h.html">glfw3.h</a> and moved to the <code>GLFW</code> directory, to avoid collisions with the headers of other major versions. Similarly, the GLFW 3 library is named <code>glfw3,</code> except when it's installed as a shared library on Unix-like systems, where it uses the <a href="https://en.wikipedia.org/wiki/soname">soname</a> <code>libglfw.so.3</code>.</p>
+docs/moving.dox:[soname](https://en.wikipedia.org/wiki/soname) `libglfw.so.3`.
+examples/CMakeFiles/boing.dir/build.make:examples/boing: src/libglfw3.a
+examples/CMakeFiles/boing.dir/link.txt:/usr/bin/cc -rdynamic CMakeFiles/boing.dir/boing.c.o CMakeFiles/boing.dir/__/deps/glad_gl.c.o -o boing  ../src/libglfw3.a -lm -lrt -lm -ldl -lX11 -lpthread 
+examples/CMakeFiles/gears.dir/build.make:examples/gears: src/libglfw3.a
+examples/CMakeFiles/gears.dir/link.txt:/usr/bin/cc -rdynamic CMakeFiles/gears.dir/gears.c.o CMakeFiles/gears.dir/__/deps/glad_gl.c.o -o gears  ../src/libglfw3.a -lm -lrt -lm -ldl -lX11 -lpthread 
+examples/CMakeFiles/heightmap.dir/build.make:examples/heightmap: src/libglfw3.a
+examples/CMakeFiles/heightmap.dir/link.txt:/usr/bin/cc -rdynamic CMakeFiles/heightmap.dir/heightmap.c.o CMakeFiles/heightmap.dir/__/deps/glad_gl.c.o -o heightmap  ../src/libglfw3.a -lm -lrt -lm -ldl -lX11 -lpthread 
+examples/CMakeFiles/offscreen.dir/build.make:examples/offscreen: src/libglfw3.a
+examples/CMakeFiles/offscreen.dir/link.txt:/usr/bin/cc -rdynamic CMakeFiles/offscreen.dir/offscreen.c.o CMakeFiles/offscreen.dir/__/deps/glad_gl.c.o -o offscreen  ../src/libglfw3.a -lm -lrt -lm -ldl -lX11 -lpthread 
+examples/CMakeFiles/particles.dir/build.make:examples/particles: src/libglfw3.a
+examples/CMakeFiles/particles.dir/link.txt:/usr/bin/cc -rdynamic CMakeFiles/particles.dir/particles.c.o CMakeFiles/particles.dir/__/deps/tinycthread.c.o CMakeFiles/particles.dir/__/deps/getopt.c.o CMakeFiles/particles.dir/__/deps/glad_gl.c.o -o particles  ../src/libglfw3.a -lm -lpthread -lrt -ldl -lX11 -lpthread 
+examples/CMakeFiles/sharing.dir/build.make:examples/sharing: src/libglfw3.a
+examples/CMakeFiles/sharing.dir/link.txt:/usr/bin/cc -rdynamic CMakeFiles/sharing.dir/sharing.c.o CMakeFiles/sharing.dir/__/deps/glad_gl.c.o -o sharing  ../src/libglfw3.a -lm -lrt -lm -ldl -lX11 -lpthread 
+examples/CMakeFiles/simple.dir/build.make:examples/simple: src/libglfw3.a
+examples/CMakeFiles/simple.dir/link.txt:/usr/bin/cc -rdynamic CMakeFiles/simple.dir/simple.c.o CMakeFiles/simple.dir/__/deps/glad_gl.c.o -o simple  ../src/libglfw3.a -lm -lrt -lm -ldl -lX11 -lpthread 
+examples/CMakeFiles/splitview.dir/build.make:examples/splitview: src/libglfw3.a
+examples/CMakeFiles/splitview.dir/link.txt:/usr/bin/cc -rdynamic CMakeFiles/splitview.dir/splitview.c.o CMakeFiles/splitview.dir/__/deps/glad_gl.c.o -o splitview  ../src/libglfw3.a -lm -lrt -lm -ldl -lX11 -lpthread 
+examples/CMakeFiles/wave.dir/build.make:examples/wave: src/libglfw3.a
+examples/CMakeFiles/wave.dir/link.txt:/usr/bin/cc -rdynamic CMakeFiles/wave.dir/wave.c.o CMakeFiles/wave.dir/__/deps/glad_gl.c.o -o wave  ../src/libglfw3.a -lm -lrt -lm -ldl -lX11 -lpthread 
+src/CMakeFiles/glfw.dir/build.make:src/libglfw3.a: src/CMakeFiles/glfw.dir/context.c.o
+src/CMakeFiles/glfw.dir/build.make:src/libglfw3.a: src/CMakeFiles/glfw.dir/init.c.o
+src/CMakeFiles/glfw.dir/build.make:src/libglfw3.a: src/CMakeFiles/glfw.dir/input.c.o
+src/CMakeFiles/glfw.dir/build.make:src/libglfw3.a: src/CMakeFiles/glfw.dir/monitor.c.o
+src/CMakeFiles/glfw.dir/build.make:src/libglfw3.a: src/CMakeFiles/glfw.dir/vulkan.c.o
+src/CMakeFiles/glfw.dir/build.make:src/libglfw3.a: src/CMakeFiles/glfw.dir/window.c.o
+src/CMakeFiles/glfw.dir/build.make:src/libglfw3.a: src/CMakeFiles/glfw.dir/x11_init.c.o
+src/CMakeFiles/glfw.dir/build.make:src/libglfw3.a: src/CMakeFiles/glfw.dir/x11_monitor.c.o
+src/CMakeFiles/glfw.dir/build.make:src/libglfw3.a: src/CMakeFiles/glfw.dir/x11_window.c.o
+src/CMakeFiles/glfw.dir/build.make:src/libglfw3.a: src/CMakeFiles/glfw.dir/xkb_unicode.c.o
+src/CMakeFiles/glfw.dir/build.make:src/libglfw3.a: src/CMakeFiles/glfw.dir/posix_time.c.o
+src/CMakeFiles/glfw.dir/build.make:src/libglfw3.a: src/CMakeFiles/glfw.dir/posix_thread.c.o
+src/CMakeFiles/glfw.dir/build.make:src/libglfw3.a: src/CMakeFiles/glfw.dir/glx_context.c.o
+src/CMakeFiles/glfw.dir/build.make:src/libglfw3.a: src/CMakeFiles/glfw.dir/egl_context.c.o
+src/CMakeFiles/glfw.dir/build.make:src/libglfw3.a: src/CMakeFiles/glfw.dir/osmesa_context.c.o
+src/CMakeFiles/glfw.dir/build.make:src/libglfw3.a: src/CMakeFiles/glfw.dir/linux_joystick.c.o
+src/CMakeFiles/glfw.dir/build.make:src/libglfw3.a: src/CMakeFiles/glfw.dir/build.make
+src/CMakeFiles/glfw.dir/build.make:src/libglfw3.a: src/CMakeFiles/glfw.dir/link.txt
+src/CMakeFiles/glfw.dir/build.make:	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/media/liusheng/Programfiles/Programs/libs/glfw/glfw-3.3.2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Linking C static library libglfw3.a"
+src/CMakeFiles/glfw.dir/build.make:src/CMakeFiles/glfw.dir/build: src/libglfw3.a
+src/CMakeFiles/glfw.dir/cmake_clean.cmake:  "libglfw3.a"
+src/CMakeFiles/glfw.dir/cmake_clean.cmake:  "libglfw3.pdb"
+src/CMakeFiles/glfw.dir/cmake_clean_target.cmake:  "libglfw3.a"
+src/CMakeFiles/glfw.dir/link.txt:/usr/bin/ar qc libglfw3.a CMakeFiles/glfw.dir/context.c.o CMakeFiles/glfw.dir/init.c.o CMakeFiles/glfw.dir/input.c.o CMakeFiles/glfw.dir/monitor.c.o CMakeFiles/glfw.dir/vulkan.c.o CMakeFiles/glfw.dir/window.c.o CMakeFiles/glfw.dir/x11_init.c.o CMakeFiles/glfw.dir/x11_monitor.c.o CMakeFiles/glfw.dir/x11_window.c.o CMakeFiles/glfw.dir/xkb_unicode.c.o CMakeFiles/glfw.dir/posix_time.c.o CMakeFiles/glfw.dir/posix_thread.c.o CMakeFiles/glfw.dir/glx_context.c.o CMakeFiles/glfw.dir/egl_context.c.o CMakeFiles/glfw.dir/osmesa_context.c.o CMakeFiles/glfw.dir/linux_joystick.c.o
+src/CMakeFiles/glfw.dir/link.txt:/usr/bin/ranlib libglfw3.a
+src/cmake_install.cmake:  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/media/liusheng/Programfiles/Programs/libs/glfw/glfw-3.3.2/src/libglfw3.a")
+tests/CMakeFiles/clipboard.dir/build.make:tests/clipboard: src/libglfw3.a
+tests/CMakeFiles/clipboard.dir/link.txt:/usr/bin/cc -rdynamic CMakeFiles/clipboard.dir/clipboard.c.o CMakeFiles/clipboard.dir/__/deps/getopt.c.o CMakeFiles/clipboard.dir/__/deps/glad_gl.c.o -o clipboard  ../src/libglfw3.a -lm -lrt -lm -ldl -lX11 -lpthread 
+tests/CMakeFiles/cursor.dir/build.make:tests/cursor: src/libglfw3.a
+tests/CMakeFiles/cursor.dir/link.txt:/usr/bin/cc -rdynamic CMakeFiles/cursor.dir/cursor.c.o CMakeFiles/cursor.dir/__/deps/glad_gl.c.o -o cursor  ../src/libglfw3.a -lm -lrt -lm -ldl -lX11 -lpthread 
+tests/CMakeFiles/empty.dir/build.make:tests/empty: src/libglfw3.a
+tests/CMakeFiles/empty.dir/link.txt:/usr/bin/cc -rdynamic CMakeFiles/empty.dir/empty.c.o CMakeFiles/empty.dir/__/deps/tinycthread.c.o CMakeFiles/empty.dir/__/deps/glad_gl.c.o -o empty  ../src/libglfw3.a -lm -lpthread -lrt -ldl -lX11 -lpthread 
+tests/CMakeFiles/events.dir/build.make:tests/events: src/libglfw3.a
+tests/CMakeFiles/events.dir/link.txt:/usr/bin/cc -rdynamic CMakeFiles/events.dir/events.c.o CMakeFiles/events.dir/__/deps/getopt.c.o CMakeFiles/events.dir/__/deps/glad_gl.c.o -o events  ../src/libglfw3.a -lm -lrt -lm -ldl -lX11 -lpthread 
+tests/CMakeFiles/gamma.dir/build.make:tests/gamma: src/libglfw3.a
+tests/CMakeFiles/gamma.dir/link.txt:/usr/bin/cc -rdynamic CMakeFiles/gamma.dir/gamma.c.o CMakeFiles/gamma.dir/__/deps/glad_gl.c.o -o gamma  ../src/libglfw3.a -lm -lrt -lm -ldl -lX11 -lpthread 
+tests/CMakeFiles/glfwinfo.dir/build.make:tests/glfwinfo: src/libglfw3.a
+tests/CMakeFiles/glfwinfo.dir/link.txt:/usr/bin/cc -rdynamic CMakeFiles/glfwinfo.dir/glfwinfo.c.o CMakeFiles/glfwinfo.dir/__/deps/getopt.c.o CMakeFiles/glfwinfo.dir/__/deps/glad_gl.c.o CMakeFiles/glfwinfo.dir/__/deps/glad_vulkan.c.o -o glfwinfo  ../src/libglfw3.a -lm -lrt -lm -ldl -lX11 -lpthread 
+tests/CMakeFiles/icon.dir/build.make:tests/icon: src/libglfw3.a
+tests/CMakeFiles/icon.dir/link.txt:/usr/bin/cc -rdynamic CMakeFiles/icon.dir/icon.c.o CMakeFiles/icon.dir/__/deps/glad_gl.c.o -o icon  ../src/libglfw3.a -lm -lrt -lm -ldl -lX11 -lpthread 
+tests/CMakeFiles/iconify.dir/build.make:tests/iconify: src/libglfw3.a
+tests/CMakeFiles/iconify.dir/link.txt:/usr/bin/cc -rdynamic CMakeFiles/iconify.dir/iconify.c.o CMakeFiles/iconify.dir/__/deps/getopt.c.o CMakeFiles/iconify.dir/__/deps/glad_gl.c.o -o iconify  ../src/libglfw3.a -lm -lrt -lm -ldl -lX11 -lpthread 
+tests/CMakeFiles/inputlag.dir/build.make:tests/inputlag: src/libglfw3.a
+tests/CMakeFiles/inputlag.dir/link.txt:/usr/bin/cc -rdynamic CMakeFiles/inputlag.dir/inputlag.c.o CMakeFiles/inputlag.dir/__/deps/getopt.c.o CMakeFiles/inputlag.dir/__/deps/glad_gl.c.o -o inputlag  ../src/libglfw3.a -lm -lrt -lm -ldl -lX11 -lpthread 
+tests/CMakeFiles/joysticks.dir/build.make:tests/joysticks: src/libglfw3.a
+tests/CMakeFiles/joysticks.dir/link.txt:/usr/bin/cc -rdynamic CMakeFiles/joysticks.dir/joysticks.c.o CMakeFiles/joysticks.dir/__/deps/glad_gl.c.o -o joysticks  ../src/libglfw3.a -lm -lrt -lm -ldl -lX11 -lpthread 
+tests/CMakeFiles/monitors.dir/build.make:tests/monitors: src/libglfw3.a
+tests/CMakeFiles/monitors.dir/link.txt:/usr/bin/cc -rdynamic CMakeFiles/monitors.dir/monitors.c.o CMakeFiles/monitors.dir/__/deps/getopt.c.o CMakeFiles/monitors.dir/__/deps/glad_gl.c.o -o monitors  ../src/libglfw3.a -lm -lrt -lm -ldl -lX11 -lpthread 
+tests/CMakeFiles/msaa.dir/build.make:tests/msaa: src/libglfw3.a
+tests/CMakeFiles/msaa.dir/link.txt:/usr/bin/cc -rdynamic CMakeFiles/msaa.dir/msaa.c.o CMakeFiles/msaa.dir/__/deps/getopt.c.o CMakeFiles/msaa.dir/__/deps/glad_gl.c.o -o msaa  ../src/libglfw3.a -lm -lrt -lm -ldl -lX11 -lpthread 
+tests/CMakeFiles/opacity.dir/build.make:tests/opacity: src/libglfw3.a
+tests/CMakeFiles/opacity.dir/link.txt:/usr/bin/cc -rdynamic CMakeFiles/opacity.dir/opacity.c.o CMakeFiles/opacity.dir/__/deps/glad_gl.c.o -o opacity  ../src/libglfw3.a -lm -lrt -lm -ldl -lX11 -lpthread 
+tests/CMakeFiles/reopen.dir/build.make:tests/reopen: src/libglfw3.a
+tests/CMakeFiles/reopen.dir/link.txt:/usr/bin/cc -rdynamic CMakeFiles/reopen.dir/reopen.c.o CMakeFiles/reopen.dir/__/deps/glad_gl.c.o -o reopen  ../src/libglfw3.a -lm -lrt -lm -ldl -lX11 -lpthread 
+tests/CMakeFiles/tearing.dir/build.make:tests/tearing: src/libglfw3.a
+tests/CMakeFiles/tearing.dir/link.txt:/usr/bin/cc -rdynamic CMakeFiles/tearing.dir/tearing.c.o CMakeFiles/tearing.dir/__/deps/glad_gl.c.o -o tearing  ../src/libglfw3.a -lm -lrt -lm -ldl -lX11 -lpthread 
+tests/CMakeFiles/threads.dir/build.make:tests/threads: src/libglfw3.a
+tests/CMakeFiles/threads.dir/link.txt:/usr/bin/cc -rdynamic CMakeFiles/threads.dir/threads.c.o CMakeFiles/threads.dir/__/deps/tinycthread.c.o CMakeFiles/threads.dir/__/deps/glad_gl.c.o -o threads  ../src/libglfw3.a -lm -lpthread -lrt -ldl -lX11 -lpthread 
+tests/CMakeFiles/timeout.dir/build.make:tests/timeout: src/libglfw3.a
+tests/CMakeFiles/timeout.dir/link.txt:/usr/bin/cc -rdynamic CMakeFiles/timeout.dir/timeout.c.o CMakeFiles/timeout.dir/__/deps/glad_gl.c.o -o timeout  ../src/libglfw3.a -lm -lrt -lm -ldl -lX11 -lpthread 
+tests/CMakeFiles/title.dir/build.make:tests/title: src/libglfw3.a
+tests/CMakeFiles/title.dir/link.txt:/usr/bin/cc -rdynamic CMakeFiles/title.dir/title.c.o CMakeFiles/title.dir/__/deps/glad_gl.c.o -o title  ../src/libglfw3.a -lm -lrt -lm -ldl -lX11 -lpthread 
+tests/CMakeFiles/triangle-vulkan.dir/build.make:tests/triangle-vulkan: src/libglfw3.a
+tests/CMakeFiles/triangle-vulkan.dir/link.txt:/usr/bin/cc -rdynamic CMakeFiles/triangle-vulkan.dir/triangle-vulkan.c.o CMakeFiles/triangle-vulkan.dir/__/deps/glad_vulkan.c.o -o triangle-vulkan  ../src/libglfw3.a -lm -lrt -lm -ldl -lX11 -lpthread 
+tests/CMakeFiles/windows.dir/build.make:tests/windows: src/libglfw3.a
+tests/CMakeFiles/windows.dir/link.txt:/usr/bin/cc -rdynamic CMakeFiles/windows.dir/windows.c.o CMakeFiles/windows.dir/__/deps/getopt.c.o CMakeFiles/windows.dir/__/deps/glad_gl.c.o -o windows  ../src/libglfw3.a -lm -lrt -lm -ldl -lX11 -lpthread 
+liusheng@disini-ubuntu:/media/liusheng/Programfiles/Programs/libs/glfw/glfw-3.3.2$ ls
+CMake                CMakeLists.txt            docs        Makefile
+CMakeCache.txt       cmake_uninstall.cmake     examples    README.md
+CMakeFiles           cmake_uninstall.cmake.in  include     src
+cmake_install.cmake  deps                      LICENSE.md  tests
+liusheng@disini-ubuntu:/media/liusheng/Programfiles/Programs/libs/glfw/glfw-3.3.2$ realpath src/
+/media/liusheng/Programfiles/Programs/libs/glfw/glfw-3.3.2/src
+liusheng@disini-ubuntu:/media/liusheng/Programfiles/Programs/libs/glfw/glfw-3.3.2$ realpath src/
+CMakeFiles/               input.c                   vulkan.c
+cmake_install.cmake       internal.h                wgl_context.c
+CMakeLists.txt            libglfw3.a                wgl_context.h
+cocoa_init.m              linux_joystick.c          win32_init.c
+cocoa_joystick.h          linux_joystick.h          win32_joystick.c
+cocoa_joystick.m          Makefile                  win32_joystick.h
+cocoa_monitor.m           mappings.h                win32_monitor.c
+cocoa_platform.h          mappings.h.in             win32_platform.h
+cocoa_time.c              monitor.c                 win32_thread.c
+cocoa_window.m            nsgl_context.h            win32_time.c
+context.c                 nsgl_context.m            win32_window.c
+egl_context.c             null_init.c               window.c
+egl_context.h             null_joystick.c           wl_init.c
+glfw3Config.cmake         null_joystick.h           wl_monitor.c
+glfw3Config.cmake.in      null_monitor.c            wl_platform.h
+glfw3ConfigVersion.cmake  null_platform.h           wl_window.c
+glfw3.pc                  null_window.c             x11_init.c
+glfw3.pc.in               osmesa_context.c          x11_monitor.c
+glfw_config.h             osmesa_context.h          x11_platform.h
+glfw_config.h.in          posix_thread.c            x11_window.c
+glx_context.c             posix_thread.h            xkb_unicode.c
+glx_context.h             posix_time.c              xkb_unicode.h
+init.c                    posix_time.h              
+liusheng@disini-ubuntu:/media/liusheng/Programfiles/Programs/libs/glfw/glfw-3.3.2$ realpath src/libglfw3.a 
+/media/liusheng/Programfiles/Programs/libs/glfw/glfw-3.3.2/src/libglfw3.a
+liusheng@disini-ubuntu:/media/liusheng/Programfiles/Programs/libs/glfw/glfw-3.3.2$ grep dlclose /media/liusheng/Programfiles/Programs/libs/glfw/glfw-3.3.2/src/libglfw3.a
+匹配到二进制文件 /media/liusheng/Programfiles/Programs/libs/glfw/glfw-3.3.2/src/libglfw3.a
+liusheng@disini-ubuntu:/media/liusheng/Programfiles/Programs/libs/glfw/glfw-3.3.2$ ls
+CMake                CMakeLists.txt            docs        Makefile
+CMakeCache.txt       cmake_uninstall.cmake     examples    README.md
+CMakeFiles           cmake_uninstall.cmake.in  include     src
+cmake_install.cmake  deps                      LICENSE.md  tests
+liusheng@disini-ubuntu:/media/liusheng/Programfiles/Programs/libs/glfw/glfw-3.3.2$ less CMakeLists.txt
+liusheng@disini-ubuntu:/media/liusheng/Programfiles/Programs/libs/glfw/glfw-3.3.2$ cat README.md 
+# GLFW
+
+[![Build status](https://travis-ci.org/glfw/glfw.svg?branch=master)](https://travis-ci.org/glfw/glfw)
+[![Build status](https://ci.appveyor.com/api/projects/status/0kf0ct9831i5l6sp/branch/master?svg=true)](https://ci.appveyor.com/project/elmindreda/glfw)
+[![Coverity Scan](https://scan.coverity.com/projects/4884/badge.svg)](https://scan.coverity.com/projects/glfw-glfw)
+
+## Introduction
+
+GLFW is an Open Source, multi-platform library for OpenGL, OpenGL ES and Vulkan
+application development.  It provides a simple, platform-independent API for
+creating windows, contexts and surfaces, reading input, handling events, etc.
+
+GLFW natively supports Windows, macOS and Linux and other Unix-like systems.  On
+Linux both X11 and Wayland are supported.
+
+GLFW is licensed under the [zlib/libpng
+license](http://www.glfw.org/license.html).
+
+You can [download](http://www.glfw.org/download.html) the latest stable release
+as source or Windows binaries, or fetch the `latest` branch from GitHub.  Each
+release starting with 3.0 also has a corresponding [annotated
+tag](https://github.com/glfw/glfw/releases) with source and binary archives.
+
+The [documentation](http://www.glfw.org/docs/latest/) is available online and is
+included in all source and binary archives.  See the [release
+notes](https://www.glfw.org/docs/latest/news.html) for new features, caveats and
+deprecations in the latest release.  For more details see the [version
+history](http://www.glfw.org/changelog.html).
+
+The `master` branch is the stable integration branch and _should_ always compile
+and run on all supported platforms, although details of newly added features may
+change until they have been included in a release.  New features and many bug
+fixes live in [other branches](https://github.com/glfw/glfw/branches/all) until
+they are stable enough to merge.
+
+If you are new to GLFW, you may find the
+[tutorial](http://www.glfw.org/docs/latest/quick.html) for GLFW 3 useful.  If
+you have used GLFW 2 in the past, there is a [transition
+guide](http://www.glfw.org/docs/latest/moving.html) for moving to the GLFW
+3 API.
+
+
+## Compiling GLFW
+
+GLFW itself requires only the headers and libraries for your OS and window
+system.  It does not need the headers for any context creation API (WGL, GLX,
+EGL, NSGL, OSMesa) or rendering API (OpenGL, OpenGL ES, Vulkan) to enable
+support for them.
+
+GLFW supports compilation on Windows with Visual C++ 2010 and later, MinGW and
+MinGW-w64, on macOS with Clang and on Linux and other Unix-like systems with GCC
+and Clang.  It will likely compile in other environments as well, but this is
+not regularly tested.
+
+There are [pre-compiled Windows binaries](http://www.glfw.org/download.html)
+available for all supported compilers.
+
+See the [compilation guide](http://www.glfw.org/docs/latest/compile.html) for
+more information about how to compile GLFW yourself.
+
+
+## Using GLFW
+
+See the [documentation](http://www.glfw.org/docs/latest/) for tutorials, guides
+and the API reference.
+
+
+## Contributing to GLFW
+
+See the [contribution
+guide](https://github.com/glfw/glfw/blob/master/docs/CONTRIBUTING.md) for
+more information.
+
+
+## System requirements
+
+GLFW supports Windows XP and later and macOS 10.8 and later.  Linux and other
+Unix-like systems running the X Window System are supported even without
+a desktop environment or modern extensions, although some features require
+a running window or clipboard manager.  The OSMesa backend requires Mesa 6.3.
+
+See the [compatibility guide](http://www.glfw.org/docs/latest/compat.html)
+in the documentation for more information.
+
+
+## Dependencies
+
+GLFW itself depends only on the headers and libraries for your window system.
+
+The (experimental) Wayland backend also depends on the `extra-cmake-modules`
+package, which is used to generate Wayland protocol headers.
+
+The examples and test programs depend on a number of tiny libraries.  These are
+located in the `deps/` directory.
+
+ - [getopt\_port](https://github.com/kimgr/getopt_port/) for examples
+   with command-line options
+ - [TinyCThread](https://github.com/tinycthread/tinycthread) for threaded
+   examples
+ - [glad2](https://github.com/Dav1dde/glad) for loading OpenGL and Vulkan
+   functions
+ - [linmath.h](https://github.com/datenwolf/linmath.h) for linear algebra in
+   examples
+ - [Nuklear](https://github.com/vurtun/nuklear) for test and example UI
+ - [stb\_image\_write](https://github.com/nothings/stb) for writing images to disk
+
+The documentation is generated with [Doxygen](http://doxygen.org/) if CMake can
+find that tool.
+
+
+## Reporting bugs
+
+Bugs are reported to our [issue tracker](https://github.com/glfw/glfw/issues).
+Please check the [contribution
+guide](https://github.com/glfw/glfw/blob/master/docs/CONTRIBUTING.md) for
+information on what to include when reporting a bug.
+
+
+## Changelog
+
+ - [Win32] Bugfix: Super key was not released after Win+V hotkey (#1622)
+ - [Win32] Bugfix: `glfwGetKeyName` could access out of bounds and return an
+   invalid pointer
+ - [Win32] Bugfix: Some synthetic key events were reported as `GLFW_KEY_UNKNOWN`
+   (#1623)
+ - [Cocoa] Added support for `VK_EXT_metal_surface` (#1619)
+ - [Cocoa] Added locating the Vulkan loader at runtime in an application bundle
+ - [X11] Bugfix: `glfwFocusWindow` could terminate on older WMs or without a WM
+ - [X11] Bugfix: Creating an undecorated window could fail with BadMatch (#1620)
+ - [X11] Bugfix: Querying a disconnected monitor could segfault (#1602)
+
+
+## Contact
+
+On [glfw.org](http://www.glfw.org/) you can find the latest version of GLFW, as
+well as news, documentation and other information about the project.
+
+If you have questions related to the use of GLFW, we have a
+[forum](https://discourse.glfw.org/), and the `#glfw` IRC channel on
+[Freenode](http://freenode.net/).
+
+If you have a bug to report, a patch to submit or a feature you'd like to
+request, please file it in the
+[issue tracker](https://github.com/glfw/glfw/issues) on GitHub.
+
+Finally, if you're interested in helping out with the development of GLFW or
+porting it to your favorite platform, join us on the forum, GitHub or IRC.
+
+
+## Acknowledgements
+
+GLFW exists because people around the world donated their time and lent their
+skills.
+
+ - Bobyshev Alexander
+ - Matt Arsenault
+ - David Avedissian
+ - Keith Bauer
+ - John Bartholomew
+ - Coşku Baş
+ - Niklas Behrens
+ - Andrew Belt
+ - Niklas Bergström
+ - Denis Bernard
+ - Doug Binks
+ - blanco
+ - Kyle Brenneman
+ - Rok Breulj
+ - Kai Burjack
+ - Martin Capitanio
+ - David Carlier
+ - Arturo Castro
+ - Chi-kwan Chan
+ - Ian Clarkson
+ - Michał Cichoń
+ - Lambert Clara
+ - Anna Clarke
+ - Yaron Cohen-Tal
+ - Omar Cornut
+ - Andrew Corrigan
+ - Bailey Cosier
+ - Noel Cower
+ - Jason Daly
+ - Jarrod Davis
+ - Olivier Delannoy
+ - Paul R. Deppe
+ - Michael Dickens
+ - Роман Донченко
+ - Mario Dorn
+ - Wolfgang Draxinger
+ - Jonathan Dummer
+ - Ralph Eastwood
+ - Fredrik Ehnbom
+ - Robin Eklind
+ - Siavash Eliasi
+ - Felipe Ferreira
+ - Michael Fogleman
+ - Gerald Franz
+ - Mário Freitas
+ - GeO4d
+ - Marcus Geelnard
+ - Charles Giessen
+ - Ryan C. Gordon
+ - Stephen Gowen
+ - Kovid Goyal
+ - Eloi Marín Gratacós
+ - Stefan Gustavson
+ - Jonathan Hale
+ - Sylvain Hellegouarch
+ - Matthew Henry
+ - heromyth
+ - Lucas Hinderberger
+ - Paul Holden
+ - Warren Hu
+ - Charles Huber
+ - IntellectualKitty
+ - Aaron Jacobs
+ - Erik S. V. Jansson
+ - Toni Jovanoski
+ - Arseny Kapoulkine
+ - Cem Karan
+ - Osman Keskin
+ - Josh Kilmer
+ - Byunghoon Kim
+ - Cameron King
+ - Peter Knut
+ - Christoph Kubisch
+ - Yuri Kunde Schlesner
+ - Rokas Kupstys
+ - Konstantin Käfer
+ - Eric Larson
+ - Francis Lecavalier
+ - Robin Leffmann
+ - Glenn Lewis
+ - Shane Liesegang
+ - Anders Lindqvist
+ - Leon Linhart
+ - Eyal Lotem
+ - Aaron Loucks
+ - Luflosi
+ - lukect
+ - Tristam MacDonald
+ - Hans Mackowiak
+ - Дмитри Малышев
+ - Zbigniew Mandziejewicz
+ - Adam Marcus
+ - Célestin Marot
+ - Kyle McDonald
+ - David Medlock
+ - Bryce Mehring
+ - Jonathan Mercier
+ - Marcel Metz
+ - Liam Middlebrook
+ - Ave Milia
+ - Jonathan Miller
+ - Kenneth Miller
+ - Bruce Mitchener
+ - Jack Moffitt
+ - Jeff Molofee
+ - Alexander Monakov
+ - Pierre Morel
+ - Jon Morton
+ - Pierre Moulon
+ - Martins Mozeiko
+ - Julian Møller
+ - ndogxj
+ - Kristian Nielsen
+ - Kamil Nowakowski
+ - Denis Ovod
+ - Ozzy
+ - Andri Pálsson
+ - Peoro
+ - Braden Pellett
+ - Christopher Pelloux
+ - Arturo J. Pérez
+ - Anthony Pesch
+ - Orson Peters
+ - Emmanuel Gil Peyrot
+ - Cyril Pichard
+ - Keith Pitt
+ - Stanislav Podgorskiy
+ - Konstantin Podsvirov
+ - Nathan Poirier
+ - Alexandre Pretyman
+ - Pablo Prietz
+ - przemekmirek
+ - pthom
+ - Guillaume Racicot
+ - Philip Rideout
+ - Eddie Ringle
+ - Max Risuhin
+ - Jorge Rodriguez
+ - Ed Ropple
+ - Aleksey Rybalkin
+ - Riku Salminen
+ - Brandon Schaefer
+ - Sebastian Schuberth
+ - Christian Sdunek
+ - Matt Sealey
+ - Steve Sexton
+ - Arkady Shapkin
+ - Yoshiki Shibukawa
+ - Dmitri Shuralyov
+ - Daniel Skorupski
+ - Bradley Smith
+ - Cliff Smolinsky
+ - Patrick Snape
+ - Erlend Sogge Heggen
+ - Julian Squires
+ - Johannes Stein
+ - Pontus Stenetorp
+ - Michael Stocker
+ - Justin Stoecker
+ - Elviss Strazdins
+ - Paul Sultana
+ - Nathan Sweet
+ - TTK-Bandit
+ - Sergey Tikhomirov
+ - Arthur Tombs
+ - Ioannis Tsakpinis
+ - Samuli Tuomola
+ - Matthew Turner
+ - urraka
+ - Elias Vanderstuyft
+ - Stef Velzel
+ - Jari Vetoniemi
+ - Ricardo Vieira
+ - Nicholas Vitovitch
+ - Simon Voordouw
+ - Corentin Wallez
+ - Torsten Walluhn
+ - Patrick Walton
+ - Xo Wang
+ - Jay Weisskopf
+ - Frank Wille
+ - Ryogo Yoshimura
+ - Lukas Zanner
+ - Andrey Zholos
+ - Santi Zupancic
+ - Jonas Ådahl
+ - Lasse Öörni
+ - All the unmentioned and anonymous contributors in the GLFW community, for bug
+   reports, patches, feedback, testing and encouragement
+
+liusheng@disini-ubuntu:/media/liusheng/Programfiles/Programs/libs/glfw/glfw-3.3.2$ 
+liusheng@disini-ubuntu:/media/liusheng/Programfiles/Programs/libs/glfw/glfw-3.3.2$ ls
+CMake                CMakeLists.txt            docs        Makefile
+CMakeCache.txt       cmake_uninstall.cmake     examples    README.md
+CMakeFiles           cmake_uninstall.cmake.in  include     src
+cmake_install.cmake  deps                      LICENSE.md  tests
+liusheng@disini-ubuntu:/media/liusheng/Programfiles/Programs/libs/glfw/glfw-3.3.2$ find -name 'libglfw3*'
+./src/libglfw3.a
+liusheng@disini-ubuntu:/media/liusheng/Programfiles/Programs/libs/glfw/glfw-3.3.2$ cmake -DBUILD_SHARED_LIBS=ON
+CMake Warning:
+  No source or binary directory provided.  Both will be assumed to be the
+  same as the current working directory, but note that this warning will
+  become a fatal error in future CMake releases.
+
+
+-- Could NOT find Doxygen (missing: DOXYGEN_EXECUTABLE) 
+-- Using X11 for window creation
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /media/liusheng/Programfiles/Programs/libs/glfw/glfw-3.3.2
+liusheng@disini-ubuntu:/media/liusheng/Programfiles/Programs/libs/glfw/glfw-3.3.2$ make -j16
+Scanning dependencies of target glfw
+[  2%] Building C object src/CMakeFiles/glfw.dir/input.c.o
+[  2%] Building C object src/CMakeFiles/glfw.dir/init.c.o
+[  3%] Building C object src/CMakeFiles/glfw.dir/context.c.o
+[  4%] Building C object src/CMakeFiles/glfw.dir/monitor.c.o
+[  4%] Building C object src/CMakeFiles/glfw.dir/x11_window.c.o
+[  5%] Building C object src/CMakeFiles/glfw.dir/posix_thread.c.o
+[  6%] Building C object src/CMakeFiles/glfw.dir/osmesa_context.c.o
+[  7%] Building C object src/CMakeFiles/glfw.dir/vulkan.c.o
+[  9%] Building C object src/CMakeFiles/glfw.dir/glx_context.c.o
+[ 10%] Building C object src/CMakeFiles/glfw.dir/xkb_unicode.c.o
+[ 10%] Building C object src/CMakeFiles/glfw.dir/x11_init.c.o
+[ 10%] Building C object src/CMakeFiles/glfw.dir/posix_time.c.o
+[ 12%] Building C object src/CMakeFiles/glfw.dir/window.c.o
+[ 12%] Building C object src/CMakeFiles/glfw.dir/linux_joystick.c.o
+[ 13%] Building C object src/CMakeFiles/glfw.dir/x11_monitor.c.o
+[ 14%] Building C object src/CMakeFiles/glfw.dir/egl_context.c.o
+[ 15%] Linking C shared library libglfw.so
+[ 15%] Built target glfw
+[ 16%] Linking C executable boing
+[ 16%] Linking C executable heightmap
+[ 17%] Linking C executable gears
+[ 18%] Linking C executable offscreen
+[ 19%] Linking C executable splitview
+[ 20%] Linking C executable wave
+[ 21%] Linking C executable sharing
+[ 22%] Linking C executable reopen
+[ 23%] Linking C executable simple
+[ 23%] Linking C executable tearing
+[ 24%] Linking C executable monitors
+[ 25%] Linking C executable gamma
+[ 25%] Linking C executable particles
+[ 26%] Linking C executable iconify
+[ 27%] Linking C executable inputlag
+[ 27%] Linking C executable icon
+[ 28%] Built target boing
+[ 30%] Built target gears
+[ 32%] Built target heightmap
+[ 36%] Built target offscreen
+[ 36%] Built target splitview
+[ 37%] Built target reopen
+[ 39%] Built target sharing
+[ 41%] Built target simple
+[ 41%] Built target wave
+[ 43%] Built target tearing
+[ 46%] Built target monitors
+[ 48%] Built target icon
+[ 53%] Built target gamma
+[ 58%] Built target iconify
+[ 58%] Built target particles
+[ 60%] Built target inputlag
+[ 60%] Linking C executable empty
+[ 61%] Linking C executable events
+[ 63%] Linking C executable threads
+[ 63%] Linking C executable cursor
+[ 64%] Linking C executable msaa
+[ 65%] Linking C executable glfwinfo
+[ 66%] Linking C executable joysticks
+[ 67%] Linking C executable windows
+[ 68%] Linking C executable opacity
+[ 68%] Linking C executable clipboard
+[ 69%] Linking C executable triangle-vulkan
+[ 70%] Linking C executable timeout
+[ 70%] Linking C executable title
+[ 76%] Built target empty
+[ 76%] Built target events
+[ 78%] Built target cursor
+[ 80%] Built target msaa
+[ 82%] Built target triangle-vulkan
+[ 90%] Built target threads
+[ 90%] Built target windows
+[ 92%] Built target clipboard
+[ 94%] Built target joysticks
+[ 97%] Built target opacity
+[ 98%] Built target glfwinfo
+[ 98%] Built target timeout
+[100%] Built target title
+liusheng@disini-ubuntu:/media/liusheng/Programfiles/Programs/libs/glfw/glfw-3.3.2$ find -name 'libglfw3*'
+./src/libglfw3.a
+liusheng@disini-ubuntu:/media/liusheng/Programfiles/Programs/libs/glfw/glfw-3.3.2$ find -name 'libglfw*'
+./src/libglfw.so
+./src/libglfw.so.3
+./src/libglfw.so.3.3
+./src/libglfw3.a
+liusheng@disini-ubuntu:/media/liusheng/Programfiles/Programs/libs/glfw/glfw-3.3.2$ realpath src
+/media/liusheng/Programfiles/Programs/libs/glfw/glfw-3.3.2/src
+liusheng@disini-ubuntu:/media/liusheng/Programfiles/Programs/libs/glfw/glfw-3.3.2$ cd ..
+liusheng@disini-ubuntu:/media/liusheng/Programfiles/Programs/libs/glfw$ 
+
+
+

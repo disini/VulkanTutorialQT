@@ -1,0 +1,2 @@
+﻿  main0.cpp
+H:\UserData\Personal\Visual Studio 2015\Libraries\glfw-3.2.bin.WIN32\include\GLFW\glfw3.h(166,12): fatal error C1083: 无法打开包括文件: “vulkan/vulkan.h”: No such file or directory
