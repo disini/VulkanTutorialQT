@@ -51,7 +51,7 @@ OBJECTS_DIR   = release/
 
 ####### Files
 
-SOURCES       = 5.Vertex_Buffers/source/main.cpp 
+SOURCES       = 6.Uniform_Buffers/source/main.cpp 
 OBJECTS       = release/main.o
 DIST          = /opt/Qt/5.15.0/5.15.0/gcc_64/mkspecs/features/spec_pre.prf \
 		/opt/Qt/5.15.0/5.15.0/gcc_64/mkspecs/common/unix.conf \
@@ -266,7 +266,7 @@ DIST          = /opt/Qt/5.15.0/5.15.0/gcc_64/mkspecs/features/spec_pre.prf \
 		/opt/Qt/5.15.0/5.15.0/gcc_64/mkspecs/features/exceptions.prf \
 		/opt/Qt/5.15.0/5.15.0/gcc_64/mkspecs/features/yacc.prf \
 		/opt/Qt/5.15.0/5.15.0/gcc_64/mkspecs/features/lex.prf \
-		VulkanTutorialQT.pro  5.Vertex_Buffers/source/main.cpp
+		VulkanTutorialQT.pro  6.Uniform_Buffers/source/main.cpp
 QMAKE_TARGET  = VulkanTutorialQT
 DESTDIR       = QT_Creator/x64/Release/
 TARGET        = QT_Creator/x64/Release/VulkanTutorialQT
@@ -294,7 +294,7 @@ distdir: FORCE
 	@test -d $(DISTDIR) || mkdir -p $(DISTDIR)
 	$(COPY_FILE) --parents $(DIST) $(DISTDIR)/
 	$(COPY_FILE) --parents /opt/Qt/5.15.0/5.15.0/gcc_64/mkspecs/features/data/dummy.cpp $(DISTDIR)/
-	$(COPY_FILE) --parents 5.Vertex_Buffers/source/main.cpp $(DISTDIR)/
+	$(COPY_FILE) --parents 6.Uniform_Buffers/source/main.cpp $(DISTDIR)/
 
 
 clean: compiler_clean 
@@ -342,8 +342,8 @@ compiler_clean: compiler_moc_predefs_clean
 
 ####### Compile
 
-release/main.o: 5.Vertex_Buffers/source/main.cpp 
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release/main.o 5.Vertex_Buffers/source/main.cpp
+release/main.o: 6.Uniform_Buffers/source/main.cpp 
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release/main.o 6.Uniform_Buffers/source/main.cpp
 
 ####### Install
 

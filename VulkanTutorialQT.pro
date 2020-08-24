@@ -28,7 +28,8 @@ SOURCES += \
 #    4.Drawing_a_triangle/Hello_Triangle/Hello Triangle/main - 副本1.cpp \
 #    4.Drawing_a_triangle/Hello_Triangle/Hello Triangle/main.cpp \
 #    4.Drawing_a_triangle/Hello_Triangle/Hello Triangle/main0.cpp
-     5.Vertex_Buffers/source/main.cpp
+#     5.Vertex_Buffers/source/main.cpp
+     6.Uniform_Buffers/source/main.cpp
 
 
 
