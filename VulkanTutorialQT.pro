@@ -29,7 +29,7 @@ SOURCES += \
 #    4.Drawing_a_triangle/Hello_Triangle/Hello Triangle/main.cpp \
 #    4.Drawing_a_triangle/Hello_Triangle/Hello Triangle/main0.cpp
 #     5.Vertex_Buffers/source/main.cpp
-     6.Uniform_Buffers/source/main.cpp
+    6.Uniform_Buffers/source/main.cpp
 
 
 
@@ -142,5 +142,17 @@ CONFIG(debug, debug|release){
 #else: unix:!android: target.path = /opt/$${TARGET}/bin
 #!isEmpty(target.path): INSTALLS += target
 
-DISTFILES += \
+DISTFILES += \ \
+    5.Vertex_Buffers/shaders/compile.bat \
+    5.Vertex_Buffers/shaders/frag.spv \
+    5.Vertex_Buffers/shaders/shader_base.frag \
+    5.Vertex_Buffers/shaders/shader_base.vert \
+    5.Vertex_Buffers/shaders/vert.spv \
+    5.Vertex_Buffers/source/5.Vertex_Buffers.cflags \
+    5.Vertex_Buffers/source/5.Vertex_Buffers.cxxflags \
+    6.Uniform_Buffers/shaders/compile.bat \
+    6.Uniform_Buffers/shaders/frag.spv \
+    6.Uniform_Buffers/shaders/shader_base.frag \
+    6.Uniform_Buffers/shaders/shader_base.vert \
+    6.Uniform_Buffers/shaders/vert.spv
 

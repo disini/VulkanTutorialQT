@@ -53,7 +53,20 @@ OBJECTS_DIR   = debug/
 
 SOURCES       = 6.Uniform_Buffers/source/main.cpp 
 OBJECTS       = debug/main.o
-DIST          = /opt/Qt/5.15.0/5.15.0/gcc_64/mkspecs/features/spec_pre.prf \
+DIST          = / \
+		5.Vertex_Buffers/shaders/compile.bat \
+		5.Vertex_Buffers/shaders/frag.spv \
+		5.Vertex_Buffers/shaders/shader_base.frag \
+		5.Vertex_Buffers/shaders/shader_base.vert \
+		5.Vertex_Buffers/shaders/vert.spv \
+		5.Vertex_Buffers/source/5.Vertex_Buffers.cflags \
+		5.Vertex_Buffers/source/5.Vertex_Buffers.cxxflags \
+		6.Uniform_Buffers/shaders/compile.bat \
+		6.Uniform_Buffers/shaders/frag.spv \
+		6.Uniform_Buffers/shaders/shader_base.frag \
+		6.Uniform_Buffers/shaders/shader_base.vert \
+		6.Uniform_Buffers/shaders/vert.spv \
+		/opt/Qt/5.15.0/5.15.0/gcc_64/mkspecs/features/spec_pre.prf \
 		/opt/Qt/5.15.0/5.15.0/gcc_64/mkspecs/common/unix.conf \
 		/opt/Qt/5.15.0/5.15.0/gcc_64/mkspecs/common/linux.conf \
 		/opt/Qt/5.15.0/5.15.0/gcc_64/mkspecs/common/sanitize.conf \
