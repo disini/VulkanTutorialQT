@@ -3,6 +3,8 @@
 #include <GLFW/glfw3.h>
 
 #define GLM_FORCE_RADIANS
+#define GLM_FORCE_DEFAULT_ALIGNED_GENTYPES// force GLM to use a version of vec2 and mat4 that has the alignment requirements already specified for us.
+
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
 
@@ -127,18 +129,19 @@ const std::vector<const char*> deviceExtensions = {
 
     };
 
+    struct UniformBufferObject {
+        alignas(16) glm::mat4 model;
+        alignas(16) glm::mat4 view;
+        alignas(16) glm::mat4 proj;
+    };
+
 //    struct UniformBufferObject {
-//        glm::mat4 model;
+//        glm::vec2 foo;
+//        alignas(16) glm::mat4 model;// alignas(16) can be commented out if using "#define GLM_FORCE_DEFAULT_ALIGNED_GENTYPES"
+////        glm::mat4 model;
 //        glm::mat4 view;
 //        glm::mat4 proj;
 //    };
-
-    struct UniformBufferObject {
-        glm::vec2 foo;
-        alignas(16) glm::mat4 model;
-        glm::mat4 view;
-        glm::mat4 proj;
-    };
 
 
 /*
@@ -157,7 +160,7 @@ const std::vector<const char*> deviceExtensions = {
         {{0.5f, -0.5f}, {0.0f, 1.0f, 0.0f}},// 1
         {{0.5f, 0.5f}, {0.0f, 0.0f, 1.0f}},// 2
 //        {{0.5f, 0.5f}, {0.0f, 0.0f, 1.0f}},// 2
-        {{-0.5f, 0.5f},{1.0f, 1.0f, 1.0f}},// 3
+        {{-0.5f, 0.5f},{1.0f, 1.0f, 1.0f}}// 3
 //        {{-0.5f, -0.5f}, {1.0f, 0.0f, 0.0f}}// 0
     };
 
@@ -734,8 +737,9 @@ private:
     void createDescriptorSetLayout() {
         VkDescriptorSetLayoutBinding uboLayoutBinding = {};
         uboLayoutBinding.binding = 0;
-        uboLayoutBinding.descriptorType = VK_DESCRIPTOR_TYPE_UNIFORM_BUFFER;
+        
         uboLayoutBinding.descriptorCount = 1;
+		uboLayoutBinding.descriptorType = VK_DESCRIPTOR_TYPE_UNIFORM_BUFFER;
         uboLayoutBinding.pImmutableSamplers = nullptr;
         uboLayoutBinding.stageFlags = VK_SHADER_STAGE_VERTEX_BIT;
 
@@ -782,8 +786,9 @@ private:
         auto attributeDescriptions = Vertex::getAttributeDescriptions();
 
         vertexInputInfo.vertexBindingDescriptionCount = 1;
-        vertexInputInfo.pVertexBindingDescriptions = &bindingDescription;
+        
         vertexInputInfo.vertexAttributeDescriptionCount = static_cast<uint32_t>(attributeDescriptions.size());
+		vertexInputInfo.pVertexBindingDescriptions = &bindingDescription;
         vertexInputInfo.pVertexAttributeDescriptions = attributeDescriptions.data();
 
         VkPipelineInputAssemblyStateCreateInfo inputAssembly = {};
