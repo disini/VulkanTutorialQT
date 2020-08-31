@@ -28,8 +28,9 @@ SOURCES += \
 #    4.Drawing_a_triangle/Hello_Triangle/Hello Triangle/main - 副本1.cpp \
 #    4.Drawing_a_triangle/Hello_Triangle/Hello Triangle/main.cpp \
 #    4.Drawing_a_triangle/Hello_Triangle/Hello Triangle/main0.cpp
-#     5.Vertex_Buffers/source/main.cpp
-    6.Uniform_Buffers/source/main.cpp
+#    5.Vertex_Buffers/source/main.cpp
+#    6.Uniform_Buffers/source/main.cpp
+     7.Texture_Mapping/source/main.cpp
 
 
 
@@ -43,7 +44,8 @@ INCLUDEPATH += /usr/include \
                /media/liusheng/Programfiles/Programs/libs/glfw/glfw-3.3.2/include \
                /media/liusheng/Programfiles/Programs/libs/glm/0.9.9.8 \
 #INCLUDEPATH += $(VULKAN_SDK_PATH)/include \
-               /media/liusheng/Programfiles/Programs/VulkanSDK/1.1.114.0/ubuntu/x86_64/include
+               /media/liusheng/Programfiles/Programs/VulkanSDK/1.1.114.0/ubuntu/x86_64/include \
+               /media/liusheng/Programfiles/Programs/libs/stb_image
 
 
 #INCLUDEPATH += /home/xxx/openpose/3rdparty/caffe/include \
@@ -154,5 +156,12 @@ DISTFILES += \ \
     6.Uniform_Buffers/shaders/frag.spv \
     6.Uniform_Buffers/shaders/shader_base.frag \
     6.Uniform_Buffers/shaders/shader_base.vert \
-    6.Uniform_Buffers/shaders/vert.spv
+    6.Uniform_Buffers/shaders/vert.spv \
+    7.Texture_Mapping/Texture_Mapping \
+    7.Texture_Mapping/shaders/compile.bat \
+    7.Texture_Mapping/shaders/compile.sh \
+    7.Texture_Mapping/shaders/frag.spv \
+    7.Texture_Mapping/shaders/shader_base.frag \
+    7.Texture_Mapping/shaders/shader_base.vert \
+    7.Texture_Mapping/shaders/vert.spv
 

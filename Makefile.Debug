@@ -16,7 +16,7 @@ CXX           = g++
 DEFINES       = -DQT_DEPRECATED_WARNINGS -DQT_QML_DEBUG -DQT_CORE_LIB
 CFLAGS        = -pipe -g -Wall -Wextra -D_REENTRANT -fPIC $(DEFINES)
 CXXFLAGS      = -pipe -g -std=gnu++1z -Wall -Wextra -D_REENTRANT -fPIC $(DEFINES)
-INCPATH       = -I. -isystem /usr/include -isystem /usr/include/c++/9 -isystem /usr/local/include -I/media/liusheng/Programfiles/Programs/libs/glfw/glfw-3.3.2/include -I/media/liusheng/Programfiles/Programs/libs/glm/0.9.9.8 -I/media/liusheng/Programfiles/Programs/VulkanSDK/1.1.114.0/ubuntu/x86_64/include -I/opt/Qt/5.15.0/5.15.0/gcc_64/include -I/opt/Qt/5.15.0/5.15.0/gcc_64/include/QtCore -Idebug -I/opt/Qt/5.15.0/5.15.0/gcc_64/mkspecs/linux-g++
+INCPATH       = -I. -isystem /usr/include -isystem /usr/include/c++/9 -isystem /usr/local/include -I/media/liusheng/Programfiles/Programs/libs/glfw/glfw-3.3.2/include -I/media/liusheng/Programfiles/Programs/libs/glm/0.9.9.8 -I/media/liusheng/Programfiles/Programs/VulkanSDK/1.1.114.0/ubuntu/x86_64/include -I/media/liusheng/Programfiles/Programs/libs/stb_image -I/opt/Qt/5.15.0/5.15.0/gcc_64/include -I/opt/Qt/5.15.0/5.15.0/gcc_64/include/QtCore -Idebug -I/opt/Qt/5.15.0/5.15.0/gcc_64/mkspecs/linux-g++
 QMAKE         = /opt/Qt/5.15.0/5.15.0/gcc_64/bin/qmake
 DEL_FILE      = rm -f
 CHK_DIR_EXISTS= test -d
@@ -51,7 +51,7 @@ OBJECTS_DIR   = debug/
 
 ####### Files
 
-SOURCES       = 6.Uniform_Buffers/source/main.cpp 
+SOURCES       = 7.Texture_Mapping/source/main.cpp 
 OBJECTS       = debug/main.o
 DIST          = / \
 		5.Vertex_Buffers/shaders/compile.bat \
@@ -66,6 +66,13 @@ DIST          = / \
 		6.Uniform_Buffers/shaders/shader_base.frag \
 		6.Uniform_Buffers/shaders/shader_base.vert \
 		6.Uniform_Buffers/shaders/vert.spv \
+		7.Texture_Mapping/Texture_Mapping \
+		7.Texture_Mapping/shaders/compile.bat \
+		7.Texture_Mapping/shaders/compile.sh \
+		7.Texture_Mapping/shaders/frag.spv \
+		7.Texture_Mapping/shaders/shader_base.frag \
+		7.Texture_Mapping/shaders/shader_base.vert \
+		7.Texture_Mapping/shaders/vert.spv \
 		/opt/Qt/5.15.0/5.15.0/gcc_64/mkspecs/features/spec_pre.prf \
 		/opt/Qt/5.15.0/5.15.0/gcc_64/mkspecs/common/unix.conf \
 		/opt/Qt/5.15.0/5.15.0/gcc_64/mkspecs/common/linux.conf \
@@ -279,7 +286,7 @@ DIST          = / \
 		/opt/Qt/5.15.0/5.15.0/gcc_64/mkspecs/features/exceptions.prf \
 		/opt/Qt/5.15.0/5.15.0/gcc_64/mkspecs/features/yacc.prf \
 		/opt/Qt/5.15.0/5.15.0/gcc_64/mkspecs/features/lex.prf \
-		VulkanTutorialQT.pro  6.Uniform_Buffers/source/main.cpp
+		VulkanTutorialQT.pro  7.Texture_Mapping/source/main.cpp
 QMAKE_TARGET  = VulkanTutorialQT
 DESTDIR       = QT_Creator/x64/Debug/
 TARGET        = QT_Creator/x64/Debug/VulkanTutorialQT
@@ -307,7 +314,7 @@ distdir: FORCE
 	@test -d $(DISTDIR) || mkdir -p $(DISTDIR)
 	$(COPY_FILE) --parents $(DIST) $(DISTDIR)/
 	$(COPY_FILE) --parents /opt/Qt/5.15.0/5.15.0/gcc_64/mkspecs/features/data/dummy.cpp $(DISTDIR)/
-	$(COPY_FILE) --parents 6.Uniform_Buffers/source/main.cpp $(DISTDIR)/
+	$(COPY_FILE) --parents 7.Texture_Mapping/source/main.cpp $(DISTDIR)/
 
 
 clean: compiler_clean 
@@ -355,8 +362,8 @@ compiler_clean: compiler_moc_predefs_clean
 
 ####### Compile
 
-debug/main.o: 6.Uniform_Buffers/source/main.cpp 
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug/main.o 6.Uniform_Buffers/source/main.cpp
+debug/main.o: 7.Texture_Mapping/source/main.cpp 
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug/main.o 7.Texture_Mapping/source/main.cpp
 
 ####### Install
 
