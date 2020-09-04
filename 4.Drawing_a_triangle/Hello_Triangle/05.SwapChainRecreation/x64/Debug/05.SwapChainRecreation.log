@@ -1,3 +1,2 @@
-﻿G:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(491,5): warning MSB8028: 中间目录(x64\Debug\)包含从另一个项目(05.SwapChainRecreation.vcxproj)共享的文件。   这会导致错误的清除和重新生成行为。
-  main.cpp
-  05.SwapChainRecreation.vcxproj -> D:\progworks\github\Vulkan\Overv\vulkan-tutorial.com\code_me\4.Drawing_a_triangle\Hello_Triangle\x64\Debug\05.SwapChainRecreation.exe
+﻿  main.cpp
+  05.SwapChainRecreation.vcxproj -> D:\progworks\github\Vulkan\Overv\vulkan-tutorial.com\code_me\VulkanTutorialQT\4.Drawing_a_triangle\Hello_Triangle\x64\Debug\05.SwapChainRecreation.exe

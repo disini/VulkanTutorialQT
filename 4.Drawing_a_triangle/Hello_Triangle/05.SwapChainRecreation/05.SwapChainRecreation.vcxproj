@@ -21,7 +21,7 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{70F3D968-693F-4BE9-B725-A53FA44C8E45}</ProjectGuid>
+    <ProjectGuid>{71B30E52-0EE4-48D0-9EDE-643F5E9AE81A}</ProjectGuid>
     <RootNamespace>05.SwapChainRecreation</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
