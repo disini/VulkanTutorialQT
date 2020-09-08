@@ -1334,8 +1334,8 @@ private:
         }
 
 		cout << "vertices.size == " << vertices.size() << endl;// vertices.size == 11484(before); 3566(after)
-        cout << "indices.size == " << indices.size() << endl;// indices.size ==11484
-        cout << "uniqueVertices.size == " << uniqueVertices.size() << endl;// uniqueVertices.size == 3566
+        cout << "indices.size == " << indices.size() << endl;// indices.size ==11484(before); 3566(after)
+        cout << "uniqueVertices.size == " << uniqueVertices.size() << endl;// indices.size == 3566
     }
 
     void createVertexBuffer() {
