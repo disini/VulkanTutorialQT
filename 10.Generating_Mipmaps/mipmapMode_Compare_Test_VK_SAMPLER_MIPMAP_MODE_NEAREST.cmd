@@ -1,0 +1,1 @@
+x64\Debug\10.Generating_Mipmaps_VK_SAMPLER_MIPMAP_MODE_NEAREST.exe
