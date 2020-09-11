@@ -881,8 +881,8 @@ private:
         //multisampling.rasterizationSamples = VK_SAMPLE_COUNT_1_BIT;
         multisampling.rasterizationSamples = msaaSamples;
 		multisampling.sampleShadingEnable = VK_TRUE;// enable sample shading in the pipeline 
-		//multisampling.minSampleShading = 0.2f;
-        multisampling.minSampleShading = 1.0F;
+		multisampling.minSampleShading = 0.2f;// min fraction for sample shading; closer to one is smoother
+        //multisampling.minSampleShading = 1.0f;
         multisampling.pSampleMask = nullptr;
         multisampling.alphaToCoverageEnable = VK_FALSE;
         multisampling.alphaToOneEnable = VK_FALSE;
