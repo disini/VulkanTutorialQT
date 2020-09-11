@@ -580,6 +580,7 @@ private:
 
         VkPhysicalDeviceFeatures deviceFeatures = {};
         deviceFeatures.samplerAnisotropy = VK_TRUE;
+        deviceFeatures.sampleRateShading = VK_TRUE;// enable sample shading feature for the device
         VkDeviceCreateInfo createInfo = {};
         createInfo.sType = VK_STRUCTURE_TYPE_DEVICE_CREATE_INFO;
 
@@ -879,10 +880,13 @@ private:
         multisampling.sampleShadingEnable = VK_FALSE;
         //multisampling.rasterizationSamples = VK_SAMPLE_COUNT_1_BIT;
         multisampling.rasterizationSamples = msaaSamples;
+		multisampling.sampleShadingEnable = VK_TRUE;// enable sample shading in the pipeline 
+		//multisampling.minSampleShading = 0.2f;
         multisampling.minSampleShading = 1.0F;
         multisampling.pSampleMask = nullptr;
         multisampling.alphaToCoverageEnable = VK_FALSE;
         multisampling.alphaToOneEnable = VK_FALSE;
+        
 
         VkPipelineDepthStencilStateCreateInfo depthStencil {};
         depthStencil.sType = VK_STRUCTURE_TYPE_PIPELINE_DEPTH_STENCIL_STATE_CREATE_INFO;
