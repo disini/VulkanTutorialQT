@@ -41,8 +41,8 @@
 
 using namespace std;
 
-const int WIDTH = 800;
-const int HEIGHT = 600;
+const int WIDTH = 1200;
+const int HEIGHT = 900;
 
 const std::string MODEL_PATH = "models/viking_room.obj";
 const std::string TEXTURE_PATH = "textures/viking_room.png";
@@ -280,7 +280,7 @@ private:
           glfwWindowHint(GLFW_CLIENT_API, GLFW_NO_API);
 //          glfwWindowHint(GLFW_RESIZABLE, GLFW_FALSE);
 
-          window = glfwCreateWindow(WIDTH, HEIGHT, "Vulkan Triangle", nullptr, nullptr);
+          window = glfwCreateWindow(WIDTH, HEIGHT, "09. Vulkan Loading Models Demo", nullptr, nullptr);
           //VkAndroidSurfaceCreateInfoKHR::window = glfwCreateWindow(800, 600, "Vulkan Triangle", nullptr, nullptr);
           glfwSetWindowUserPointer(window, this);
           glfwSetFramebufferSizeCallback(window, framebufferResizeCallback);
