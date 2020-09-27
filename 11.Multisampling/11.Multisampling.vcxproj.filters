@@ -39,6 +39,7 @@
     <None Include="textures\viking_room.png">
       <Filter>资源文件\textures</Filter>
     </None>
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="source\main.cpp">
