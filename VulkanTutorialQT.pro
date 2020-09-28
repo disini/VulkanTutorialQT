@@ -58,18 +58,21 @@ INCLUDEPATH += /usr/include \
 
 ##增加库文件包含路径
 
-LIBS += -L/usr/lib
-        -L/usr/local/lib
-        -L/usr/lib/x86_64-linux-gnu
-        -L/media/liusheng/Programfiles/Programs/libs/glfw/glfw-3.3.2/src
-#LIBS += -L$(VULKAN_SDK_PATH)/lib \
-        -L/media/liusheng/Programfiles/Programs/VulkanSDK/1.1.114.0/ubuntu/x86_64/lib
+#LIBS += -L/usr/lib \
+#        -L/usr/local/lib \
+#        -L/usr/lib/x86_64-linux-gnu \
+#        -L/usr/lib64/glibc-2.32/lib \
+#        -L/media/liusheng/Programfiles/Programs/libs/glfw/glfw-3.3.2/src \
+##LIBS += -L$(VULKAN_SDK_PATH)/lib \
+#        -L/media/liusheng/Programfiles/Programs/VulkanSDK/1.1.114.0/ubuntu/x86_64/lib
+
 
 #LIBS += -lcurand -lcublas -lcublas_device -lcudnn -lcudart_static
 #LIBS += -lcurand -lcublas -lcudnn -lcudart_static
 
 LIBS+= /media/liusheng/Programfiles/Programs/VulkanSDK/1.1.114.0/ubuntu/x86_64/lib/libvulkan.so
 LIBS+= /media/liusheng/Programfiles/Programs/libs/glfw/glfw-3.3.2/src/libglfw.so
+LIBS+= /usr/lib64/glibc-2.32/lib/libm.so.6
 #LIBS+= /media/liusheng/Programfiles/Programs/libs/glfw/glfw-3.3.2/src/libglfw.so.3
 #LIBS+= /media/liusheng/Programfiles/Programs/libs/glfw/glfw-3.3.2/src/libglfw.so.3.3
 
@@ -84,7 +87,7 @@ LIBS+= /media/liusheng/Programfiles/Programs/libs/glfw/glfw-3.3.2/src/libglfw.so
 #LIBS += $(pkg-config /media/liusheng/Programfiles/Programs/libs/glfw/3.3.2/build/src/libglfw3.a --libs --static)
 #LIBS += -ldl
 
-#LIBS += -lvulkan -lc
+#LIBS += -lvulkan -lc -lm
 # LIBS += -static
 
 #LIBS += -lrt
