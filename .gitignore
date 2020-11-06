@@ -5,5 +5,10 @@ release/
 .*sdf
 *.db
 *.VC.db
-
+*.ppm
+*.rar
+*.tar
+*.tar.bz
+*.tar.bz2
+*.tar.gz
 VulkanTutorialQT.pro.user

@@ -246,7 +246,8 @@ private:
           glfwWindowHint(GLFW_CLIENT_API, GLFW_NO_API);
 //          glfwWindowHint(GLFW_RESIZABLE, GLFW_FALSE);
 
-          window = glfwCreateWindow(WIDTH, HEIGHT, "11. Vulkan Multisampling Demo", nullptr, nullptr);
+//          window = glfwCreateWindow(WIDTH, HEIGHT, "11. Vulkan Multisampling Demo", nullptr, nullptr);
+          window = glfwCreateWindow(WIDTH, HEIGHT, "Vulkan Loding Obj Demo", nullptr, nullptr);
           //VkAndroidSurfaceCreateInfoKHR::window = glfwCreateWindow(800, 600, "Vulkan Triangle", nullptr, nullptr);
           glfwSetWindowUserPointer(window, this);
           glfwSetFramebufferSizeCallback(window, framebufferResizeCallback);

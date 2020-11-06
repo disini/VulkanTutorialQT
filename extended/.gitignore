@@ -1,0 +1,11 @@
+x64/
+.vs/
+build-11.Multisampling_With_Save_Image-unknown-Debug/
+build-11.Multisampling_With_Save_Image-unknown-Release/
+ppm/
+*.ppm
+*.rar
+*.tar
+*.tar.bz
+*.tar.gz
+

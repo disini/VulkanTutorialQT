@@ -46,7 +46,7 @@ INCLUDEPATH += /usr/include \
                /media/liusheng/Programfiles/Programs/libs/glfw/glfw-3.3.2/include \
                /media/liusheng/Programfiles/Programs/libs/glm/0.9.9.8 \
 #INCLUDEPATH += $(VULKAN_SDK_PATH)/include \
-               /media/liusheng/Programfiles/Programs/VulkanSDK/1.1.114.0/ubuntu/x86_64/include \
+               /media/liusheng/Programfiles/Programs/VulkanSDK/1.2.148.1/ubuntu/x86_64/include \
                /media/liusheng/Programfiles/Programs/libs/stb_image \
                3rdparty/stb_image \
                3rdparty/tinyobj
@@ -64,13 +64,13 @@ INCLUDEPATH += /usr/include \
 #        -L/usr/lib64/glibc-2.32/lib \
 #        -L/media/liusheng/Programfiles/Programs/libs/glfw/glfw-3.3.2/src \
 ##LIBS += -L$(VULKAN_SDK_PATH)/lib \
-#        -L/media/liusheng/Programfiles/Programs/VulkanSDK/1.1.114.0/ubuntu/x86_64/lib
+#        -L/media/liusheng/Programfiles/Programs/VulkanSDK/1.2.148.1/ubuntu/x86_64/lib
 
 
 #LIBS += -lcurand -lcublas -lcublas_device -lcudnn -lcudart_static
 #LIBS += -lcurand -lcublas -lcudnn -lcudart_static
 
-LIBS+= /media/liusheng/Programfiles/Programs/VulkanSDK/1.1.114.0/ubuntu/x86_64/lib/libvulkan.so
+LIBS+= /media/liusheng/Programfiles/Programs/VulkanSDK/1.2.148.1/ubuntu/x86_64/lib/libvulkan.so
 LIBS+= /media/liusheng/Programfiles/Programs/libs/glfw/glfw-3.3.2/src/libglfw.so
 LIBS+= /usr/lib64/glibc-2.32/lib/libm.so.6
 #LIBS+= /media/liusheng/Programfiles/Programs/libs/glfw/glfw-3.3.2/src/libglfw.so.3
@@ -92,7 +92,7 @@ LIBS+= /usr/lib64/glibc-2.32/lib/libm.so.6
 
 #LIBS += -lrt
 #LIBS += -ldl
-#        /media/liusheng/Programfiles/Programs/VulkanSDK/1.1.114.0/ubuntu/x86_64/lib/libvulkan.so
+#        /media/liusheng/Programfiles/Programs/VulkanSDK/1.2.148.1/ubuntu/x86_64/lib/libvulkan.so
 
 #LIBS += -lglfw3
 #LIBS += -lglslang -lHLSL -lOGLCompiler -lOSDependent - - - - - - - - - - -
@@ -171,7 +171,6 @@ DISTFILES += \ \
 #    7.Texture_Mapping/shaders/shader_base.frag \
 #    7.Texture_Mapping/shaders/shader_base.vert \
 #    7.Texture_Mapping/shaders/vert.spv
-     11.Multisampling/Texture_Mapping \
      11.Multisampling/shaders/compile.bat \
      11.Multisampling/shaders/compile.sh \
      11.Multisampling/shaders/frag.spv \
