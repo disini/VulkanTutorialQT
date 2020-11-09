@@ -7,6 +7,8 @@
 #define GLM_ENABLE_EXPERIMENTAL
 #define GLM_FORCE_DEFAULT_ALIGNED_GENTYPES// force GLM to use a version of vec2 and mat4 that has the alignment requirements already specified for us.
 
+#define NOMINMAX
+
 //#undef _TIMESPEC_DEFINED
 
 //#define VK_USE_PLATFORM_XCB_KHR
@@ -49,12 +51,14 @@
 #include <set>
 #include <unordered_map>
 
+//#include <GL/glut.h>
+
 // #define NDEBUG // not debug
 
 using namespace std;
 
-const int WIDTH = 1200;
-const int HEIGHT = 900;
+const int WIDTH = 2520;
+const int HEIGHT = 1680;
 
 const std::string MODEL_PATH = "models/viking_room.obj";
 const std::string TEXTURE_PATH = "textures/viking_room.png";
@@ -481,6 +485,8 @@ private:
         //glfwGetFramebufferSize(window, &width, &height);
         while (width == 0 || height == 0) {
             glfwGetFramebufferSize(window, &width, &height);
+            renderInfo.width = width;
+            renderInfo.height = height;
             glfwWaitEvents();
         }
 
@@ -738,6 +744,9 @@ private:
 
         swapChainImageFormat = surfaceFormat.format;
         swapChainExtent = extent;
+        
+        renderInfo.width = std::min(WIDTH, (int)extent.width);
+        renderInfo.height = std::min(HEIGHT, (int)extent.height);
 
     }
     void createImageViews() {
@@ -1913,8 +1922,8 @@ allocInfo.memoryTypeIndex = findMemoryType(memRequirements.memoryTypeBits, prope
         renderInfo.save_images = true;
 //        renderInfo
         renderInfo.device = device;
-        renderInfo.width = WIDTH;
-        renderInfo.height = HEIGHT;
+        //renderInfo.width = WIDTH;
+        //renderInfo.height = HEIGHT;
         renderInfo.format = swapChainImageFormat;
         renderInfo.swap_chain = swapChain;
         renderInfo.graphics_queue = graphicsQueue;
@@ -2023,7 +2032,7 @@ allocInfo.memoryTypeIndex = findMemoryType(memRequirements.memoryTypeBits, prope
         /*if(curFrameNum == 0)
         {*/
 
-            res = write_ppm(renderInfo, string("frame_" + formatNumByDigit(curFrameNum)).c_str());
+            res = write_ppm(renderInfo, string("ppm/frame_" + formatNumByDigit(curFrameNum)).c_str());
 //            write_ppm(string("frame_" + formatNumByDigit(curFrameNum)).c_str());
         //}
 
@@ -2102,6 +2111,10 @@ allocInfo.memoryTypeIndex = findMemoryType(memRequirements.memoryTypeBits, prope
         SwapChainSupportDetails details;
 
         vkGetPhysicalDeviceSurfaceCapabilitiesKHR(device, surface, &details.capabilities);
+
+        int windowWidth, windowHeight;
+
+        glfwGetWindowSize(window, &windowWidth, &windowHeight);
 
         uint32_t formatCount;
         vkGetPhysicalDeviceSurfaceFormatsKHR(device, surface, &formatCount, nullptr);
